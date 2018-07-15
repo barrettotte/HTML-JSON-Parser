@@ -4,33 +4,39 @@ using System.Collections.Generic;
 
 public class HtmlLexer{
 
-    private String[] childlessTags = new String[] {"style", "script", "template"};
+    private ParseOptions options;
     private string htmlString;
+    private CursorPosition currentPosition;
+    private List<Token> tokens;
     
     public HtmlLexer(){}
 
-    public String[] Lexer(string str){
+    public List<Token> Lexer(string str, ParseOptions ops){
         this.htmlString = str;
-        LexObj lexObj = new LexObj(new Position(0,0,0), new List<Token>());
+        this.currentPosition = new CursorPosition();
+        this.tokens = new List<Token>();
+        this.options = (ops == null) ? new ParseOptions() : ops;
+
+        LexObj lexObj = new LexObj(new CursorPosition());
         Lex(lexObj);
         
-        foreach(Token token in lexObj.Tokens){
+        foreach(Token token in tokens){
             Console.WriteLine(token.Content);
         }
-        Console.WriteLine("\n" + lexObj.Tokens.Count + " tokens made!\n");
-        return new String[1];
+        Console.WriteLine("\n" + tokens.Count + " tokens made!\n");
+        return tokens;
     }
 
     private void Lex(LexObj lexObj){
-        while(lexObj.Position.Index < htmlString.Length){
-            int startIndex = lexObj.Position.Index;
+        while(currentPosition.Index < htmlString.Length){
+            int startIndex = currentPosition.Index;
             LexText(lexObj);
-            if(lexObj.Position.Index == startIndex){
+            if(currentPosition.Index == startIndex){
                 if(htmlString.Substring(startIndex + 1, 3) == "!--"){
                     LexComment(lexObj);
                 } else{
                     string tag = LexTag(lexObj);
-                    if(Array.IndexOf(childlessTags, tag.ToLower()) > -1){
+                    if(Array.IndexOf(options.ChildlessTags, tag.ToLower()) > -1){
                         LexSkipTag(tag, lexObj);
                     }
                 }
@@ -39,23 +45,23 @@ public class HtmlLexer{
     }
 
     private void LexText(LexObj lexObj){
-        Position position = lexObj.Position;
+        CursorPosition position = currentPosition;
         int textEnd = FindTextEnd(htmlString, position.Index);
         if(textEnd != position.Index){
             if(textEnd == -1){
                 textEnd = htmlString.Length;
             }
-            Position startPos = CopyPosition(position);
+            CursorPosition startPos = CopyPosition(position);
             string content = htmlString.Substring(position.Index, textEnd - position.Index);
             FeedPosition(position, htmlString, textEnd - position.Index);
-            Position endPos = CopyPosition(position);
-            lexObj.Tokens.Add(new Token("text", content, new PositionPair(startPos, endPos)));
+            CursorPosition endPos = CopyPosition(position);
+            tokens.Add(new Token("text", content, startPos, endPos));
         }
     }
 
     private void LexComment(LexObj lexObj){
-        Position position = lexObj.Position;
-        Position startPos = CopyPosition(position);
+        CursorPosition position = currentPosition;
+        CursorPosition startPos = CopyPosition(position);
         FeedPosition(position, htmlString, 4); //<!---
         int contentEnd = htmlString.IndexOf("-->", position.Index);
         int commentEnd = contentEnd + 3; //-->
@@ -64,23 +70,22 @@ public class HtmlLexer{
         }
         string content = htmlString.Substring(position.Index, contentEnd - position.Index);
         FeedPosition(position, htmlString, commentEnd - position.Index);
-        lexObj.Tokens.Add(new Token("comment", content, new PositionPair(startPos, CopyPosition(position))));
+        tokens.Add(new Token("comment", content, startPos, CopyPosition(position)));
     }
 
     private string LexTag(LexObj lexObj){
-        Position position = lexObj.Position;
+        CursorPosition position = currentPosition;
         bool isClose = htmlString[position.Index + 1] == '/';
-        Position startPos = CopyPosition(position);
+        CursorPosition startPos = CopyPosition(position);
         FeedPosition(position, htmlString, isClose ? 2 : 1);
-        lexObj.Tokens.Add(new Token("tag-start", "" + isClose, new PositionPair(startPos, null)));
+        tokens.Add(new Token("tag-start", "" + isClose, startPos, null));
         string tagName = LexTagName(lexObj);
         LexTagAttributes(lexObj);
         return tagName;
     }
 
-
     private string LexTagName(LexObj lexObj){
-        Position position = lexObj.Position;
+        CursorPosition position = currentPosition;
         int start = position.Index;
         while(start < htmlString.Length){
             char c = htmlString[start];
@@ -99,13 +104,12 @@ public class HtmlLexer{
         }
         FeedPosition(position, htmlString, end - position.Index);
         string tagName = htmlString.Substring(start, end - start);
-        lexObj.Tokens.Add(new Token("tag", tagName, new PositionPair()));
+        tokens.Add(new Token("tag", tagName));
         return tagName;
     }
 
-
     private void LexTagAttributes(LexObj lexObj){
-        int cursor, wordBegin = cursor = lexObj.Position.Index;
+        int cursor, wordBegin = cursor = currentPosition.Index;
         char quote = '\0';
         List<string> words = new List<string>();
 
@@ -130,7 +134,7 @@ public class HtmlLexer{
                 cursor++;
             } 
         }
-        FeedPosition(lexObj.Position, htmlString, cursor - lexObj.Position.Index);
+        FeedPosition(currentPosition, htmlString, cursor - currentPosition.Index);
         LexTagAttributeWords(lexObj, words);
     }
 
@@ -139,44 +143,43 @@ public class HtmlLexer{
             if(words[i].IndexOf("=") == -1){
                 if(words.ElementAtOrDefault(i+1) != null && htmlString[1] == '='){
                     if(words[i+1].Length > 1){
-                        lexObj.Tokens.Add(new Token("attribute", words[i] + words[i+1]));
+                        tokens.Add(new Token("attribute", words[i] + words[i+1]));
                     } else if(words.ElementAtOrDefault(i+2) != null){
-                        lexObj.Tokens.Add(new Token("attribute", words[i] + "=" + words[i+2]));
+                        tokens.Add(new Token("attribute", words[i] + "=" + words[i+2]));
                     }
                 }
             }
             if(EndsWith(words[i], "=", 0)){
                 if(words.ElementAtOrDefault(i+1) != null && words[i+1].IndexOf("=", 0) != -1){
-                    lexObj.Tokens.Add(new Token("attribute", words[i] + words[i+1]));
+                    tokens.Add(new Token("attribute", words[i] + words[i+1]));
                 } else{
-                    lexObj.Tokens.Add(new Token("attribute", words[i].Substring(0, -1)));   //possible issue???
+                    tokens.Add(new Token("attribute", words[i].Substring(0, -1)));   //possible issue???
                 }
             }
-            lexObj.Tokens.Add(new Token("attribute", words[i]));
+            tokens.Add(new Token("attribute", words[i]));
         }
     }
 
     private void LexSkipTag(string tagName, LexObj lexObj){
-        int index = lexObj.Position.Index;
+        int index = currentPosition.Index;
         while(index < htmlString.Length){
             int nextTag = htmlString.IndexOf("</", index);
             if(nextTag == -1){
                 LexText(lexObj);
                 break;
             }
-            Position tagStartPos = CopyPosition(lexObj.Position);
-            FeedPosition(lexObj.Position, htmlString, nextTag - lexObj.Position.Index);
-            LexObj tagLexObj = new LexObj(tagStartPos, lexObj.Tokens);
+            CursorPosition tagStartPos = CopyPosition(currentPosition);
+            FeedPosition(currentPosition, htmlString, nextTag - currentPosition.Index);
+            LexObj tagLexObj = new LexObj(tagStartPos);
 
             if(tagName.ToLower() != LexTag(tagLexObj).ToLower()){
                 index = tagLexObj.Position.Index;
-            } else if(nextTag != lexObj.Position.Index){
-                Position textStart = CopyPosition(lexObj.Position);
-                FeedPosition(lexObj.Position, htmlString, nextTag - lexObj.Position.Index);
-                lexObj.Tokens.Add(new Token("text", htmlString.Substring(textStart.Index, nextTag - textStart.Index),
-                    new PositionPair(textStart, CopyPosition(lexObj.Position))));
+            } else if(nextTag != currentPosition.Index){
+                CursorPosition textStart = CopyPosition(currentPosition);
+                FeedPosition(currentPosition, htmlString, nextTag - currentPosition.Index);
+                tokens.Add(new Token("text", htmlString.Substring(textStart.Index, nextTag - textStart.Index), textStart, CopyPosition(currentPosition)));
             } else{
-                FeedPosition(lexObj.Position, htmlString, tagLexObj.Position.Index - lexObj.Position.Index);
+                FeedPosition(currentPosition, htmlString, tagLexObj.Position.Index - currentPosition.Index);
                 break;
             }
         }
@@ -197,10 +200,10 @@ public class HtmlLexer{
         }
     }
 
-    private Position CopyPosition(Position position){
-        return new Position(position.Index, position.Line, position.Column);
+    private CursorPosition CopyPosition(CursorPosition position){
+        return new CursorPosition(position.Index, position.Line, position.Column);
     }
-    private void FeedPosition(Position position, string str, int len){
+    private void FeedPosition(CursorPosition position, string str, int len){
         int end = position.Index = position.Index + len;
         for(int i = position.Index; i < end; i++){
             position.Line += (str[i] == '\n') ? 1 : 0;
@@ -213,89 +216,14 @@ public class HtmlLexer{
     }
 }
 
-
-class Token{
-    private readonly string type;
-    public string Type{ get{ return this.type; }}
-    private readonly string content;
-    public string Content{ get{ return this.content; }}
-    private readonly PositionPair pair;
-    public PositionPair Pair{ get{ return this.pair; }}
-
-    public Token(){
-        this.type = "undefined";
-        this.content = "undefined";
-        this.pair = new PositionPair();
-    }
-    public Token(string t, string c){
-        type = t;
-        content = c;
-        pair = new PositionPair();
-    }
-    public Token(string t, string c, PositionPair p){
-        type = t;
-        content = c;
-        pair = (p == null) ? new PositionPair() : p;
-    }
-}
-
-class PositionPair{
-    private readonly Position start;
-    public Position Start{ get{ return this.start; }}
-    private readonly Position end;
-    public Position End{ get{ return this.end; }}
-
-    public PositionPair(){
-        start = new Position();
-        end = new Position();
-    }
-    public PositionPair(Position s, Position e){
-        start = (s == null) ? new Position() : s;
-        end = (e == null) ? new Position() : e;
-    }
-}
-
-class Position{
-    private int index;
-    public int Index{ 
-        get{ return this.index; }
-        set{ this.index = value; }
-    }
-    private int column;
-    public int Column{ 
-        get{ return this.column; }
-        set{ this.column = value; }
-    }
-    private int line;
-    public int Line{ 
-        get{ return this.line; }
-        set{ this.line = value; }    
-    }
-
-    public Position(){
-        this.index = 0;
-        this.column = 0;
-        this.line = 0;
-    }
-    public Position(int i, int c, int l){
-        this.index = i;
-        this.column = c;
-        this.line = l;
-    }
-}
-
 class LexObj{
-    private readonly Position position;
-    public Position Position{ get{ return this.position; }}
-    private readonly List<Token> tokens;
-    public List<Token> Tokens{ get{ return this.tokens; }}
+    private readonly CursorPosition position;
+    public CursorPosition Position{ get{ return this.position; }}
 
     public LexObj(){
-        this.position = new Position();
-        this.tokens = new List<Token>();
+        this.position = new CursorPosition();
     }
-    public LexObj(Position p, List<Token> t){
-        this.position = (p == null) ? new Position() : p;
-        this.tokens = (t == null) ? new List<Token>() : t;
+    public LexObj(CursorPosition p){
+        this.position = (p == null) ? new CursorPosition() : p;
     }
 }

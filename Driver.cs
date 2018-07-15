@@ -15,7 +15,10 @@ class Driver{
     
     private void Parse(String htmlString){
         HtmlLexer hLexer = new HtmlLexer();
-        String[] tokens = hLexer.Lexer(htmlString);
+        HtmlJsonParser hParser = new HtmlJsonParser();
+        ParseOptions options = new ParseOptions();
+        List<Token> tokens = hLexer.Lexer(htmlString, options);
+        hParser.Parser(tokens, options);
     }
 
     private String LoadHTML(String path){
