@@ -1,7 +1,6 @@
 using System;
 using System.IO;
 using System.Collections.Generic;  
-//using System.Web.Script.Serialization;
 
 
 class Driver{
@@ -13,11 +12,10 @@ class Driver{
         d.Parse(d.LoadHTML(path));
         d.Finish();
     }
-
     
     private void Parse(String htmlString){
-        HtmlLexer hLexer = new HtmlLexer(htmlString);
-        String[] tokens = hLexer.Lex();
+        HtmlLexer hLexer = new HtmlLexer();
+        String[] tokens = hLexer.Lexer(htmlString);
     }
 
     private String LoadHTML(String path){
