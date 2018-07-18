@@ -4,7 +4,9 @@
 
 { type: tag-start, content: False, startPos: { index: 58, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
 
-{ type: tag, content: !DOCTYPE, startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
+{ type: tag, content: !, startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
+
+{ type: attribute, content: DOCTYPE, startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
 
 { type: attribute, content: html, startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
 
@@ -12,13 +14,15 @@
 
 { type: tag-start, content: False, startPos: { index: 75, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
 
-{ type: tag, content: html, startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
+{ type: tag, content: h, startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
+
+{ type: attribute, content: tml, startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
 
 { type: text, content: 	, startPos: { index: 80, column: 0, line: 0 }, endPos: { index: 84, column: 0, line: 0 } }
 
 { type: tag-start, content: False, startPos: { index: 84, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
 
-{ type: tag, content: p, startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
+{ type: tag, content: p , startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
 
 { type: attribute, content: class="123", startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
 
@@ -26,11 +30,9 @@
 
 { type: tag-start, content: True, startPos: { index: 127, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
 
-{ type: tag, content: p, startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
+{ type: tag, content: p>, startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
 
-{ type: text, content: , startPos: { index: 130, column: 0, line: 0 }, endPos: { index: 133, column: 0, line: 0 } }
+{ type: attribute, content: <, startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
 
-{ type: tag-start, content: True, startPos: { index: 133, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
-
-{ type: tag, content: html, startPos: { index: 0, column: 0, line: 0 }, endPos: { index: 0, column: 0, line: 0 } }
+{ type: text, content: html>, startPos: { index: 134, column: 0, line: 0 }, endPos: { index: 140, column: 0, line: 0 } }
 

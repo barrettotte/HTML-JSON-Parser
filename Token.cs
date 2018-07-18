@@ -14,12 +14,7 @@ public class Token{
         this.startPos = new CursorPosition();
         this.endPos = new CursorPosition();
     }
-    public Token(string t, string c){
-        this.type = t;
-        this.content = c;
-        this.startPos = new CursorPosition();
-        this.endPos = new CursorPosition();
-    }
+    
     public Token(string t, string c, CursorPosition s, CursorPosition e){
         this.type = t;
         this.content = c;

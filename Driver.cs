@@ -6,28 +6,18 @@ using System.Collections.Generic;
 class Driver{
     
     private static void Main(){
+        const string fileName = "files/Test-01";
         Driver d = new Driver();
+        ParseOptions options = new ParseOptions();
         d.Start();
 
-        bool isDebug = true;
-        bool writeToConsole = true;
-        bool writeToTextFile = true;
-        string fileName = "files/Test-01";
         string htmlContent = d.LoadHTML(fileName);
-
         HtmlLexer hLexer = new HtmlLexer();
-        ParseOptions options = new ParseOptions();
         List<Token> tokens = hLexer.Lexer(htmlContent, options);
-        
-        if(isDebug){
-            if(writeToConsole){
-                d.WriteTokensToConsole(tokens);
-            }
-            if(writeToTextFile){
-                d.WriteTokensToTextFile(tokens, fileName);
-            }
-        }
         HtmlParse parser = new HtmlParse();
+
+        d.WriteTokensToConsole(tokens);
+        d.WriteTokensToTextFile(tokens, fileName);
         parser.Parse(tokens);
         d.Finish();
     }

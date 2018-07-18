@@ -1,6 +1,6 @@
 @echo off
-    rem Compiles all .cs files into exe and runs it.
-    rem Yeah, I know its bad practice to do this.
+    rem Compiles all .cs files in current directory into single exe and runs it.
+    rem Yeah, I know its bad practice to do this, but it works for my purposes.
 @echo on
 
 cls
