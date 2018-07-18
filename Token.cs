@@ -1,5 +1,3 @@
-using System;
-
 public class Token{
     private readonly string type;
     public string Type{ get{ return this.type; }}
@@ -11,21 +9,27 @@ public class Token{
     public CursorPosition EndPos{ get{ return this.endPos; }}
 
     public Token(){
-        this.type = "undefined";
-        this.content = "undefined";
+        this.type = "";
+        this.content = "";
         this.startPos = new CursorPosition();
         this.endPos = new CursorPosition();
     }
     public Token(string t, string c){
-        type = t;
-        content = c;
-        startPos = new CursorPosition();
-        endPos = new CursorPosition();
+        this.type = t;
+        this.content = c;
+        this.startPos = new CursorPosition();
+        this.endPos = new CursorPosition();
     }
     public Token(string t, string c, CursorPosition s, CursorPosition e){
-        type = t;
-        content = c;
-        startPos = (s == null) ? new CursorPosition() : s;
-        endPos = (e == null) ? new CursorPosition() : e;
+        this.type = t;
+        this.content = c;
+        this.startPos = (s == null) ? new CursorPosition() : s;
+        this.endPos = (e == null) ? new CursorPosition() : e;
+    }
+
+    public override string ToString(){
+        string str = "{ type: " + this.type + ", content: " + this.content + ", ";
+        str += "startPos: " + this.startPos.ToString() + ", endPos: " + this.endPos.ToString() + " }";
+        return str;
     }
 }

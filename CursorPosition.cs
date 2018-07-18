@@ -25,4 +25,8 @@ public class CursorPosition{
         this.column = c;
         this.line = l;
     }
+
+    public override string ToString(){
+        return "{ index: " + this.index + ", column: " + this.column + ", line: " + this.line + " }";
+    }
 }

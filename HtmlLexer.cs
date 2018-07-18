@@ -9,7 +9,6 @@ public class HtmlLexer{
     private CursorPosition currentPosition;
     private List<Token> tokens;
     
-    public HtmlLexer(){}
 
     public List<Token> Lexer(string str, ParseOptions ops){
         this.htmlString = str;
@@ -19,16 +18,12 @@ public class HtmlLexer{
 
         LexObj lexObj = new LexObj(new CursorPosition());
         Lex(lexObj);
-        
-        foreach(Token token in tokens){
-            Console.WriteLine(token.Content);
-        }
-        Console.WriteLine("\n" + tokens.Count + " tokens made!\n");
+
         return tokens;
     }
 
     private void Lex(LexObj lexObj){
-        while(currentPosition.Index < htmlString.Length){
+        while(currentPosition.Index < htmlString.Length-1){
             int startIndex = currentPosition.Index;
             LexText(lexObj);
             if(currentPosition.Index == startIndex){
@@ -52,6 +47,7 @@ public class HtmlLexer{
                 textEnd = htmlString.Length;
             }
             CursorPosition startPos = CopyPosition(position);
+            position.Index += (position.Index + 1 >= htmlString.Length) ? 0 : 1;
             string content = htmlString.Substring(position.Index, textEnd - position.Index);
             FeedPosition(position, htmlString, textEnd - position.Index);
             CursorPosition endPos = CopyPosition(position);
