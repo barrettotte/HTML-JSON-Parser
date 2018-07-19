@@ -36,6 +36,10 @@ public class HtmlLexer{
         }
     }
 
+    /*
+        Tag endings are not being lexed correctly. Fix it
+    */
+
     private void LexText(){
         int textEnd = FindTextEnd(htmlString, currentPosition.Index);
         if(textEnd != currentPosition.Index){
@@ -82,7 +86,7 @@ public class HtmlLexer{
                 break;
             }
             start++;
-        }
+        } //Refactor! Duplicate loops
         int end = start + 1;
         while(end < htmlString.Length){
             char c = htmlString[end];
@@ -115,7 +119,7 @@ public class HtmlLexer{
                 } else if(Char.IsWhiteSpace(c)){
                     if(cursor != wordBegin){
                         words.Add(htmlString.Substring(wordBegin, cursor - wordBegin));
-                    }
+                    } //Refactor! Duplicate Conditionals
                     wordBegin = cursor + 1;
                 } else if((c == '\'' || c == '"')){
                     quote = c;
@@ -136,7 +140,7 @@ public class HtmlLexer{
                     } else if(words.ElementAtOrDefault(i+2) != null){
                         tokens.Add(new Token("attribute", words[i] + "=" + words[i+2], null, null));
                     }
-                } // Kind of messy around here...think about more refactoring
+                } // //Refactor! Kind of messy around here
             }
             if(EndsWith(words[i], "=", 0)){
                 if(words.ElementAtOrDefault(i+1) != null && words[i+1].IndexOf("=", 0) != -1){
@@ -175,14 +179,14 @@ public class HtmlLexer{
     private int FindTextEnd(string str, int index){
         while(true){
             int textEnd = str.IndexOf('<', index);
-            if(textEnd != -1){
+            if(textEnd == -1){
+                return textEnd;
+            } else{
                 char c = str[textEnd + 1];
                 if(Char.IsLetterOrDigit(c) || c == '/' || c == '!'){
                     return textEnd;
                 }
                 index = textEnd + 1;
-            } else{
-                return textEnd;
             }
         }
     }

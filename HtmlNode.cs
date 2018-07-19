@@ -1,14 +1,11 @@
 using System.Collections.Generic;
 
 public class HtmlNode{
-
     private string element;
     private string content;
     private List<KeyPair> attributes;
     private List<HtmlNode> children;
 
-
-    #region Properties
     public string Element{ 
         get{ return this.element; } 
     }
@@ -21,8 +18,6 @@ public class HtmlNode{
     public List<HtmlNode> Children{ 
         get{ return this.children; } 
     }
-    #endregion
-
 
     public HtmlNode(){
         this.element = "";
@@ -36,7 +31,6 @@ public class HtmlNode{
         this.attributes = (a == null) ? new List<KeyPair>() : a;
         this.children = (child == null) ? new List<HtmlNode>() : child;
     }
-
 
     public override string ToString(){
         string str = "{ element: " + this.element + ", content: " + this.content + ", attributes: ";

@@ -14,7 +14,24 @@ public class HtmlParse{
     }
 
     public void Parse(List<Token> t){
-        
+        this.tokens = t;
+        Console.WriteLine("Parsing tokens...");
+
+        Stack<Token> tagStartStack = new Stack<Token>();
+        Stack<Token> tokenStack = new Stack<Token>();
+
+        bool isClosingTag;
+        for(int i = 0; i < tokens.Count; i++){
+            if(tokens[i].Type == "tag-start" && Boolean.TryParse(tokens[i].Content, out isClosingTag)){
+                if(isClosingTag){
+                    Console.WriteLine("Found tag end");    
+                } else{
+                    Console.WriteLine("Found tag start");    
+                }
+            }
+        }
     }
+
+
 
 }

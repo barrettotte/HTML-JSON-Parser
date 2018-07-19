@@ -1,20 +1,21 @@
 public class CursorPosition{
     private int index;
+    private int column;
+    private int line;
+
     public int Index{ 
         get{ return this.index; }
         set{ this.index = value; }
     }
-    private int column;
     public int Column{ 
         get{ return this.column; }
         set{ this.column = value; }
     }
-    private int line;
-    public int Line{ 
+     public int Line{ 
         get{ return this.line; }
         set{ this.line = value; }    
     }
-
+    
     public CursorPosition(){
         this.index = 0;
         this.column = 0;

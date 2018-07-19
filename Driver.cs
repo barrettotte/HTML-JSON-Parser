@@ -18,6 +18,7 @@ class Driver{
 
         d.WriteTokensToConsole(tokens);
         d.WriteTokensToTextFile(tokens, fileName);
+        d.WriteCharsToTextFile(htmlContent, fileName);
         parser.Parse(tokens);
         d.Finish();
     }
@@ -46,12 +47,22 @@ class Driver{
         Console.WriteLine("Wrote " + fileName + ".html tokens to " + fileName + ".tokens.txt");
     }
 
+    private void WriteCharsToTextFile(string str, string fileName){
+        string content = "";
+        for(int i = 0; i < str.Length; i++){
+            content += (i + " --- " + str[i]);
+            content += (str[i] == '\n') ? "" : "\n";
+        }
+        File.WriteAllText(fileName + ".chars.txt", content);
+        Console.WriteLine("Wrote " + fileName + ".html chars to " + fileName + ".chars.txt");
+    }
+
     private void Start(){
         Console.WriteLine("\nStarted HTML To JSON Parser.\n");
     }
 
     private void Finish(){
-        Console.WriteLine("Press any key to exit.");
+        Console.WriteLine("\nPress any key to exit.");
         Console.ReadKey();
     }
 }

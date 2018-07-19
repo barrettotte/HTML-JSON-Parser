@@ -2,8 +2,12 @@ public class KeyPair{
     private string key;
     private string value;
 
-    public string Key{ get{ return this.key; }}
-    public string Value{ get{ return this.value; }}
+    public string Key{ 
+        get{ return this.key; }
+    }
+    public string Value{ 
+        get{ return this.value; }
+    }
 
     public KeyPair(){
         this.key = "";
