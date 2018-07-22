@@ -12,7 +12,7 @@ public class HtmlLexer{
     
     public List<Token> Lexer(string str, ParseOptions ops){
         this.htmlString = str;
-        this.currentPosition = new CursorPosition();
+        this.currentPosition = new CursorPosition(0,0,1);
         this.tokens = new List<Token>();
         this.options = (ops == null) ? new ParseOptions() : ops;
         Lex();
@@ -20,7 +20,7 @@ public class HtmlLexer{
     }
 
     private void Lex(){
-        while(currentPosition.Index < htmlString.Length){
+        while(currentPosition.Index < htmlString.Length - 1){
             int startIndex = currentPosition.Index;
             LexText();
             if(currentPosition.Index == startIndex){
@@ -36,22 +36,17 @@ public class HtmlLexer{
         }
     }
 
-    /*
-        Tag endings are not being lexed correctly. Fix it
-    */
-
     private void LexText(){
         int textEnd = FindTextEnd(htmlString, currentPosition.Index);
         if(textEnd != currentPosition.Index){
-            if(textEnd == -1){
-                textEnd = htmlString.Length;
-            }
+            textEnd = (textEnd == -1) ? htmlString.Length : textEnd;
             CursorPosition startPos = CopyPosition(currentPosition);
             currentPosition.Index += (currentPosition.Index + 1 >= htmlString.Length) ? 0 : 1;
-            string content = htmlString.Substring(currentPosition.Index, textEnd - currentPosition.Index);
+            string content = htmlString.Substring(currentPosition.Index, textEnd - currentPosition.Index).Trim();
             FeedPosition(currentPosition, htmlString, textEnd - currentPosition.Index);
-            CursorPosition endPos = CopyPosition(currentPosition);
-            tokens.Add(new Token("text", content, startPos, endPos));
+            if(content != ""){
+                tokens.Add(new Token("text", content, startPos, CopyPosition(currentPosition)));
+            }
         }
     }
 
@@ -72,13 +67,16 @@ public class HtmlLexer{
         bool isClose = htmlString[currentPosition.Index + 1] == '/';
         CursorPosition startPos = CopyPosition(currentPosition);
         FeedPosition(currentPosition, htmlString, isClose ? 2 : 1);
-        tokens.Add(new Token("tag-start", "" + isClose, startPos, null));
+        string type = (isClose) ? "tag-end" : "tag-start";
+        string content = (isClose) ? "/>" : "<";
+        tokens.Add(new Token(type, content, startPos, CopyPosition(currentPosition)));
         string tagName = LexTagName();
         LexTagAttributes();
         return tagName;
     }
 
     private string LexTagName(){
+        CursorPosition startPos = CopyPosition(currentPosition);
         int start = currentPosition.Index;
         while(start < htmlString.Length){
             char c = htmlString[start];
@@ -86,70 +84,64 @@ public class HtmlLexer{
                 break;
             }
             start++;
-        } //Refactor! Duplicate loops
+        }
         int end = start + 1;
         while(end < htmlString.Length){
             char c = htmlString[end];
-            if(!(Char.IsWhiteSpace(c) || c == '/' || c == '>')){
+            if(Char.IsWhiteSpace(c) || c == '/' || c == '>'){
                 break;
             }
             end++;
         }
         FeedPosition(currentPosition, htmlString, end - currentPosition.Index);
         string tagName = htmlString.Substring(start, end - start);
-        tokens.Add(new Token("tag", tagName, null, null));
+        tokens.Add(new Token("tag", "" + tagName, startPos, CopyPosition(currentPosition)));
         return tagName;
     }
 
     private void LexTagAttributes(){
-        int cursor, wordBegin = cursor = currentPosition.Index;
+        int index, attrStart = index = currentPosition.Index;
         char quote = '\0';
         List<string> words = new List<string>();
 
-        while(cursor < htmlString.Length){
-            char c = htmlString[cursor];
-            if(c == '/' || c == '>'){
-                if(cursor != wordBegin){
-                    words.Add(htmlString.Substring(wordBegin, cursor - wordBegin));
+        while(index < htmlString.Length){
+            char c = htmlString[index];
+            if(quote != '\0'){
+                quote = (c == quote) ? '\0' : quote;
+            } else if(c == '/' || c == '>'){
+                if(index != attrStart){
+                    words.Add(htmlString.Substring(attrStart, index - attrStart));
                 }
                 break;
-            } else{
-                if(quote != '\0'){
-                    quote = (c == quote) ? '\0' : quote;
-                } else if(Char.IsWhiteSpace(c)){
-                    if(cursor != wordBegin){
-                        words.Add(htmlString.Substring(wordBegin, cursor - wordBegin));
-                    } //Refactor! Duplicate Conditionals
-                    wordBegin = cursor + 1;
-                } else if((c == '\'' || c == '"')){
-                    quote = c;
-                } 
-                cursor++;
-            } 
+            } else if(Char.IsWhiteSpace(c)){
+                if(index != attrStart){
+                    words.Add(htmlString.Substring(attrStart, index - attrStart));
+                }
+                attrStart = index + 1;
+            } else if(c == '\'' || c == '"'){
+                quote = c;
+            }
+            index++;
         }
-        FeedPosition(currentPosition, htmlString, cursor - currentPosition.Index);
-        LexTagAttributeWords(words);
+
+        CursorPosition startPos = CopyPosition(currentPosition);
+        FeedPosition(currentPosition, htmlString, index - currentPosition.Index);
+        LexTagAttributeWords(words, startPos);
     }
 
-    private void LexTagAttributeWords(List<string> words){
+    private void LexTagAttributeWords(List<string> words, CursorPosition startPos){
+        bool[] alreadyUsed = new bool[words.Count];
         for(int i = 0; i < words.Count; i++){
-            if(words[i].IndexOf("=") == -1){
-                if(words.ElementAtOrDefault(i+1) != null && htmlString[1] == '='){
-                    if(words[i+1].Length > 1){
-                        tokens.Add(new Token("attribute", words[i] + words[i+1], null, null));
-                    } else if(words.ElementAtOrDefault(i+2) != null){
-                        tokens.Add(new Token("attribute", words[i] + "=" + words[i+2], null, null));
-                    }
-                } // //Refactor! Kind of messy around here
-            }
-            if(EndsWith(words[i], "=", 0)){
-                if(words.ElementAtOrDefault(i+1) != null && words[i+1].IndexOf("=", 0) != -1){
-                    tokens.Add(new Token("attribute", words[i] + words[i+1], null, null));
+            if(!alreadyUsed[i]){
+                if(!words[i].Contains('=') && words.ElementAtOrDefault(i+1) != null && !alreadyUsed[i+1] && words[i+1] == "="){
+                    if(words.ElementAtOrDefault(i+2) != null && !alreadyUsed[i+2]){
+                        tokens.Add(new Token("attribute", words[i] + "=" + words[i+2], startPos, CopyPosition(currentPosition)));
+                        alreadyUsed[i] = alreadyUsed[i+1] = alreadyUsed[i+2] = true;
+                    } 
                 } else{
-                    tokens.Add(new Token("attribute", words[i].Substring(0, -1), null, null));
+                    tokens.Add(new Token("attribute", words[i], startPos, CopyPosition(currentPosition)));
                 }
             }
-            tokens.Add(new Token("attribute", words[i], null, null));
         }
     }
 
@@ -168,7 +160,10 @@ public class HtmlLexer{
             } else if(nextTag != currentPosition.Index){
                 CursorPosition textStart = CopyPosition(currentPosition);
                 FeedPosition(currentPosition, htmlString, nextTag - currentPosition.Index);
-                tokens.Add(new Token("text", htmlString.Substring(textStart.Index, nextTag - textStart.Index), textStart, CopyPosition(currentPosition)));
+                string content = htmlString.Substring(textStart.Index, nextTag - textStart.Index).Trim();
+                if(content != ""){
+                    tokens.Add(new Token("text", content, textStart, CopyPosition(currentPosition)));
+                }
             } else{
                 FeedPosition(currentPosition, htmlString, tagStartPos.Index - currentPosition.Index);
                 break;
@@ -192,15 +187,22 @@ public class HtmlLexer{
     }
 
     private CursorPosition CopyPosition(CursorPosition position){
-        return new CursorPosition(position.Index, position.Line, position.Column);
+        return new CursorPosition(position.Index, position.Column, position.Line);
     }
+
     private void FeedPosition(CursorPosition position, string str, int len){
-        int end = position.Index = position.Index + len;
-        for(int i = position.Index; i < end; i++){
-            position.Line += (str[i] == '\n') ? 1 : 0;
-            position.Column = (str[i] == '\n') ? 0 : position.Column + 1;
+        int start = position.Index;
+        int end = position.Index = start + len;
+        for(int i = start; i < end; i++){
+            if(str[i] == '\n'){
+                position.Line++;
+                position.Column = 0;
+            } else{
+                position.Column++;
+            }
         }
     }
+
     private bool EndsWith(string str, string search, int position){
         int index = (position == 0) ? str.Length : position;
         return (str.LastIndexOf(search, index) != -1) && (str.LastIndexOf(search, index) == index);

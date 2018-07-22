@@ -30,4 +30,8 @@ public class CursorPosition{
     public override string ToString(){
         return "{ index: " + this.index + ", column: " + this.column + ", line: " + this.line + " }";
     }
+
+    public bool Equals(CursorPosition other){
+        return (this.index == other.Index) && (this.column == other.Column) && (this.line == other.Line);
+    }
 }
