@@ -6,6 +6,8 @@
 
 { type: attribute, content: html, startPos: { index: 85, column: 9, line: 4 }, endPos: { index: 90, column: 14, line: 4 } }
 
+{ type: tag-end, content: />, startPos: { index: 90, column: 14, line: 4 }, endPos: { index: 90, column: 14, line: 4 } }
+
 { type: tag-start, content: <, startPos: { index: 93, column: 0, line: 5 }, endPos: { index: 94, column: 1, line: 5 } }
 
 { type: tag, content: html, startPos: { index: 94, column: 1, line: 5 }, endPos: { index: 98, column: 5, line: 5 } }
@@ -24,17 +26,19 @@
 
 { type: attribute, content: class="123", startPos: { index: 140, column: 4, line: 7 }, endPos: { index: 152, column: 16, line: 7 } }
 
-{ type: text, content: This is a simple test, startPos: { index: 152, column: 16, line: 7 }, endPos: { index: 179, column: 24, line: 8 } }
+{ type: text, content: This is a simple test, startPos: { index: 152, column: 16, line: 7 }, endPos: { index: 183, column: 2, line: 9 } }
 
-{ type: tag-end, content: />, startPos: { index: 179, column: 24, line: 8 }, endPos: { index: 181, column: 26, line: 8 } }
+{ type: tag-end, content: />, startPos: { index: 183, column: 2, line: 9 }, endPos: { index: 185, column: 4, line: 9 } }
 
-{ type: tag, content: p, startPos: { index: 181, column: 26, line: 8 }, endPos: { index: 182, column: 27, line: 8 } }
+{ type: tag, content: p, startPos: { index: 185, column: 4, line: 9 }, endPos: { index: 186, column: 5, line: 9 } }
 
-{ type: tag-end, content: />, startPos: { index: 186, column: 1, line: 9 }, endPos: { index: 188, column: 3, line: 9 } }
+{ type: comment, content: I am another comment, startPos: { index: 191, column: 2, line: 10 }, endPos: { index: 218, column: 29, line: 10 } }
 
-{ type: tag, content: div, startPos: { index: 188, column: 3, line: 9 }, endPos: { index: 191, column: 6, line: 9 } }
+{ type: tag-end, content: />, startPos: { index: 221, column: 1, line: 11 }, endPos: { index: 223, column: 3, line: 11 } }
 
-{ type: tag-end, content: />, startPos: { index: 194, column: 0, line: 10 }, endPos: { index: 196, column: 2, line: 10 } }
+{ type: tag, content: div, startPos: { index: 223, column: 3, line: 11 }, endPos: { index: 226, column: 6, line: 11 } }
 
-{ type: tag, content: html, startPos: { index: 196, column: 2, line: 10 }, endPos: { index: 200, column: 6, line: 10 } }
+{ type: tag-end, content: />, startPos: { index: 229, column: 0, line: 12 }, endPos: { index: 231, column: 2, line: 12 } }
+
+{ type: tag, content: html, startPos: { index: 231, column: 2, line: 12 }, endPos: { index: 235, column: 6, line: 12 } }
 

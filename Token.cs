@@ -28,4 +28,8 @@ public class Token{
         str += "startPos: " + this.startPos.ToString() + ", endPos: " + this.endPos.ToString() + " }";
         return str;
     }
+
+    public bool Equals(Token other){
+        return this.type == other.Type && this.content == other.Content && this.startPos.Equals(other.StartPos) && this.endPos.Equals(other.EndPos);
+    }
 }

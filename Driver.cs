@@ -16,10 +16,10 @@ class Driver{
         List<Token> tokens = hLexer.Lexer(htmlContent, options);
         HtmlParse parser = new HtmlParse();
 
-        d.WriteTokensToConsole(tokens);
+        //d.WriteTokensToConsole(tokens);
         d.WriteTokensToTextFile(tokens, fileName);
-        d.WriteCharsToTextFile(htmlContent, fileName);
-        parser.Parse(tokens);
+        //d.WriteCharsToTextFile(htmlContent, fileName);
+        parser.Parser(tokens, options);
         d.Finish();
     }
 

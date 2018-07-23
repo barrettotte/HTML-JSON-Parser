@@ -30,6 +30,8 @@ public class HtmlLexer{
                     string tag = LexTag();
                     if(Array.IndexOf(options.ChildlessTags, tag.ToLower()) > -1){
                         LexSkipTag(tag);
+                    } else if(Array.IndexOf(options.NoClosingTags, tag.ToLower()) > -1){
+                        tokens.Add(new Token("tag-end", "/>", CopyPosition(currentPosition), CopyPosition(currentPosition)));
                     }
                 }
             }
