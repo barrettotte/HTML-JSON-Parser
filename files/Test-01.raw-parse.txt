@@ -1,0 +1,27 @@
+{
+    "type": "root",
+    "content": "root",
+    "children": {
+        "type": "tag",
+        "content": "html",
+        "children": {
+            "type": "tag",
+            "content": "div",
+            "attributes":{
+                "type":"wasd", 
+                "class":"test"
+            },
+            "children": {
+                "type": "tag",
+                "content": "p",
+                "attributes":{
+                    "class":"123"
+                },
+                "children": {
+                    "type": "text",
+                    "content": "This is a simple test"
+                }
+            }
+        }
+    }
+}

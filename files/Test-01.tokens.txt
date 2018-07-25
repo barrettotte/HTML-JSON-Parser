@@ -1,44 +1,42 @@
-{ type: comment, content:  Test-01.html	This is a test to see how well the lexer performs, startPos: { index: 0, column: 0, line: 1 }, endPos: { index: 74, column: 3, line: 3 } }
+{ type: tag-start, content: <, startPos: { index: 0, column: 0, line: 1 }, endPos: { index: 1, column: 1, line: 1 } }
 
-{ type: tag-start, content: <, startPos: { index: 76, column: 0, line: 4 }, endPos: { index: 77, column: 1, line: 4 } }
+{ type: tag, content: html, startPos: { index: 1, column: 1, line: 1 }, endPos: { index: 5, column: 5, line: 1 } }
 
-{ type: tag, content: !DOCTYPE, startPos: { index: 77, column: 1, line: 4 }, endPos: { index: 85, column: 9, line: 4 } }
+{ type: tag-start, content: <, startPos: { index: 9, column: 1, line: 2 }, endPos: { index: 10, column: 2, line: 2 } }
 
-{ type: attribute, content: html, startPos: { index: 85, column: 9, line: 4 }, endPos: { index: 90, column: 14, line: 4 } }
+{ type: tag, content: div, startPos: { index: 10, column: 2, line: 2 }, endPos: { index: 13, column: 5, line: 2 } }
 
-{ type: tag-end, content: />, startPos: { index: 90, column: 14, line: 4 }, endPos: { index: 90, column: 14, line: 4 } }
+{ type: attribute, content: class="test", startPos: { index: 13, column: 5, line: 2 }, endPos: { index: 40, column: 32, line: 2 } }
 
-{ type: tag-start, content: <, startPos: { index: 93, column: 0, line: 5 }, endPos: { index: 94, column: 1, line: 5 } }
+{ type: attribute, content: type="wasd", startPos: { index: 13, column: 5, line: 2 }, endPos: { index: 40, column: 32, line: 2 } }
 
-{ type: tag, content: html, startPos: { index: 94, column: 1, line: 5 }, endPos: { index: 98, column: 5, line: 5 } }
+{ type: tag-start, content: <, startPos: { index: 45, column: 2, line: 3 }, endPos: { index: 46, column: 3, line: 3 } }
 
-{ type: tag-start, content: <, startPos: { index: 102, column: 1, line: 6 }, endPos: { index: 103, column: 2, line: 6 } }
+{ type: tag, content: p, startPos: { index: 46, column: 3, line: 3 }, endPos: { index: 47, column: 4, line: 3 } }
 
-{ type: tag, content: div, startPos: { index: 103, column: 2, line: 6 }, endPos: { index: 106, column: 5, line: 6 } }
+{ type: attribute, content: class="123", startPos: { index: 47, column: 4, line: 3 }, endPos: { index: 59, column: 16, line: 3 } }
 
-{ type: attribute, content: class="test", startPos: { index: 106, column: 5, line: 6 }, endPos: { index: 133, column: 32, line: 6 } }
+{ type: text, content: This is a simple test, startPos: { index: 59, column: 16, line: 3 }, endPos: { index: 90, column: 2, line: 5 } }
 
-{ type: attribute, content: type="wasd", startPos: { index: 106, column: 5, line: 6 }, endPos: { index: 133, column: 32, line: 6 } }
+{ type: tag-end, content: />, startPos: { index: 90, column: 2, line: 5 }, endPos: { index: 92, column: 4, line: 5 } }
 
-{ type: tag-start, content: <, startPos: { index: 138, column: 2, line: 7 }, endPos: { index: 139, column: 3, line: 7 } }
+{ type: tag, content: p, startPos: { index: 92, column: 4, line: 5 }, endPos: { index: 93, column: 5, line: 5 } }
 
-{ type: tag, content: p, startPos: { index: 139, column: 3, line: 7 }, endPos: { index: 140, column: 4, line: 7 } }
+{ type: tag-start, content: <, startPos: { index: 98, column: 2, line: 6 }, endPos: { index: 99, column: 3, line: 6 } }
 
-{ type: attribute, content: class="123", startPos: { index: 140, column: 4, line: 7 }, endPos: { index: 152, column: 16, line: 7 } }
+{ type: tag, content: b, startPos: { index: 99, column: 3, line: 6 }, endPos: { index: 100, column: 4, line: 6 } }
 
-{ type: text, content: This is a simple test, startPos: { index: 152, column: 16, line: 7 }, endPos: { index: 183, column: 2, line: 9 } }
+{ type: text, content: Bold text, startPos: { index: 100, column: 4, line: 6 }, endPos: { index: 119, column: 2, line: 8 } }
 
-{ type: tag-end, content: />, startPos: { index: 183, column: 2, line: 9 }, endPos: { index: 185, column: 4, line: 9 } }
+{ type: tag-end, content: />, startPos: { index: 119, column: 2, line: 8 }, endPos: { index: 121, column: 4, line: 8 } }
 
-{ type: tag, content: p, startPos: { index: 185, column: 4, line: 9 }, endPos: { index: 186, column: 5, line: 9 } }
+{ type: tag, content: b, startPos: { index: 121, column: 4, line: 8 }, endPos: { index: 122, column: 5, line: 8 } }
 
-{ type: comment, content: I am another comment, startPos: { index: 191, column: 2, line: 10 }, endPos: { index: 218, column: 29, line: 10 } }
+{ type: tag-end, content: />, startPos: { index: 126, column: 1, line: 9 }, endPos: { index: 128, column: 3, line: 9 } }
 
-{ type: tag-end, content: />, startPos: { index: 221, column: 1, line: 11 }, endPos: { index: 223, column: 3, line: 11 } }
+{ type: tag, content: div, startPos: { index: 128, column: 3, line: 9 }, endPos: { index: 131, column: 6, line: 9 } }
 
-{ type: tag, content: div, startPos: { index: 223, column: 3, line: 11 }, endPos: { index: 226, column: 6, line: 11 } }
+{ type: tag-end, content: />, startPos: { index: 134, column: 0, line: 10 }, endPos: { index: 136, column: 2, line: 10 } }
 
-{ type: tag-end, content: />, startPos: { index: 229, column: 0, line: 12 }, endPos: { index: 231, column: 2, line: 12 } }
-
-{ type: tag, content: html, startPos: { index: 231, column: 2, line: 12 }, endPos: { index: 235, column: 6, line: 12 } }
+{ type: tag, content: html, startPos: { index: 136, column: 2, line: 10 }, endPos: { index: 140, column: 6, line: 10 } }
 

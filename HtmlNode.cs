@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 
 public class HtmlNode{
@@ -5,6 +6,8 @@ public class HtmlNode{
     private string content;
     private List<KeyPair> attributes;
     private List<HtmlNode> children;
+    private bool hasParent;
+    private int generation;
 
     public string Type{ 
         get{ return this.type; } 
@@ -18,47 +21,56 @@ public class HtmlNode{
     public List<HtmlNode> Children{ 
         get{ return this.children; } 
     }
+    public int Generation{
+        get{ return this.generation; }
+    }
+    public bool HasParent{
+        get{ return this.hasParent; }
+    }
 
     public HtmlNode(){
         this.type = "";
         this.content = "";
         this.attributes = new List<KeyPair>();
         this.children = new List<HtmlNode>();
+        this.generation = 0;
+        this.hasParent = false;
+    }
+    public HtmlNode(string t, string c){
+        this.type = t;
+        this.content = c;
+        this.attributes = new List<KeyPair>();
+        this.children = new List<HtmlNode>();
+        this.generation = 0;
+        this.hasParent = false;
     }
     public HtmlNode(string t, string c, List<KeyPair> a, List<HtmlNode> child){
         this.type = t;
         this.content = c;
         this.attributes = (a == null) ? new List<KeyPair>() : a;
         this.children = (child == null) ? new List<HtmlNode>() : child;
+        this.generation = 0;
+        this.hasParent = false;
     }
-    public HtmlNode(Token t){
+    public HtmlNode(Token t, int g){
         this.type = t.Type;
         this.content = t.Content;
         this.attributes = new List<KeyPair>();
         this.children = new List<HtmlNode>();
+        this.generation = g;
+        this.hasParent = true;
     }
 
-    public override string ToString(){
-        string str = " {\n   type: " + this.type + ",\n";
-        str += "   content: " + this.content.Replace("\r\n", "\\n");
-        if(this.attributes.Count > 0){
-            str += ",\n   attributes: \n";
-            for(int i = 0; i < this.attributes.Count; i++){
-                str += "      ";
-                str += (i == this.attributes.Count - 1) ? (this.attributes[i] + "") : (this.attributes[i] + ", \n");
-            }
-        } 
-        if(this.children.Count > 0){
-            str += "   children: ";
-            for(int i = 0; i < this.children.Count; i++){
-                str += (i == this.children.Count - 1) ? (this.children[i] + "") : (this.children[i] + ", ");
-            }
-        }
-        return str + "\n }";
+    public override ToString(){
+        return "{type: " + this.type + ", content:"+ this.content + ", generation:" + this.generation +
+            ",attributes:[" + this.attributes.Count + "], children:[" + this.children.Count + "]}";
     }
 
     public bool IsEmpty(){
         return (this.type == "" && this.content == "") && 
             (this.attributes.Count == 0) && (this.children.Count == 0);
+    }
+    private string getPad(int i){
+        return new String(' ', (i + 1) * 4);
     }
 }

@@ -1,0 +1,53 @@
+{
+    "node":{
+        "generation":"0",
+        "type":"root",
+        "content":"root",
+        "children":{
+            "node":{
+                "generation":"1",
+                "type":"tag",
+                "content":"html",
+                "children":{
+                    "node":{
+                        "generation":"2",
+                        "type":"tag",
+                        "content":"div",
+                        "attributes":{
+                            "type":"wasd",
+                            "class":"test"
+                        },
+                        "children":{
+                            "node":{
+                                "generation":"3",
+                                "type":"tag",
+                                "content":"p",
+                                "attributes":{
+                                    "class":"123"
+                                },
+                                "children":{
+                                    "node":{
+                                        "generation":"4",
+                                        "type":"text",
+                                        "content":"This is a simple test"
+                                    }
+                                },
+                            "node":{
+                                "generation":"3",
+                                "type":"tag",
+                                "content":"b",
+                                "children":{
+                                    "node":{
+                                        "generation":"4",
+                                        "type":"text",
+                                        "content":"Bold text"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

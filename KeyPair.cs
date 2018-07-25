@@ -19,6 +19,8 @@ public class KeyPair{
     }
 
     public override string ToString(){
-        return "{ key=" + this.key + ", value=" + this.value + " } ";
+        this.key = this.key.Replace("\"", "");
+        this.value = this.value.Replace("\"", "");
+        return "\"" + this.key + "\":\"" + this.value + "\"";
     }
 }

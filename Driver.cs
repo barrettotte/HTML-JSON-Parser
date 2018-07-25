@@ -2,7 +2,6 @@ using System;
 using System.IO;
 using System.Collections.Generic;  
 
-
 class Driver{
     
     private static void Main(){
@@ -11,15 +10,18 @@ class Driver{
         ParseOptions options = new ParseOptions();
         d.Start();
 
-        string htmlContent = d.LoadHTML(fileName);
         HtmlLexer hLexer = new HtmlLexer();
-        List<Token> tokens = hLexer.Lexer(htmlContent, options);
         HtmlParse parser = new HtmlParse();
+        JsonConverter converter = new JsonConverter();
+        string htmlContent = d.LoadHTML(fileName);
 
+        List<Token> tokens = hLexer.Lexer(htmlContent, options);
         //d.WriteTokensToConsole(tokens);
         d.WriteTokensToTextFile(tokens, fileName);
         //d.WriteCharsToTextFile(htmlContent, fileName);
-        parser.Parser(tokens, options);
+        HtmlNode parseResult = parser.Parser(tokens, options);
+        string json = converter.convertHtml(parseResult);
+        d.WriteToJSON(json);
         d.Finish();
     }
 
@@ -43,8 +45,7 @@ class Driver{
         for(int i = 0; i < tokens.Count; i++){
             content += tokens[i].ToString().Replace("\r\n", "").Replace("\n", "") + "\n\n";
         }
-        File.WriteAllText(fileName + ".tokens.txt", content); 
-        Console.WriteLine("Wrote " + fileName + ".html tokens to " + fileName + ".tokens.txt");
+        WriteToTextFile(content, fileName, "tokens");
     }
 
     private void WriteCharsToTextFile(string str, string fileName){
@@ -53,8 +54,17 @@ class Driver{
             content += (i + " --- " + str[i]);
             content += (str[i] == '\n') ? "" : "\n";
         }
-        File.WriteAllText(fileName + ".chars.txt", content);
-        Console.WriteLine("Wrote " + fileName + ".html chars to " + fileName + ".chars.txt");
+        WriteToTextFile(content, fileName, "chars");
+    }
+
+    private void WriteToTextFile(string content, string fileName, string contentType){
+        File.WriteAllText(fileName + "." + contentType + ".txt", content);
+        Console.WriteLine("Wrote " + fileName + ".html " + contentType + " to " + fileName + "." + contentType + ".txt");
+    }
+
+    private void WriteToJSON(string content, string fileName, string contentType){
+        File.WriteAllText(fileName + "." + contentType + ".json", content);
+        Console.WriteLine("Wrote " + fileName + ".html " + contentType + " to " + fileName + "." + contentType + ".txt");
     }
 
     private void Start(){
@@ -65,4 +75,5 @@ class Driver{
         Console.WriteLine("\nPress any key to exit.");
         Console.ReadKey();
     }
+
 }
