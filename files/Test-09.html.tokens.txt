@@ -1,0 +1,412 @@
+{ type: tag-start, content: <, startPos: { index: 0, column: 0, line: 1 }, endPos: { index: 1, column: 1, line: 1 } }
+
+{ type: tag, content: !DOCTYPE, startPos: { index: 1, column: 1, line: 1 }, endPos: { index: 9, column: 9, line: 1 } }
+
+{ type: attribute, content: html, startPos: { index: 9, column: 9, line: 1 }, endPos: { index: 14, column: 14, line: 1 } }
+
+{ type: tag-end, content: />, startPos: { index: 14, column: 14, line: 1 }, endPos: { index: 14, column: 14, line: 1 } }
+
+{ type: tag-start, content: <, startPos: { index: 17, column: 0, line: 2 }, endPos: { index: 18, column: 1, line: 2 } }
+
+{ type: tag, content: html, startPos: { index: 18, column: 1, line: 2 }, endPos: { index: 22, column: 5, line: 2 } }
+
+{ type: tag-start, content: <, startPos: { index: 26, column: 1, line: 3 }, endPos: { index: 27, column: 2, line: 3 } }
+
+{ type: tag, content: head, startPos: { index: 27, column: 2, line: 3 }, endPos: { index: 31, column: 6, line: 3 } }
+
+{ type: tag-start, content: <, startPos: { index: 36, column: 2, line: 4 }, endPos: { index: 37, column: 3, line: 4 } }
+
+{ type: tag, content: meta, startPos: { index: 37, column: 3, line: 4 }, endPos: { index: 41, column: 7, line: 4 } }
+
+{ type: attribute, content: charset="UTF-8", startPos: { index: 41, column: 7, line: 4 }, endPos: { index: 57, column: 23, line: 4 } }
+
+{ type: tag-end, content: />, startPos: { index: 57, column: 23, line: 4 }, endPos: { index: 57, column: 23, line: 4 } }
+
+{ type: tag-start, content: <, startPos: { index: 62, column: 2, line: 5 }, endPos: { index: 63, column: 3, line: 5 } }
+
+{ type: tag, content: meta, startPos: { index: 63, column: 3, line: 5 }, endPos: { index: 67, column: 7, line: 5 } }
+
+{ type: attribute, content: name="description", startPos: { index: 67, column: 7, line: 5 }, endPos: { index: 114, column: 54, line: 5 } }
+
+{ type: attribute, content: content="Another test file", startPos: { index: 67, column: 7, line: 5 }, endPos: { index: 114, column: 54, line: 5 } }
+
+{ type: tag-end, content: />, startPos: { index: 114, column: 54, line: 5 }, endPos: { index: 114, column: 54, line: 5 } }
+
+{ type: tag-start, content: <, startPos: { index: 119, column: 2, line: 6 }, endPos: { index: 120, column: 3, line: 6 } }
+
+{ type: tag, content: meta, startPos: { index: 120, column: 3, line: 6 }, endPos: { index: 124, column: 7, line: 6 } }
+
+{ type: attribute, content: name="author", startPos: { index: 124, column: 7, line: 6 }, endPos: { index: 161, column: 44, line: 6 } }
+
+{ type: attribute, content: content="Barrett Otte", startPos: { index: 124, column: 7, line: 6 }, endPos: { index: 161, column: 44, line: 6 } }
+
+{ type: tag-end, content: />, startPos: { index: 161, column: 44, line: 6 }, endPos: { index: 161, column: 44, line: 6 } }
+
+{ type: tag-start, content: <, startPos: { index: 166, column: 2, line: 7 }, endPos: { index: 167, column: 3, line: 7 } }
+
+{ type: tag, content: script, startPos: { index: 167, column: 3, line: 7 }, endPos: { index: 173, column: 9, line: 7 } }
+
+{ type: attribute, content: type="text/javascript", startPos: { index: 173, column: 9, line: 7 }, endPos: { index: 196, column: 32, line: 7 } }
+
+{ type: text, content: document.getElementById("test").innerHTML = "Hello World";, startPos: { index: 196, column: 32, line: 7 }, endPos: { index: 264, column: 2, line: 9 } }
+
+{ type: tag-end, content: />, startPos: { index: 264, column: 2, line: 9 }, endPos: { index: 266, column: 4, line: 9 } }
+
+{ type: tag, content: script, startPos: { index: 266, column: 4, line: 9 }, endPos: { index: 272, column: 10, line: 9 } }
+
+{ type: tag-start, content: <, startPos: { index: 277, column: 2, line: 10 }, endPos: { index: 278, column: 3, line: 10 } }
+
+{ type: tag, content: noscript, startPos: { index: 278, column: 3, line: 10 }, endPos: { index: 286, column: 11, line: 10 } }
+
+{ type: text, content: This browser does not support JavaScript!, startPos: { index: 286, column: 11, line: 10 }, endPos: { index: 328, column: 52, line: 10 } }
+
+{ type: tag-end, content: />, startPos: { index: 328, column: 52, line: 10 }, endPos: { index: 330, column: 54, line: 10 } }
+
+{ type: tag, content: noscript, startPos: { index: 330, column: 54, line: 10 }, endPos: { index: 338, column: 62, line: 10 } }
+
+{ type: tag-end, content: />, startPos: { index: 342, column: 1, line: 11 }, endPos: { index: 344, column: 3, line: 11 } }
+
+{ type: tag, content: head, startPos: { index: 344, column: 3, line: 11 }, endPos: { index: 348, column: 7, line: 11 } }
+
+{ type: tag-start, content: <, startPos: { index: 352, column: 1, line: 12 }, endPos: { index: 353, column: 2, line: 12 } }
+
+{ type: tag, content: body, startPos: { index: 353, column: 2, line: 12 }, endPos: { index: 357, column: 6, line: 12 } }
+
+{ type: tag-start, content: <, startPos: { index: 362, column: 2, line: 13 }, endPos: { index: 363, column: 3, line: 13 } }
+
+{ type: tag, content: canvas, startPos: { index: 363, column: 3, line: 13 }, endPos: { index: 369, column: 9, line: 13 } }
+
+{ type: attribute, content: id="myCanvas", startPos: { index: 369, column: 9, line: 13 }, endPos: { index: 383, column: 23, line: 13 } }
+
+{ type: tag-end, content: />, startPos: { index: 384, column: 23, line: 13 }, endPos: { index: 386, column: 25, line: 13 } }
+
+{ type: tag, content: canvas, startPos: { index: 386, column: 25, line: 13 }, endPos: { index: 392, column: 31, line: 13 } }
+
+{ type: tag-start, content: <, startPos: { index: 397, column: 2, line: 14 }, endPos: { index: 398, column: 3, line: 14 } }
+
+{ type: tag, content: script, startPos: { index: 398, column: 3, line: 14 }, endPos: { index: 404, column: 9, line: 14 } }
+
+{ type: text, content: var canvas = document.getElementById("myCanvas");			var ctx = canvas.getContext("2d");			ctx.fillStyle = "#FF0000";			ctx.fillRect(0, 0, 80, 80);, startPos: { index: 404, column: 9, line: 14 }, endPos: { index: 565, column: 2, line: 19 } }
+
+{ type: tag-end, content: />, startPos: { index: 565, column: 2, line: 19 }, endPos: { index: 567, column: 4, line: 19 } }
+
+{ type: tag, content: script, startPos: { index: 567, column: 4, line: 19 }, endPos: { index: 573, column: 10, line: 19 } }
+
+{ type: tag-start, content: <, startPos: { index: 580, column: 2, line: 21 }, endPos: { index: 581, column: 3, line: 21 } }
+
+{ type: tag, content: table, startPos: { index: 581, column: 3, line: 21 }, endPos: { index: 586, column: 8, line: 21 } }
+
+{ type: tag-start, content: <, startPos: { index: 592, column: 3, line: 22 }, endPos: { index: 593, column: 4, line: 22 } }
+
+{ type: tag, content: caption, startPos: { index: 593, column: 4, line: 22 }, endPos: { index: 600, column: 11, line: 22 } }
+
+{ type: text, content: Im a copy and pasted table from w3schools.com, startPos: { index: 600, column: 11, line: 22 }, endPos: { index: 646, column: 56, line: 22 } }
+
+{ type: tag-end, content: />, startPos: { index: 646, column: 56, line: 22 }, endPos: { index: 648, column: 58, line: 22 } }
+
+{ type: tag, content: caption, startPos: { index: 648, column: 58, line: 22 }, endPos: { index: 655, column: 65, line: 22 } }
+
+{ type: tag-start, content: <, startPos: { index: 661, column: 3, line: 23 }, endPos: { index: 662, column: 4, line: 23 } }
+
+{ type: tag, content: colgroup, startPos: { index: 662, column: 4, line: 23 }, endPos: { index: 670, column: 12, line: 23 } }
+
+{ type: tag-start, content: <, startPos: { index: 677, column: 4, line: 24 }, endPos: { index: 678, column: 5, line: 24 } }
+
+{ type: tag, content: col, startPos: { index: 678, column: 5, line: 24 }, endPos: { index: 681, column: 8, line: 24 } }
+
+{ type: attribute, content: span="2", startPos: { index: 681, column: 8, line: 24 }, endPos: { index: 719, column: 46, line: 24 } }
+
+{ type: attribute, content: style="background-color:red", startPos: { index: 681, column: 8, line: 24 }, endPos: { index: 719, column: 46, line: 24 } }
+
+{ type: tag-end, content: />, startPos: { index: 719, column: 46, line: 24 }, endPos: { index: 719, column: 46, line: 24 } }
+
+{ type: tag-start, content: <, startPos: { index: 726, column: 4, line: 25 }, endPos: { index: 727, column: 5, line: 25 } }
+
+{ type: tag, content: col, startPos: { index: 727, column: 5, line: 25 }, endPos: { index: 730, column: 8, line: 25 } }
+
+{ type: attribute, content: style="background-color:yellow", startPos: { index: 730, column: 8, line: 25 }, endPos: { index: 762, column: 40, line: 25 } }
+
+{ type: tag-end, content: />, startPos: { index: 762, column: 40, line: 25 }, endPos: { index: 762, column: 40, line: 25 } }
+
+{ type: tag-end, content: />, startPos: { index: 768, column: 3, line: 26 }, endPos: { index: 770, column: 5, line: 26 } }
+
+{ type: tag, content: colgroup, startPos: { index: 770, column: 5, line: 26 }, endPos: { index: 778, column: 13, line: 26 } }
+
+{ type: tag-start, content: <, startPos: { index: 784, column: 3, line: 27 }, endPos: { index: 785, column: 4, line: 27 } }
+
+{ type: tag, content: tr, startPos: { index: 785, column: 4, line: 27 }, endPos: { index: 787, column: 6, line: 27 } }
+
+{ type: tag-start, content: <, startPos: { index: 794, column: 4, line: 28 }, endPos: { index: 795, column: 5, line: 28 } }
+
+{ type: tag, content: th, startPos: { index: 795, column: 5, line: 28 }, endPos: { index: 797, column: 7, line: 28 } }
+
+{ type: text, content: ISBN, startPos: { index: 797, column: 7, line: 28 }, endPos: { index: 802, column: 11, line: 28 } }
+
+{ type: tag-end, content: />, startPos: { index: 802, column: 11, line: 28 }, endPos: { index: 804, column: 13, line: 28 } }
+
+{ type: tag, content: th, startPos: { index: 804, column: 13, line: 28 }, endPos: { index: 806, column: 15, line: 28 } }
+
+{ type: tag-start, content: <, startPos: { index: 813, column: 4, line: 29 }, endPos: { index: 814, column: 5, line: 29 } }
+
+{ type: tag, content: th, startPos: { index: 814, column: 5, line: 29 }, endPos: { index: 816, column: 7, line: 29 } }
+
+{ type: text, content: Title, startPos: { index: 816, column: 7, line: 29 }, endPos: { index: 822, column: 12, line: 29 } }
+
+{ type: tag-end, content: />, startPos: { index: 822, column: 12, line: 29 }, endPos: { index: 824, column: 14, line: 29 } }
+
+{ type: tag, content: th, startPos: { index: 824, column: 14, line: 29 }, endPos: { index: 826, column: 16, line: 29 } }
+
+{ type: tag-start, content: <, startPos: { index: 833, column: 4, line: 30 }, endPos: { index: 834, column: 5, line: 30 } }
+
+{ type: tag, content: th, startPos: { index: 834, column: 5, line: 30 }, endPos: { index: 836, column: 7, line: 30 } }
+
+{ type: text, content: Price, startPos: { index: 836, column: 7, line: 30 }, endPos: { index: 842, column: 12, line: 30 } }
+
+{ type: tag-end, content: />, startPos: { index: 842, column: 12, line: 30 }, endPos: { index: 844, column: 14, line: 30 } }
+
+{ type: tag, content: th, startPos: { index: 844, column: 14, line: 30 }, endPos: { index: 846, column: 16, line: 30 } }
+
+{ type: tag-end, content: />, startPos: { index: 852, column: 3, line: 31 }, endPos: { index: 854, column: 5, line: 31 } }
+
+{ type: tag, content: tr, startPos: { index: 854, column: 5, line: 31 }, endPos: { index: 856, column: 7, line: 31 } }
+
+{ type: tag-start, content: <, startPos: { index: 862, column: 3, line: 32 }, endPos: { index: 863, column: 4, line: 32 } }
+
+{ type: tag, content: tr, startPos: { index: 863, column: 4, line: 32 }, endPos: { index: 865, column: 6, line: 32 } }
+
+{ type: tag-start, content: <, startPos: { index: 872, column: 4, line: 33 }, endPos: { index: 873, column: 5, line: 33 } }
+
+{ type: tag, content: td, startPos: { index: 873, column: 5, line: 33 }, endPos: { index: 875, column: 7, line: 33 } }
+
+{ type: text, content: 3476896, startPos: { index: 875, column: 7, line: 33 }, endPos: { index: 883, column: 14, line: 33 } }
+
+{ type: tag-end, content: />, startPos: { index: 883, column: 14, line: 33 }, endPos: { index: 885, column: 16, line: 33 } }
+
+{ type: tag, content: td, startPos: { index: 885, column: 16, line: 33 }, endPos: { index: 887, column: 18, line: 33 } }
+
+{ type: tag-start, content: <, startPos: { index: 894, column: 4, line: 34 }, endPos: { index: 895, column: 5, line: 34 } }
+
+{ type: tag, content: td, startPos: { index: 895, column: 5, line: 34 }, endPos: { index: 897, column: 7, line: 34 } }
+
+{ type: text, content: My first HTML, startPos: { index: 897, column: 7, line: 34 }, endPos: { index: 911, column: 20, line: 34 } }
+
+{ type: tag-end, content: />, startPos: { index: 911, column: 20, line: 34 }, endPos: { index: 913, column: 22, line: 34 } }
+
+{ type: tag, content: td, startPos: { index: 913, column: 22, line: 34 }, endPos: { index: 915, column: 24, line: 34 } }
+
+{ type: tag-start, content: <, startPos: { index: 922, column: 4, line: 35 }, endPos: { index: 923, column: 5, line: 35 } }
+
+{ type: tag, content: td, startPos: { index: 923, column: 5, line: 35 }, endPos: { index: 925, column: 7, line: 35 } }
+
+{ type: text, content: $53, startPos: { index: 925, column: 7, line: 35 }, endPos: { index: 929, column: 10, line: 35 } }
+
+{ type: tag-end, content: />, startPos: { index: 929, column: 10, line: 35 }, endPos: { index: 931, column: 12, line: 35 } }
+
+{ type: tag, content: td, startPos: { index: 931, column: 12, line: 35 }, endPos: { index: 933, column: 14, line: 35 } }
+
+{ type: tag-end, content: />, startPos: { index: 939, column: 3, line: 36 }, endPos: { index: 941, column: 5, line: 36 } }
+
+{ type: tag, content: tr, startPos: { index: 941, column: 5, line: 36 }, endPos: { index: 943, column: 7, line: 36 } }
+
+{ type: tag-end, content: />, startPos: { index: 950, column: 4, line: 37 }, endPos: { index: 952, column: 6, line: 37 } }
+
+{ type: tag, content: table, startPos: { index: 952, column: 6, line: 37 }, endPos: { index: 957, column: 11, line: 37 } }
+
+{ type: tag-start, content: <, startPos: { index: 966, column: 2, line: 39 }, endPos: { index: 967, column: 3, line: 39 } }
+
+{ type: tag, content: figure, startPos: { index: 967, column: 3, line: 39 }, endPos: { index: 973, column: 9, line: 39 } }
+
+{ type: tag-start, content: <, startPos: { index: 979, column: 3, line: 40 }, endPos: { index: 980, column: 4, line: 40 } }
+
+{ type: tag, content: img, startPos: { index: 980, column: 4, line: 40 }, endPos: { index: 983, column: 7, line: 40 } }
+
+{ type: attribute, content: src="picture.png", startPos: { index: 983, column: 7, line: 40 }, endPos: { index: 1030, column: 54, line: 40 } }
+
+{ type: attribute, content: alt="asd", startPos: { index: 983, column: 7, line: 40 }, endPos: { index: 1030, column: 54, line: 40 } }
+
+{ type: attribute, content: style="width:100%", startPos: { index: 983, column: 7, line: 40 }, endPos: { index: 1030, column: 54, line: 40 } }
+
+{ type: tag-end, content: />, startPos: { index: 1030, column: 54, line: 40 }, endPos: { index: 1030, column: 54, line: 40 } }
+
+{ type: tag-start, content: <, startPos: { index: 1036, column: 3, line: 41 }, endPos: { index: 1037, column: 4, line: 41 } }
+
+{ type: tag, content: figcaption, startPos: { index: 1037, column: 4, line: 41 }, endPos: { index: 1047, column: 14, line: 41 } }
+
+{ type: text, content: Im a picture, startPos: { index: 1047, column: 14, line: 41 }, endPos: { index: 1060, column: 26, line: 41 } }
+
+{ type: tag-end, content: />, startPos: { index: 1060, column: 26, line: 41 }, endPos: { index: 1062, column: 28, line: 41 } }
+
+{ type: tag, content: figcaption, startPos: { index: 1062, column: 28, line: 41 }, endPos: { index: 1072, column: 38, line: 41 } }
+
+{ type: tag-end, content: />, startPos: { index: 1077, column: 2, line: 42 }, endPos: { index: 1079, column: 4, line: 42 } }
+
+{ type: tag, content: figure, startPos: { index: 1079, column: 4, line: 42 }, endPos: { index: 1085, column: 10, line: 42 } }
+
+{ type: tag-start, content: <, startPos: { index: 1092, column: 2, line: 44 }, endPos: { index: 1093, column: 3, line: 44 } }
+
+{ type: tag, content: iframe, startPos: { index: 1093, column: 3, line: 44 }, endPos: { index: 1099, column: 9, line: 44 } }
+
+{ type: attribute, content: src="https://www.w3schools.com", startPos: { index: 1099, column: 9, line: 44 }, endPos: { index: 1131, column: 41, line: 44 } }
+
+{ type: tag-end, content: />, startPos: { index: 1132, column: 41, line: 44 }, endPos: { index: 1134, column: 43, line: 44 } }
+
+{ type: tag, content: iframe, startPos: { index: 1134, column: 43, line: 44 }, endPos: { index: 1140, column: 49, line: 44 } }
+
+{ type: tag-start, content: <, startPos: { index: 1147, column: 2, line: 46 }, endPos: { index: 1148, column: 3, line: 46 } }
+
+{ type: tag, content: nav, startPos: { index: 1148, column: 3, line: 46 }, endPos: { index: 1151, column: 6, line: 46 } }
+
+{ type: tag-start, content: <, startPos: { index: 1157, column: 3, line: 47 }, endPos: { index: 1158, column: 4, line: 47 } }
+
+{ type: tag, content: a, startPos: { index: 1158, column: 4, line: 47 }, endPos: { index: 1159, column: 5, line: 47 } }
+
+{ type: attribute, content: href="/html/", startPos: { index: 1159, column: 5, line: 47 }, endPos: { index: 1173, column: 19, line: 47 } }
+
+{ type: text, content: HTML, startPos: { index: 1173, column: 19, line: 47 }, endPos: { index: 1178, column: 23, line: 47 } }
+
+{ type: tag-end, content: />, startPos: { index: 1178, column: 23, line: 47 }, endPos: { index: 1180, column: 25, line: 47 } }
+
+{ type: tag, content: a, startPos: { index: 1180, column: 25, line: 47 }, endPos: { index: 1181, column: 26, line: 47 } }
+
+{ type: text, content: |, startPos: { index: 1181, column: 26, line: 47 }, endPos: { index: 1189, column: 3, line: 48 } }
+
+{ type: tag-start, content: <, startPos: { index: 1189, column: 3, line: 48 }, endPos: { index: 1190, column: 4, line: 48 } }
+
+{ type: tag, content: a, startPos: { index: 1190, column: 4, line: 48 }, endPos: { index: 1191, column: 5, line: 48 } }
+
+{ type: attribute, content: href="/css/", startPos: { index: 1191, column: 5, line: 48 }, endPos: { index: 1204, column: 18, line: 48 } }
+
+{ type: text, content: CSS, startPos: { index: 1204, column: 18, line: 48 }, endPos: { index: 1208, column: 21, line: 48 } }
+
+{ type: tag-end, content: />, startPos: { index: 1208, column: 21, line: 48 }, endPos: { index: 1210, column: 23, line: 48 } }
+
+{ type: tag, content: a, startPos: { index: 1210, column: 23, line: 48 }, endPos: { index: 1211, column: 24, line: 48 } }
+
+{ type: text, content: |, startPos: { index: 1211, column: 24, line: 48 }, endPos: { index: 1219, column: 3, line: 49 } }
+
+{ type: tag-start, content: <, startPos: { index: 1219, column: 3, line: 49 }, endPos: { index: 1220, column: 4, line: 49 } }
+
+{ type: tag, content: a, startPos: { index: 1220, column: 4, line: 49 }, endPos: { index: 1221, column: 5, line: 49 } }
+
+{ type: attribute, content: href="/js/", startPos: { index: 1221, column: 5, line: 49 }, endPos: { index: 1233, column: 17, line: 49 } }
+
+{ type: text, content: JavaScript, startPos: { index: 1233, column: 17, line: 49 }, endPos: { index: 1244, column: 27, line: 49 } }
+
+{ type: tag-end, content: />, startPos: { index: 1244, column: 27, line: 49 }, endPos: { index: 1246, column: 29, line: 49 } }
+
+{ type: tag, content: a, startPos: { index: 1246, column: 29, line: 49 }, endPos: { index: 1247, column: 30, line: 49 } }
+
+{ type: text, content: |, startPos: { index: 1247, column: 30, line: 49 }, endPos: { index: 1255, column: 3, line: 50 } }
+
+{ type: tag-start, content: <, startPos: { index: 1255, column: 3, line: 50 }, endPos: { index: 1256, column: 4, line: 50 } }
+
+{ type: tag, content: a, startPos: { index: 1256, column: 4, line: 50 }, endPos: { index: 1257, column: 5, line: 50 } }
+
+{ type: attribute, content: href="/jquery/", startPos: { index: 1257, column: 5, line: 50 }, endPos: { index: 1273, column: 21, line: 50 } }
+
+{ type: text, content: jQuery, startPos: { index: 1273, column: 21, line: 50 }, endPos: { index: 1280, column: 27, line: 50 } }
+
+{ type: tag-end, content: />, startPos: { index: 1280, column: 27, line: 50 }, endPos: { index: 1282, column: 29, line: 50 } }
+
+{ type: tag, content: a, startPos: { index: 1282, column: 29, line: 50 }, endPos: { index: 1283, column: 30, line: 50 } }
+
+{ type: tag-end, content: />, startPos: { index: 1288, column: 2, line: 51 }, endPos: { index: 1290, column: 4, line: 51 } }
+
+{ type: tag, content: nav, startPos: { index: 1290, column: 4, line: 51 }, endPos: { index: 1293, column: 7, line: 51 } }
+
+{ type: tag-start, content: <, startPos: { index: 1300, column: 2, line: 53 }, endPos: { index: 1301, column: 3, line: 53 } }
+
+{ type: tag, content: object, startPos: { index: 1301, column: 3, line: 53 }, endPos: { index: 1307, column: 9, line: 53 } }
+
+{ type: attribute, content: width="400", startPos: { index: 1307, column: 9, line: 53 }, endPos: { index: 1359, column: 24, line: 54 } }
+
+{ type: attribute, content: height="400", startPos: { index: 1307, column: 9, line: 53 }, endPos: { index: 1359, column: 24, line: 54 } }
+
+{ type: attribute, content: data="helloworld.swf", startPos: { index: 1307, column: 9, line: 53 }, endPos: { index: 1359, column: 24, line: 54 } }
+
+{ type: tag-start, content: <, startPos: { index: 1365, column: 3, line: 55 }, endPos: { index: 1366, column: 4, line: 55 } }
+
+{ type: tag, content: param, startPos: { index: 1366, column: 4, line: 55 }, endPos: { index: 1371, column: 9, line: 55 } }
+
+{ type: attribute, content: name="autoplay", startPos: { index: 1371, column: 9, line: 55 }, endPos: { index: 1400, column: 38, line: 55 } }
+
+{ type: attribute, content: value="true", startPos: { index: 1371, column: 9, line: 55 }, endPos: { index: 1400, column: 38, line: 55 } }
+
+{ type: tag-end, content: />, startPos: { index: 1400, column: 38, line: 55 }, endPos: { index: 1400, column: 38, line: 55 } }
+
+{ type: tag-end, content: />, startPos: { index: 1405, column: 2, line: 56 }, endPos: { index: 1407, column: 4, line: 56 } }
+
+{ type: tag, content: object, startPos: { index: 1407, column: 4, line: 56 }, endPos: { index: 1413, column: 10, line: 56 } }
+
+{ type: tag-start, content: <, startPos: { index: 1420, column: 2, line: 58 }, endPos: { index: 1421, column: 3, line: 58 } }
+
+{ type: tag, content: picture, startPos: { index: 1421, column: 3, line: 58 }, endPos: { index: 1428, column: 10, line: 58 } }
+
+{ type: tag-start, content: <, startPos: { index: 1434, column: 3, line: 59 }, endPos: { index: 1435, column: 4, line: 59 } }
+
+{ type: tag, content: source, startPos: { index: 1435, column: 4, line: 59 }, endPos: { index: 1441, column: 10, line: 59 } }
+
+{ type: attribute, content: media="(min-width: 650px)", startPos: { index: 1441, column: 10, line: 59 }, endPos: { index: 1498, column: 67, line: 59 } }
+
+{ type: attribute, content: srcset="img_pink_flowers.jpg", startPos: { index: 1441, column: 10, line: 59 }, endPos: { index: 1498, column: 67, line: 59 } }
+
+{ type: tag-end, content: />, startPos: { index: 1498, column: 67, line: 59 }, endPos: { index: 1498, column: 67, line: 59 } }
+
+{ type: tag-start, content: <, startPos: { index: 1504, column: 3, line: 60 }, endPos: { index: 1505, column: 4, line: 60 } }
+
+{ type: tag, content: source, startPos: { index: 1505, column: 4, line: 60 }, endPos: { index: 1511, column: 10, line: 60 } }
+
+{ type: attribute, content: media="(min-width: 465px)", startPos: { index: 1511, column: 10, line: 60 }, endPos: { index: 1568, column: 67, line: 60 } }
+
+{ type: attribute, content: srcset="img_white_flower.jpg", startPos: { index: 1511, column: 10, line: 60 }, endPos: { index: 1568, column: 67, line: 60 } }
+
+{ type: tag-end, content: />, startPos: { index: 1568, column: 67, line: 60 }, endPos: { index: 1568, column: 67, line: 60 } }
+
+{ type: tag-start, content: <, startPos: { index: 1574, column: 3, line: 61 }, endPos: { index: 1575, column: 4, line: 61 } }
+
+{ type: tag, content: img, startPos: { index: 1575, column: 4, line: 61 }, endPos: { index: 1578, column: 7, line: 61 } }
+
+{ type: attribute, content: src="img_orange_flowers.jpg", startPos: { index: 1578, column: 7, line: 61 }, endPos: { index: 1641, column: 70, line: 61 } }
+
+{ type: attribute, content: alt="Flowers", startPos: { index: 1578, column: 7, line: 61 }, endPos: { index: 1641, column: 70, line: 61 } }
+
+{ type: attribute, content: style="width:auto;", startPos: { index: 1578, column: 7, line: 61 }, endPos: { index: 1641, column: 70, line: 61 } }
+
+{ type: tag-end, content: />, startPos: { index: 1641, column: 70, line: 61 }, endPos: { index: 1641, column: 70, line: 61 } }
+
+{ type: tag-end, content: />, startPos: { index: 1646, column: 2, line: 62 }, endPos: { index: 1648, column: 4, line: 62 } }
+
+{ type: tag, content: picture, startPos: { index: 1648, column: 4, line: 62 }, endPos: { index: 1655, column: 11, line: 62 } }
+
+{ type: tag-start, content: <, startPos: { index: 1662, column: 2, line: 64 }, endPos: { index: 1663, column: 3, line: 64 } }
+
+{ type: tag, content: p, startPos: { index: 1663, column: 3, line: 64 }, endPos: { index: 1664, column: 4, line: 64 } }
+
+{ type: text, content: I have a date on, startPos: { index: 1664, column: 4, line: 64 }, endPos: { index: 1692, column: 3, line: 66 } }
+
+{ type: tag-start, content: <, startPos: { index: 1692, column: 3, line: 66 }, endPos: { index: 1693, column: 4, line: 66 } }
+
+{ type: tag, content: time, startPos: { index: 1693, column: 4, line: 66 }, endPos: { index: 1697, column: 8, line: 66 } }
+
+{ type: attribute, content: datetime="2018-07-26 12:00", startPos: { index: 1697, column: 8, line: 66 }, endPos: { index: 1725, column: 36, line: 66 } }
+
+{ type: text, content: Some day, startPos: { index: 1725, column: 36, line: 66 }, endPos: { index: 1745, column: 3, line: 68 } }
+
+{ type: tag-end, content: />, startPos: { index: 1745, column: 3, line: 68 }, endPos: { index: 1747, column: 5, line: 68 } }
+
+{ type: tag, content: time, startPos: { index: 1747, column: 5, line: 68 }, endPos: { index: 1751, column: 9, line: 68 } }
+
+{ type: text, content: ., startPos: { index: 1751, column: 9, line: 68 }, endPos: { index: 1757, column: 2, line: 69 } }
+
+{ type: tag-end, content: />, startPos: { index: 1757, column: 2, line: 69 }, endPos: { index: 1759, column: 4, line: 69 } }
+
+{ type: tag, content: p, startPos: { index: 1759, column: 4, line: 69 }, endPos: { index: 1760, column: 5, line: 69 } }
+
+{ type: tag-end, content: />, startPos: { index: 1790, column: 1, line: 82 }, endPos: { index: 1792, column: 3, line: 82 } }
+
+{ type: tag, content: body, startPos: { index: 1792, column: 3, line: 82 }, endPos: { index: 1796, column: 7, line: 82 } }
+
+{ type: tag-end, content: />, startPos: { index: 1799, column: 0, line: 83 }, endPos: { index: 1801, column: 2, line: 83 } }
+
+{ type: tag, content: html, startPos: { index: 1801, column: 2, line: 83 }, endPos: { index: 1805, column: 6, line: 83 } }
+

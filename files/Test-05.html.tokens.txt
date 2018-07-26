@@ -1,0 +1,138 @@
+{ type: tag-start, content: <, startPos: { index: 0, column: 0, line: 1 }, endPos: { index: 1, column: 1, line: 1 } }
+
+{ type: tag, content: !DOCTYPE, startPos: { index: 1, column: 1, line: 1 }, endPos: { index: 9, column: 9, line: 1 } }
+
+{ type: attribute, content: html, startPos: { index: 9, column: 9, line: 1 }, endPos: { index: 14, column: 14, line: 1 } }
+
+{ type: tag-end, content: />, startPos: { index: 14, column: 14, line: 1 }, endPos: { index: 14, column: 14, line: 1 } }
+
+{ type: tag-start, content: <, startPos: { index: 17, column: 0, line: 2 }, endPos: { index: 18, column: 1, line: 2 } }
+
+{ type: tag, content: html, startPos: { index: 18, column: 1, line: 2 }, endPos: { index: 22, column: 5, line: 2 } }
+
+{ type: tag-start, content: <, startPos: { index: 26, column: 1, line: 3 }, endPos: { index: 27, column: 2, line: 3 } }
+
+{ type: tag, content: div, startPos: { index: 27, column: 2, line: 3 }, endPos: { index: 30, column: 5, line: 3 } }
+
+{ type: attribute, content: class="test", startPos: { index: 30, column: 5, line: 3 }, endPos: { index: 45, column: 20, line: 3 } }
+
+{ type: tag-start, content: <, startPos: { index: 50, column: 2, line: 4 }, endPos: { index: 51, column: 3, line: 4 } }
+
+{ type: tag, content: p, startPos: { index: 51, column: 3, line: 4 }, endPos: { index: 52, column: 4, line: 4 } }
+
+{ type: attribute, content: class="asd", startPos: { index: 52, column: 4, line: 4 }, endPos: { index: 64, column: 16, line: 4 } }
+
+{ type: text, content: Text text text text, startPos: { index: 64, column: 16, line: 4 }, endPos: { index: 93, column: 2, line: 6 } }
+
+{ type: tag-end, content: />, startPos: { index: 93, column: 2, line: 6 }, endPos: { index: 95, column: 4, line: 6 } }
+
+{ type: tag, content: p, startPos: { index: 95, column: 4, line: 6 }, endPos: { index: 96, column: 5, line: 6 } }
+
+{ type: tag-start, content: <, startPos: { index: 101, column: 2, line: 7 }, endPos: { index: 102, column: 3, line: 7 } }
+
+{ type: tag, content: ul, startPos: { index: 102, column: 3, line: 7 }, endPos: { index: 104, column: 5, line: 7 } }
+
+{ type: tag-start, content: <, startPos: { index: 110, column: 3, line: 8 }, endPos: { index: 111, column: 4, line: 8 } }
+
+{ type: tag, content: li, startPos: { index: 111, column: 4, line: 8 }, endPos: { index: 113, column: 6, line: 8 } }
+
+{ type: text, content: Item 1, startPos: { index: 113, column: 6, line: 8 }, endPos: { index: 120, column: 12, line: 8 } }
+
+{ type: tag-end, content: />, startPos: { index: 120, column: 12, line: 8 }, endPos: { index: 122, column: 14, line: 8 } }
+
+{ type: tag, content: li, startPos: { index: 122, column: 14, line: 8 }, endPos: { index: 124, column: 16, line: 8 } }
+
+{ type: tag-start, content: <, startPos: { index: 130, column: 3, line: 9 }, endPos: { index: 131, column: 4, line: 9 } }
+
+{ type: tag, content: li, startPos: { index: 131, column: 4, line: 9 }, endPos: { index: 133, column: 6, line: 9 } }
+
+{ type: text, content: Item 2, startPos: { index: 133, column: 6, line: 9 }, endPos: { index: 140, column: 12, line: 9 } }
+
+{ type: tag-end, content: />, startPos: { index: 140, column: 12, line: 9 }, endPos: { index: 142, column: 14, line: 9 } }
+
+{ type: tag, content: li, startPos: { index: 142, column: 14, line: 9 }, endPos: { index: 144, column: 16, line: 9 } }
+
+{ type: comment, content: I am a comment, startPos: { index: 150, column: 3, line: 10 }, endPos: { index: 171, column: 24, line: 10 } }
+
+{ type: tag-start, content: <, startPos: { index: 176, column: 3, line: 11 }, endPos: { index: 177, column: 4, line: 11 } }
+
+{ type: tag, content: li, startPos: { index: 177, column: 4, line: 11 }, endPos: { index: 179, column: 6, line: 11 } }
+
+{ type: text, content: Item 3, startPos: { index: 179, column: 6, line: 11 }, endPos: { index: 186, column: 12, line: 11 } }
+
+{ type: tag-end, content: />, startPos: { index: 186, column: 12, line: 11 }, endPos: { index: 188, column: 14, line: 11 } }
+
+{ type: tag, content: li, startPos: { index: 188, column: 14, line: 11 }, endPos: { index: 190, column: 16, line: 11 } }
+
+{ type: tag-start, content: <, startPos: { index: 196, column: 3, line: 12 }, endPos: { index: 197, column: 4, line: 12 } }
+
+{ type: tag, content: li, startPos: { index: 197, column: 4, line: 12 }, endPos: { index: 199, column: 6, line: 12 } }
+
+{ type: tag-start, content: <, startPos: { index: 206, column: 4, line: 13 }, endPos: { index: 207, column: 5, line: 13 } }
+
+{ type: tag, content: hr, startPos: { index: 207, column: 5, line: 13 }, endPos: { index: 209, column: 7, line: 13 } }
+
+{ type: tag-end, content: />, startPos: { index: 209, column: 7, line: 13 }, endPos: { index: 209, column: 7, line: 13 } }
+
+{ type: tag-start, content: <, startPos: { index: 216, column: 4, line: 14 }, endPos: { index: 217, column: 5, line: 14 } }
+
+{ type: tag, content: ol, startPos: { index: 217, column: 5, line: 14 }, endPos: { index: 219, column: 7, line: 14 } }
+
+{ type: tag-start, content: <, startPos: { index: 227, column: 5, line: 15 }, endPos: { index: 228, column: 6, line: 15 } }
+
+{ type: tag, content: li, startPos: { index: 228, column: 6, line: 15 }, endPos: { index: 230, column: 8, line: 15 } }
+
+{ type: text, content: Megumin, startPos: { index: 230, column: 8, line: 15 }, endPos: { index: 238, column: 15, line: 15 } }
+
+{ type: tag-end, content: />, startPos: { index: 238, column: 15, line: 15 }, endPos: { index: 240, column: 17, line: 15 } }
+
+{ type: tag, content: li, startPos: { index: 240, column: 17, line: 15 }, endPos: { index: 242, column: 19, line: 15 } }
+
+{ type: tag-start, content: <, startPos: { index: 250, column: 5, line: 16 }, endPos: { index: 251, column: 6, line: 16 } }
+
+{ type: tag, content: li, startPos: { index: 251, column: 6, line: 16 }, endPos: { index: 253, column: 8, line: 16 } }
+
+{ type: text, content: Nami, startPos: { index: 253, column: 8, line: 16 }, endPos: { index: 266, column: 10, line: 17 } }
+
+{ type: tag-end, content: />, startPos: { index: 266, column: 10, line: 17 }, endPos: { index: 268, column: 12, line: 17 } }
+
+{ type: tag, content: li, startPos: { index: 268, column: 12, line: 17 }, endPos: { index: 270, column: 14, line: 17 } }
+
+{ type: tag-start, content: <, startPos: { index: 278, column: 5, line: 18 }, endPos: { index: 279, column: 6, line: 18 } }
+
+{ type: tag, content: li, startPos: { index: 279, column: 6, line: 18 }, endPos: { index: 281, column: 8, line: 18 } }
+
+{ type: text, content: Hiyori, startPos: { index: 281, column: 8, line: 18 }, endPos: { index: 304, column: 6, line: 20 } }
+
+{ type: tag-start, content: <, startPos: { index: 304, column: 6, line: 20 }, endPos: { index: 305, column: 7, line: 20 } }
+
+{ type: tag, content: br, startPos: { index: 305, column: 7, line: 20 }, endPos: { index: 307, column: 9, line: 20 } }
+
+{ type: tag-end, content: />, startPos: { index: 308, column: 10, line: 20 }, endPos: { index: 308, column: 10, line: 20 } }
+
+{ type: text, content: >, startPos: { index: 308, column: 10, line: 20 }, endPos: { index: 317, column: 5, line: 21 } }
+
+{ type: tag-end, content: />, startPos: { index: 317, column: 5, line: 21 }, endPos: { index: 319, column: 7, line: 21 } }
+
+{ type: tag, content: li, startPos: { index: 319, column: 7, line: 21 }, endPos: { index: 321, column: 9, line: 21 } }
+
+{ type: tag-end, content: />, startPos: { index: 328, column: 4, line: 22 }, endPos: { index: 330, column: 6, line: 22 } }
+
+{ type: tag, content: ol, startPos: { index: 330, column: 6, line: 22 }, endPos: { index: 332, column: 8, line: 22 } }
+
+{ type: tag-end, content: />, startPos: { index: 338, column: 3, line: 23 }, endPos: { index: 340, column: 5, line: 23 } }
+
+{ type: tag, content: li, startPos: { index: 340, column: 5, line: 23 }, endPos: { index: 342, column: 7, line: 23 } }
+
+{ type: tag-end, content: />, startPos: { index: 347, column: 2, line: 24 }, endPos: { index: 349, column: 4, line: 24 } }
+
+{ type: tag, content: ul, startPos: { index: 349, column: 4, line: 24 }, endPos: { index: 351, column: 6, line: 24 } }
+
+{ type: tag-end, content: />, startPos: { index: 355, column: 1, line: 25 }, endPos: { index: 357, column: 3, line: 25 } }
+
+{ type: tag, content: div, startPos: { index: 357, column: 3, line: 25 }, endPos: { index: 360, column: 6, line: 25 } }
+
+{ type: tag-end, content: />, startPos: { index: 366, column: 0, line: 27 }, endPos: { index: 368, column: 2, line: 27 } }
+
+{ type: tag, content: html, startPos: { index: 368, column: 2, line: 27 }, endPos: { index: 372, column: 6, line: 27 } }
+

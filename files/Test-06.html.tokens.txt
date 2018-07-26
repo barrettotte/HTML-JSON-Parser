@@ -1,0 +1,314 @@
+{ type: tag-start, content: <, startPos: { index: 0, column: 0, line: 1 }, endPos: { index: 1, column: 1, line: 1 } }
+
+{ type: tag, content: !DOCTYPE, startPos: { index: 1, column: 1, line: 1 }, endPos: { index: 9, column: 9, line: 1 } }
+
+{ type: attribute, content: html, startPos: { index: 9, column: 9, line: 1 }, endPos: { index: 14, column: 14, line: 1 } }
+
+{ type: tag-end, content: />, startPos: { index: 14, column: 14, line: 1 }, endPos: { index: 14, column: 14, line: 1 } }
+
+{ type: tag-start, content: <, startPos: { index: 17, column: 0, line: 2 }, endPos: { index: 18, column: 1, line: 2 } }
+
+{ type: tag, content: html, startPos: { index: 18, column: 1, line: 2 }, endPos: { index: 22, column: 5, line: 2 } }
+
+{ type: tag-start, content: <, startPos: { index: 26, column: 1, line: 3 }, endPos: { index: 27, column: 2, line: 3 } }
+
+{ type: tag, content: head, startPos: { index: 27, column: 2, line: 3 }, endPos: { index: 31, column: 6, line: 3 } }
+
+{ type: tag-start, content: <, startPos: { index: 36, column: 2, line: 4 }, endPos: { index: 37, column: 3, line: 4 } }
+
+{ type: tag, content: meta, startPos: { index: 37, column: 3, line: 4 }, endPos: { index: 41, column: 7, line: 4 } }
+
+{ type: attribute, content: charset="UTF-8", startPos: { index: 41, column: 7, line: 4 }, endPos: { index: 57, column: 23, line: 4 } }
+
+{ type: tag-end, content: />, startPos: { index: 57, column: 23, line: 4 }, endPos: { index: 57, column: 23, line: 4 } }
+
+{ type: tag-start, content: <, startPos: { index: 62, column: 2, line: 5 }, endPos: { index: 63, column: 3, line: 5 } }
+
+{ type: tag, content: meta, startPos: { index: 63, column: 3, line: 5 }, endPos: { index: 67, column: 7, line: 5 } }
+
+{ type: attribute, content: name="description", startPos: { index: 67, column: 7, line: 5 }, endPos: { index: 114, column: 54, line: 5 } }
+
+{ type: attribute, content: content="Another test file", startPos: { index: 67, column: 7, line: 5 }, endPos: { index: 114, column: 54, line: 5 } }
+
+{ type: tag-end, content: />, startPos: { index: 114, column: 54, line: 5 }, endPos: { index: 114, column: 54, line: 5 } }
+
+{ type: tag-start, content: <, startPos: { index: 119, column: 2, line: 6 }, endPos: { index: 120, column: 3, line: 6 } }
+
+{ type: tag, content: meta, startPos: { index: 120, column: 3, line: 6 }, endPos: { index: 124, column: 7, line: 6 } }
+
+{ type: attribute, content: name="author", startPos: { index: 124, column: 7, line: 6 }, endPos: { index: 161, column: 44, line: 6 } }
+
+{ type: attribute, content: content="Barrett Otte", startPos: { index: 124, column: 7, line: 6 }, endPos: { index: 161, column: 44, line: 6 } }
+
+{ type: tag-end, content: />, startPos: { index: 161, column: 44, line: 6 }, endPos: { index: 161, column: 44, line: 6 } }
+
+{ type: tag-start, content: <, startPos: { index: 166, column: 2, line: 7 }, endPos: { index: 167, column: 3, line: 7 } }
+
+{ type: tag, content: script, startPos: { index: 167, column: 3, line: 7 }, endPos: { index: 173, column: 9, line: 7 } }
+
+{ type: attribute, content: type="text/javascript", startPos: { index: 173, column: 9, line: 7 }, endPos: { index: 196, column: 32, line: 7 } }
+
+{ type: text, content: document.getElementById("test").innerHTML = "Hello World";, startPos: { index: 196, column: 32, line: 7 }, endPos: { index: 264, column: 2, line: 9 } }
+
+{ type: tag-end, content: />, startPos: { index: 264, column: 2, line: 9 }, endPos: { index: 266, column: 4, line: 9 } }
+
+{ type: tag, content: script, startPos: { index: 266, column: 4, line: 9 }, endPos: { index: 272, column: 10, line: 9 } }
+
+{ type: tag-start, content: <, startPos: { index: 277, column: 2, line: 10 }, endPos: { index: 278, column: 3, line: 10 } }
+
+{ type: tag, content: noscript, startPos: { index: 278, column: 3, line: 10 }, endPos: { index: 286, column: 11, line: 10 } }
+
+{ type: text, content: This browser does not support JavaScript!, startPos: { index: 286, column: 11, line: 10 }, endPos: { index: 328, column: 52, line: 10 } }
+
+{ type: tag-end, content: />, startPos: { index: 328, column: 52, line: 10 }, endPos: { index: 330, column: 54, line: 10 } }
+
+{ type: tag, content: noscript, startPos: { index: 330, column: 54, line: 10 }, endPos: { index: 338, column: 62, line: 10 } }
+
+{ type: tag-end, content: />, startPos: { index: 342, column: 1, line: 11 }, endPos: { index: 344, column: 3, line: 11 } }
+
+{ type: tag, content: head, startPos: { index: 344, column: 3, line: 11 }, endPos: { index: 348, column: 7, line: 11 } }
+
+{ type: tag-start, content: <, startPos: { index: 352, column: 1, line: 12 }, endPos: { index: 353, column: 2, line: 12 } }
+
+{ type: tag, content: body, startPos: { index: 353, column: 2, line: 12 }, endPos: { index: 357, column: 6, line: 12 } }
+
+{ type: comment, content: A header from my old personal website, startPos: { index: 362, column: 2, line: 13 }, endPos: { index: 406, column: 46, line: 13 } }
+
+{ type: tag-start, content: <, startPos: { index: 410, column: 2, line: 14 }, endPos: { index: 411, column: 3, line: 14 } }
+
+{ type: tag, content: header, startPos: { index: 411, column: 3, line: 14 }, endPos: { index: 417, column: 9, line: 14 } }
+
+{ type: tag-start, content: <, startPos: { index: 423, column: 3, line: 15 }, endPos: { index: 424, column: 4, line: 15 } }
+
+{ type: tag, content: div, startPos: { index: 424, column: 4, line: 15 }, endPos: { index: 427, column: 7, line: 15 } }
+
+{ type: attribute, content: class="container clearfix", startPos: { index: 427, column: 7, line: 15 }, endPos: { index: 454, column: 34, line: 15 } }
+
+{ type: tag-start, content: <, startPos: { index: 461, column: 4, line: 16 }, endPos: { index: 462, column: 5, line: 16 } }
+
+{ type: tag, content: div, startPos: { index: 462, column: 5, line: 16 }, endPos: { index: 465, column: 8, line: 16 } }
+
+{ type: attribute, content: class="one-third column", startPos: { index: 465, column: 8, line: 16 }, endPos: { index: 490, column: 33, line: 16 } }
+
+{ type: tag-start, content: <, startPos: { index: 498, column: 5, line: 17 }, endPos: { index: 499, column: 6, line: 17 } }
+
+{ type: tag, content: div, startPos: { index: 499, column: 6, line: 17 }, endPos: { index: 502, column: 9, line: 17 } }
+
+{ type: attribute, content: class="logo", startPos: { index: 502, column: 9, line: 17 }, endPos: { index: 515, column: 22, line: 17 } }
+
+{ type: tag-start, content: <, startPos: { index: 524, column: 6, line: 18 }, endPos: { index: 525, column: 7, line: 18 } }
+
+{ type: tag, content: a, startPos: { index: 525, column: 7, line: 18 }, endPos: { index: 526, column: 8, line: 18 } }
+
+{ type: attribute, content: href="index.html", startPos: { index: 526, column: 8, line: 18 }, endPos: { index: 544, column: 26, line: 18 } }
+
+{ type: tag-start, content: <, startPos: { index: 545, column: 26, line: 18 }, endPos: { index: 546, column: 27, line: 18 } }
+
+{ type: tag, content: img, startPos: { index: 546, column: 27, line: 18 }, endPos: { index: 549, column: 30, line: 18 } }
+
+{ type: attribute, content: src="images/logo.png", startPos: { index: 549, column: 30, line: 18 }, endPos: { index: 610, column: 91, line: 18 } }
+
+{ type: attribute, content: alt="Barrett Otte - Personal Website", startPos: { index: 549, column: 30, line: 18 }, endPos: { index: 610, column: 91, line: 18 } }
+
+{ type: tag-end, content: />, startPos: { index: 610, column: 91, line: 18 }, endPos: { index: 610, column: 91, line: 18 } }
+
+{ type: text, content: >, startPos: { index: 610, column: 91, line: 18 }, endPos: { index: 612, column: 92, line: 18 } }
+
+{ type: tag-end, content: />, startPos: { index: 612, column: 92, line: 18 }, endPos: { index: 614, column: 94, line: 18 } }
+
+{ type: tag, content: a, startPos: { index: 614, column: 94, line: 18 }, endPos: { index: 615, column: 95, line: 18 } }
+
+{ type: tag-end, content: />, startPos: { index: 623, column: 5, line: 19 }, endPos: { index: 625, column: 7, line: 19 } }
+
+{ type: tag, content: div, startPos: { index: 625, column: 7, line: 19 }, endPos: { index: 628, column: 10, line: 19 } }
+
+{ type: tag-end, content: />, startPos: { index: 635, column: 4, line: 20 }, endPos: { index: 637, column: 6, line: 20 } }
+
+{ type: tag, content: div, startPos: { index: 637, column: 6, line: 20 }, endPos: { index: 640, column: 9, line: 20 } }
+
+{ type: tag-end, content: />, startPos: { index: 646, column: 3, line: 21 }, endPos: { index: 648, column: 5, line: 21 } }
+
+{ type: tag, content: div, startPos: { index: 648, column: 5, line: 21 }, endPos: { index: 651, column: 8, line: 21 } }
+
+{ type: tag-end, content: />, startPos: { index: 656, column: 2, line: 22 }, endPos: { index: 658, column: 4, line: 22 } }
+
+{ type: tag, content: header, startPos: { index: 658, column: 4, line: 22 }, endPos: { index: 664, column: 10, line: 22 } }
+
+{ type: tag-end, content: />, startPos: { index: 668, column: 1, line: 23 }, endPos: { index: 670, column: 3, line: 23 } }
+
+{ type: tag, content: body, startPos: { index: 670, column: 3, line: 23 }, endPos: { index: 674, column: 7, line: 23 } }
+
+{ type: comment, content: A footer from my old personal website, startPos: { index: 678, column: 1, line: 24 }, endPos: { index: 722, column: 45, line: 24 } }
+
+{ type: tag-start, content: <, startPos: { index: 725, column: 1, line: 25 }, endPos: { index: 726, column: 2, line: 25 } }
+
+{ type: tag, content: footer, startPos: { index: 726, column: 2, line: 25 }, endPos: { index: 732, column: 8, line: 25 } }
+
+{ type: tag-start, content: <, startPos: { index: 737, column: 2, line: 26 }, endPos: { index: 738, column: 3, line: 26 } }
+
+{ type: tag, content: div, startPos: { index: 738, column: 3, line: 26 }, endPos: { index: 741, column: 6, line: 26 } }
+
+{ type: attribute, content: class="container", startPos: { index: 741, column: 6, line: 26 }, endPos: { index: 759, column: 24, line: 26 } }
+
+{ type: tag-start, content: <, startPos: { index: 765, column: 3, line: 27 }, endPos: { index: 766, column: 4, line: 27 } }
+
+{ type: tag, content: br, startPos: { index: 766, column: 4, line: 27 }, endPos: { index: 768, column: 6, line: 27 } }
+
+{ type: tag-end, content: />, startPos: { index: 769, column: 7, line: 27 }, endPos: { index: 769, column: 7, line: 27 } }
+
+{ type: text, content: >, startPos: { index: 769, column: 7, line: 27 }, endPos: { index: 776, column: 3, line: 28 } }
+
+{ type: tag-start, content: <, startPos: { index: 776, column: 3, line: 28 }, endPos: { index: 777, column: 4, line: 28 } }
+
+{ type: tag, content: div, startPos: { index: 777, column: 4, line: 28 }, endPos: { index: 780, column: 7, line: 28 } }
+
+{ type: attribute, content: class="eight columns", startPos: { index: 780, column: 7, line: 28 }, endPos: { index: 802, column: 29, line: 28 } }
+
+{ type: tag-start, content: <, startPos: { index: 809, column: 4, line: 29 }, endPos: { index: 810, column: 5, line: 29 } }
+
+{ type: tag, content: span, startPos: { index: 810, column: 5, line: 29 }, endPos: { index: 814, column: 9, line: 29 } }
+
+{ type: attribute, content: class="copyright", startPos: { index: 814, column: 9, line: 29 }, endPos: { index: 832, column: 27, line: 29 } }
+
+{ type: text, content: © Copyright 2014-2017, startPos: { index: 832, column: 27, line: 29 }, endPos: { index: 862, column: 27, line: 30 } }
+
+{ type: tag-start, content: <, startPos: { index: 862, column: 27, line: 30 }, endPos: { index: 863, column: 28, line: 30 } }
+
+{ type: tag, content: a, startPos: { index: 863, column: 28, line: 30 }, endPos: { index: 864, column: 29, line: 30 } }
+
+{ type: attribute, content: href="index.html", startPos: { index: 864, column: 29, line: 30 }, endPos: { index: 882, column: 47, line: 30 } }
+
+{ type: text, content: Barrett Otte, startPos: { index: 882, column: 47, line: 30 }, endPos: { index: 895, column: 59, line: 30 } }
+
+{ type: tag-end, content: />, startPos: { index: 895, column: 59, line: 30 }, endPos: { index: 897, column: 61, line: 30 } }
+
+{ type: tag, content: a, startPos: { index: 897, column: 61, line: 30 }, endPos: { index: 898, column: 62, line: 30 } }
+
+{ type: text, content: ., startPos: { index: 898, column: 62, line: 30 }, endPos: { index: 901, column: 64, line: 30 } }
+
+{ type: tag-start, content: <, startPos: { index: 901, column: 64, line: 30 }, endPos: { index: 902, column: 65, line: 30 } }
+
+{ type: tag, content: br, startPos: { index: 902, column: 65, line: 30 }, endPos: { index: 904, column: 67, line: 30 } }
+
+{ type: tag-end, content: />, startPos: { index: 905, column: 68, line: 30 }, endPos: { index: 905, column: 68, line: 30 } }
+
+{ type: text, content: >&emsp;All Rights Reserved, startPos: { index: 905, column: 68, line: 30 }, endPos: { index: 933, column: 95, line: 30 } }
+
+{ type: tag-start, content: <, startPos: { index: 933, column: 95, line: 30 }, endPos: { index: 934, column: 96, line: 30 } }
+
+{ type: tag, content: a, startPos: { index: 934, column: 96, line: 30 }, endPos: { index: 935, column: 97, line: 30 } }
+
+{ type: attribute, content: href="#", startPos: { index: 935, column: 97, line: 30 }, endPos: { index: 944, column: 106, line: 30 } }
+
+{ type: text, content: Barrett Otte, startPos: { index: 944, column: 106, line: 30 }, endPos: { index: 957, column: 118, line: 30 } }
+
+{ type: tag-end, content: />, startPos: { index: 957, column: 118, line: 30 }, endPos: { index: 959, column: 120, line: 30 } }
+
+{ type: tag, content: a, startPos: { index: 959, column: 120, line: 30 }, endPos: { index: 960, column: 121, line: 30 } }
+
+{ type: tag-end, content: />, startPos: { index: 967, column: 4, line: 31 }, endPos: { index: 969, column: 6, line: 31 } }
+
+{ type: tag, content: span, startPos: { index: 969, column: 6, line: 31 }, endPos: { index: 973, column: 10, line: 31 } }
+
+{ type: tag-end, content: />, startPos: { index: 979, column: 3, line: 32 }, endPos: { index: 981, column: 5, line: 32 } }
+
+{ type: tag, content: div, startPos: { index: 981, column: 5, line: 32 }, endPos: { index: 984, column: 8, line: 32 } }
+
+{ type: tag-start, content: <, startPos: { index: 990, column: 3, line: 33 }, endPos: { index: 991, column: 4, line: 33 } }
+
+{ type: tag, content: div, startPos: { index: 991, column: 4, line: 33 }, endPos: { index: 994, column: 7, line: 33 } }
+
+{ type: attribute, content: class="eight columns", startPos: { index: 994, column: 7, line: 33 }, endPos: { index: 1016, column: 29, line: 33 } }
+
+{ type: tag-start, content: <, startPos: { index: 1023, column: 4, line: 34 }, endPos: { index: 1024, column: 5, line: 34 } }
+
+{ type: tag, content: div, startPos: { index: 1024, column: 5, line: 34 }, endPos: { index: 1027, column: 8, line: 34 } }
+
+{ type: attribute, content: class="social", startPos: { index: 1027, column: 8, line: 34 }, endPos: { index: 1042, column: 23, line: 34 } }
+
+{ type: tag-start, content: <, startPos: { index: 1050, column: 5, line: 35 }, endPos: { index: 1051, column: 6, line: 35 } }
+
+{ type: tag, content: a, startPos: { index: 1051, column: 6, line: 35 }, endPos: { index: 1052, column: 7, line: 35 } }
+
+{ type: attribute, content: href="https://www.linkedin.com/in/barrett-otte-564123b4", startPos: { index: 1052, column: 7, line: 35 }, endPos: { index: 1109, column: 64, line: 35 } }
+
+{ type: tag-start, content: <, startPos: { index: 1110, column: 64, line: 35 }, endPos: { index: 1111, column: 65, line: 35 } }
+
+{ type: tag, content: img, startPos: { index: 1111, column: 65, line: 35 }, endPos: { index: 1114, column: 68, line: 35 } }
+
+{ type: attribute, content: src="images/icons/linkedin.png", startPos: { index: 1114, column: 68, line: 35 }, endPos: { index: 1155, column: 109, line: 35 } }
+
+{ type: attribute, content: alt="x", startPos: { index: 1114, column: 68, line: 35 }, endPos: { index: 1155, column: 109, line: 35 } }
+
+{ type: tag-end, content: />, startPos: { index: 1155, column: 109, line: 35 }, endPos: { index: 1155, column: 109, line: 35 } }
+
+{ type: text, content: >, startPos: { index: 1155, column: 109, line: 35 }, endPos: { index: 1157, column: 110, line: 35 } }
+
+{ type: tag-end, content: />, startPos: { index: 1157, column: 110, line: 35 }, endPos: { index: 1159, column: 112, line: 35 } }
+
+{ type: tag, content: a, startPos: { index: 1159, column: 112, line: 35 }, endPos: { index: 1160, column: 113, line: 35 } }
+
+{ type: tag-start, content: <, startPos: { index: 1168, column: 5, line: 36 }, endPos: { index: 1169, column: 6, line: 36 } }
+
+{ type: tag, content: a, startPos: { index: 1169, column: 6, line: 36 }, endPos: { index: 1170, column: 7, line: 36 } }
+
+{ type: attribute, content: href="https://barrettotte.itch.io/", startPos: { index: 1170, column: 7, line: 36 }, endPos: { index: 1206, column: 43, line: 36 } }
+
+{ type: tag-start, content: <, startPos: { index: 1207, column: 43, line: 36 }, endPos: { index: 1208, column: 44, line: 36 } }
+
+{ type: tag, content: img, startPos: { index: 1208, column: 44, line: 36 }, endPos: { index: 1211, column: 47, line: 36 } }
+
+{ type: attribute, content: src="images/icons/itch.png", startPos: { index: 1211, column: 47, line: 36 }, endPos: { index: 1248, column: 84, line: 36 } }
+
+{ type: attribute, content: alt="x", startPos: { index: 1211, column: 47, line: 36 }, endPos: { index: 1248, column: 84, line: 36 } }
+
+{ type: tag-end, content: />, startPos: { index: 1248, column: 84, line: 36 }, endPos: { index: 1248, column: 84, line: 36 } }
+
+{ type: text, content: >, startPos: { index: 1248, column: 84, line: 36 }, endPos: { index: 1250, column: 85, line: 36 } }
+
+{ type: tag-end, content: />, startPos: { index: 1250, column: 85, line: 36 }, endPos: { index: 1252, column: 87, line: 36 } }
+
+{ type: tag, content: a, startPos: { index: 1252, column: 87, line: 36 }, endPos: { index: 1253, column: 88, line: 36 } }
+
+{ type: tag-start, content: <, startPos: { index: 1261, column: 5, line: 37 }, endPos: { index: 1262, column: 6, line: 37 } }
+
+{ type: tag, content: a, startPos: { index: 1262, column: 6, line: 37 }, endPos: { index: 1263, column: 7, line: 37 } }
+
+{ type: attribute, content: href="https://github.com/barrettotte", startPos: { index: 1263, column: 7, line: 37 }, endPos: { index: 1301, column: 45, line: 37 } }
+
+{ type: tag-start, content: <, startPos: { index: 1302, column: 45, line: 37 }, endPos: { index: 1303, column: 46, line: 37 } }
+
+{ type: tag, content: img, startPos: { index: 1303, column: 46, line: 37 }, endPos: { index: 1306, column: 49, line: 37 } }
+
+{ type: attribute, content: src="images/icons/github.png", startPos: { index: 1306, column: 49, line: 37 }, endPos: { index: 1345, column: 88, line: 37 } }
+
+{ type: attribute, content: alt="x", startPos: { index: 1306, column: 49, line: 37 }, endPos: { index: 1345, column: 88, line: 37 } }
+
+{ type: tag-end, content: />, startPos: { index: 1345, column: 88, line: 37 }, endPos: { index: 1345, column: 88, line: 37 } }
+
+{ type: text, content: >, startPos: { index: 1345, column: 88, line: 37 }, endPos: { index: 1347, column: 89, line: 37 } }
+
+{ type: tag-end, content: />, startPos: { index: 1347, column: 89, line: 37 }, endPos: { index: 1349, column: 91, line: 37 } }
+
+{ type: tag, content: a, startPos: { index: 1349, column: 91, line: 37 }, endPos: { index: 1350, column: 92, line: 37 } }
+
+{ type: tag-end, content: />, startPos: { index: 1357, column: 4, line: 38 }, endPos: { index: 1359, column: 6, line: 38 } }
+
+{ type: tag, content: div, startPos: { index: 1359, column: 6, line: 38 }, endPos: { index: 1362, column: 9, line: 38 } }
+
+{ type: tag-end, content: />, startPos: { index: 1368, column: 3, line: 39 }, endPos: { index: 1370, column: 5, line: 39 } }
+
+{ type: tag, content: div, startPos: { index: 1370, column: 5, line: 39 }, endPos: { index: 1373, column: 8, line: 39 } }
+
+{ type: tag-end, content: />, startPos: { index: 1378, column: 2, line: 40 }, endPos: { index: 1380, column: 4, line: 40 } }
+
+{ type: tag, content: div, startPos: { index: 1380, column: 4, line: 40 }, endPos: { index: 1383, column: 7, line: 40 } }
+
+{ type: tag-end, content: />, startPos: { index: 1387, column: 1, line: 41 }, endPos: { index: 1389, column: 3, line: 41 } }
+
+{ type: tag, content: footer, startPos: { index: 1389, column: 3, line: 41 }, endPos: { index: 1395, column: 9, line: 41 } }
+
+{ type: tag-end, content: />, startPos: { index: 1398, column: 0, line: 42 }, endPos: { index: 1400, column: 2, line: 42 } }
+
+{ type: tag, content: html, startPos: { index: 1400, column: 2, line: 42 }, endPos: { index: 1404, column: 6, line: 42 } }
+

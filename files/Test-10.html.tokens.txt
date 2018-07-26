@@ -1,0 +1,106 @@
+{ type: comment, content: The last test file, startPos: { index: 0, column: 0, line: 1 }, endPos: { index: 25, column: 25, line: 1 } }
+
+{ type: tag-start, content: <, startPos: { index: 27, column: 0, line: 2 }, endPos: { index: 28, column: 1, line: 2 } }
+
+{ type: tag, content: !DOCTYPE, startPos: { index: 28, column: 1, line: 2 }, endPos: { index: 36, column: 9, line: 2 } }
+
+{ type: attribute, content: html, startPos: { index: 36, column: 9, line: 2 }, endPos: { index: 41, column: 14, line: 2 } }
+
+{ type: tag-end, content: />, startPos: { index: 41, column: 14, line: 2 }, endPos: { index: 41, column: 14, line: 2 } }
+
+{ type: tag-start, content: <, startPos: { index: 44, column: 0, line: 3 }, endPos: { index: 45, column: 1, line: 3 } }
+
+{ type: tag, content: html, startPos: { index: 45, column: 1, line: 3 }, endPos: { index: 49, column: 5, line: 3 } }
+
+{ type: tag-start, content: <, startPos: { index: 53, column: 1, line: 4 }, endPos: { index: 54, column: 2, line: 4 } }
+
+{ type: tag, content: head, startPos: { index: 54, column: 2, line: 4 }, endPos: { index: 58, column: 6, line: 4 } }
+
+{ type: tag-start, content: <, startPos: { index: 63, column: 2, line: 5 }, endPos: { index: 64, column: 3, line: 5 } }
+
+{ type: tag, content: meta, startPos: { index: 64, column: 3, line: 5 }, endPos: { index: 68, column: 7, line: 5 } }
+
+{ type: attribute, content: charset="UTF-8", startPos: { index: 68, column: 7, line: 5 }, endPos: { index: 84, column: 23, line: 5 } }
+
+{ type: tag-end, content: />, startPos: { index: 84, column: 23, line: 5 }, endPos: { index: 84, column: 23, line: 5 } }
+
+{ type: tag-start, content: <, startPos: { index: 89, column: 2, line: 6 }, endPos: { index: 90, column: 3, line: 6 } }
+
+{ type: tag, content: meta, startPos: { index: 90, column: 3, line: 6 }, endPos: { index: 94, column: 7, line: 6 } }
+
+{ type: attribute, content: name="description", startPos: { index: 94, column: 7, line: 6 }, endPos: { index: 141, column: 54, line: 6 } }
+
+{ type: attribute, content: content="Another test file", startPos: { index: 94, column: 7, line: 6 }, endPos: { index: 141, column: 54, line: 6 } }
+
+{ type: tag-end, content: />, startPos: { index: 141, column: 54, line: 6 }, endPos: { index: 141, column: 54, line: 6 } }
+
+{ type: tag-start, content: <, startPos: { index: 146, column: 2, line: 7 }, endPos: { index: 147, column: 3, line: 7 } }
+
+{ type: tag, content: meta, startPos: { index: 147, column: 3, line: 7 }, endPos: { index: 151, column: 7, line: 7 } }
+
+{ type: attribute, content: name="author", startPos: { index: 151, column: 7, line: 7 }, endPos: { index: 188, column: 44, line: 7 } }
+
+{ type: attribute, content: content="Barrett Otte", startPos: { index: 151, column: 7, line: 7 }, endPos: { index: 188, column: 44, line: 7 } }
+
+{ type: tag-end, content: />, startPos: { index: 188, column: 44, line: 7 }, endPos: { index: 188, column: 44, line: 7 } }
+
+{ type: comment, content: 			You know what? This will get parsed to json after the html parsing.			Why make things more complicated, im done with this side project for now.		, startPos: { index: 195, column: 2, line: 9 }, endPos: { index: 356, column: 5, line: 12 } }
+
+{ type: tag-start, content: <, startPos: { index: 360, column: 2, line: 13 }, endPos: { index: 361, column: 3, line: 13 } }
+
+{ type: tag, content: style, startPos: { index: 361, column: 3, line: 13 }, endPos: { index: 366, column: 8, line: 13 } }
+
+{ type: text, content: h1 {				color:red;			}			p {				color:blue;			}, startPos: { index: 366, column: 8, line: 13 }, endPos: { index: 433, column: 2, line: 20 } }
+
+{ type: tag-end, content: />, startPos: { index: 433, column: 2, line: 20 }, endPos: { index: 435, column: 4, line: 20 } }
+
+{ type: tag, content: style, startPos: { index: 435, column: 4, line: 20 }, endPos: { index: 440, column: 9, line: 20 } }
+
+{ type: tag-start, content: <, startPos: { index: 445, column: 0, line: 22 }, endPos: { index: 446, column: 1, line: 22 } }
+
+{ type: tag, content: script, startPos: { index: 446, column: 1, line: 22 }, endPos: { index: 452, column: 7, line: 22 } }
+
+{ type: attribute, content: type="text/javascript", startPos: { index: 452, column: 7, line: 22 }, endPos: { index: 475, column: 30, line: 22 } }
+
+{ type: text, content: var i = 10;	if (i < 5) {		// some code	}, startPos: { index: 475, column: 30, line: 22 }, endPos: { index: 532, column: 0, line: 29 } }
+
+{ type: tag-end, content: />, startPos: { index: 532, column: 0, line: 29 }, endPos: { index: 534, column: 2, line: 29 } }
+
+{ type: tag, content: script, startPos: { index: 534, column: 2, line: 29 }, endPos: { index: 540, column: 8, line: 29 } }
+
+{ type: tag-start, content: <, startPos: { index: 543, column: 0, line: 30 }, endPos: { index: 544, column: 1, line: 30 } }
+
+{ type: tag, content: noscript, startPos: { index: 544, column: 1, line: 30 }, endPos: { index: 552, column: 9, line: 30 } }
+
+{ type: text, content: Don't ever use CDATA code its disgusting, startPos: { index: 552, column: 9, line: 30 }, endPos: { index: 593, column: 49, line: 30 } }
+
+{ type: tag-end, content: />, startPos: { index: 593, column: 49, line: 30 }, endPos: { index: 595, column: 51, line: 30 } }
+
+{ type: tag, content: noscript, startPos: { index: 595, column: 51, line: 30 }, endPos: { index: 603, column: 59, line: 30 } }
+
+{ type: tag-end, content: />, startPos: { index: 613, column: 1, line: 33 }, endPos: { index: 615, column: 3, line: 33 } }
+
+{ type: tag, content: head, startPos: { index: 615, column: 3, line: 33 }, endPos: { index: 619, column: 7, line: 33 } }
+
+{ type: tag-start, content: <, startPos: { index: 623, column: 1, line: 34 }, endPos: { index: 624, column: 2, line: 34 } }
+
+{ type: tag, content: body, startPos: { index: 624, column: 2, line: 34 }, endPos: { index: 628, column: 6, line: 34 } }
+
+{ type: tag-start, content: <, startPos: { index: 633, column: 2, line: 35 }, endPos: { index: 634, column: 3, line: 35 } }
+
+{ type: tag, content: p, startPos: { index: 634, column: 3, line: 35 }, endPos: { index: 635, column: 4, line: 35 } }
+
+{ type: text, content: I think im done making test files for now, startPos: { index: 635, column: 4, line: 35 }, endPos: { index: 677, column: 45, line: 35 } }
+
+{ type: tag-end, content: />, startPos: { index: 677, column: 45, line: 35 }, endPos: { index: 679, column: 47, line: 35 } }
+
+{ type: tag, content: p, startPos: { index: 679, column: 47, line: 35 }, endPos: { index: 680, column: 48, line: 35 } }
+
+{ type: tag-end, content: />, startPos: { index: 684, column: 1, line: 36 }, endPos: { index: 686, column: 3, line: 36 } }
+
+{ type: tag, content: body, startPos: { index: 686, column: 3, line: 36 }, endPos: { index: 690, column: 7, line: 36 } }
+
+{ type: tag-end, content: />, startPos: { index: 693, column: 0, line: 37 }, endPos: { index: 695, column: 2, line: 37 } }
+
+{ type: tag, content: html, startPos: { index: 695, column: 2, line: 37 }, endPos: { index: 699, column: 6, line: 37 } }
+

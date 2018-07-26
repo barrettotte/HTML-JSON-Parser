@@ -1,0 +1,271 @@
+{
+   "Content":"root",
+   "Generation":0,
+   "Type":"root",
+   "Attributes":[
+      
+   ],
+   "Children":[
+      {
+         "Content":"!DOCTYPE",
+         "Generation":1,
+         "Type":"tag",
+         "Attributes":[
+            {
+               "Key":"attribute",
+               "Value":"html"
+            }
+         ],
+         "Children":[
+            
+         ]
+      },
+      {
+         "Content":"html",
+         "Generation":1,
+         "Type":"tag",
+         "Attributes":[
+            
+         ],
+         "Children":[
+            {
+               "Content":"div",
+               "Generation":2,
+               "Type":"tag",
+               "Attributes":[
+                  {
+                     "Key":"attribute",
+                     "Value":"class=\"test\""
+                  }
+               ],
+               "Children":[
+                  {
+                     "Content":"p",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"class=\"asd\""
+                        }
+                     ],
+                     "Children":[
+                        {
+                           "Content":"Text text text text",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "Content":"ul",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"li",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"Item 1",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"li",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"Item 2",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"I am a comment",
+                           "Generation":4,
+                           "Type":"comment",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        },
+                        {
+                           "Content":"li",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"Item 3",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"li",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"hr",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              },
+                              {
+                                 "Content":"ol",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    {
+                                       "Content":"li",
+                                       "Generation":6,
+                                       "Type":"tag",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          {
+                                             "Content":"Megumin",
+                                             "Generation":7,
+                                             "Type":"text",
+                                             "Attributes":[
+                                                
+                                             ],
+                                             "Children":[
+                                                
+                                             ]
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "Content":"li",
+                                       "Generation":6,
+                                       "Type":"tag",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          {
+                                             "Content":"Nami",
+                                             "Generation":7,
+                                             "Type":"text",
+                                             "Attributes":[
+                                                
+                                             ],
+                                             "Children":[
+                                                
+                                             ]
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "Content":"li",
+                                       "Generation":6,
+                                       "Type":"tag",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          {
+                                             "Content":"br",
+                                             "Generation":7,
+                                             "Type":"tag",
+                                             "Attributes":[
+                                                
+                                             ],
+                                             "Children":[
+                                                
+                                             ]
+                                          },
+                                          {
+                                             "Content":"Hiyori",
+                                             "Generation":7,
+                                             "Type":"text",
+                                             "Attributes":[
+                                                
+                                             ],
+                                             "Children":[
+                                                
+                                             ]
+                                          },
+                                          {
+                                             "Content":"\u003e",
+                                             "Generation":7,
+                                             "Type":"text",
+                                             "Attributes":[
+                                                
+                                             ],
+                                             "Children":[
+                                                
+                                             ]
+                                          }
+                                       ]
+                                    }
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

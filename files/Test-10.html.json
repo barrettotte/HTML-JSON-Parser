@@ -1,0 +1,219 @@
+{
+   "Content":"root",
+   "Generation":0,
+   "Type":"root",
+   "Attributes":[
+      
+   ],
+   "Children":[
+      {
+         "Content":"!DOCTYPE",
+         "Generation":1,
+         "Type":"tag",
+         "Attributes":[
+            {
+               "Key":"attribute",
+               "Value":"html"
+            }
+         ],
+         "Children":[
+            
+         ]
+      },
+      {
+         "Content":"The last test file",
+         "Generation":1,
+         "Type":"comment",
+         "Attributes":[
+            
+         ],
+         "Children":[
+            
+         ]
+      },
+      {
+         "Content":"html",
+         "Generation":1,
+         "Type":"tag",
+         "Attributes":[
+            
+         ],
+         "Children":[
+            {
+               "Content":"head",
+               "Generation":2,
+               "Type":"tag",
+               "Attributes":[
+                  
+               ],
+               "Children":[
+                  {
+                     "Content":"meta",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"charset=\"UTF-8\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"meta",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"name=\"description\""
+                        },
+                        {
+                           "Key":"attribute",
+                           "Value":"content=\"Another test file\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"meta",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"name=\"author\""
+                        },
+                        {
+                           "Key":"attribute",
+                           "Value":"content=\"Barrett Otte\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"\r\n\t\t\tYou know what? This will get parsed to json after the html parsing.\r\n\t\t\tWhy make things more complicated, im done with this side project for now.\r\n\t\t",
+                     "Generation":3,
+                     "Type":"comment",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"style",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"h1 {
+                              \r\n\t\t\t\tcolor:red;\r\n\t\t\t
+                           }\r\n\t\t\tp {
+                              \r\n\t\t\t\tcolor:blue;\r\n\t\t\t
+                           }",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "Content":"script",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"type=\"text/javascript\""
+                        }
+                     ],
+                     "Children":[
+                        {
+                           "Content":"var i = 10;\r\n\tif (i \u003c 5) {
+                              \r\n\t\t// some code\r\n\t
+                           }",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "Content":"noscript",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"Don\u0027t ever use CDATA code its disgusting",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "Content":"body",
+               "Generation":2,
+               "Type":"tag",
+               "Attributes":[
+                  
+               ],
+               "Children":[
+                  {
+                     "Content":"p",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"I think im done making test files for now",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

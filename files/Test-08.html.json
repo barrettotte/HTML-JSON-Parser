@@ -1,0 +1,381 @@
+{
+   "Content":"root",
+   "Generation":0,
+   "Type":"root",
+   "Attributes":[
+      
+   ],
+   "Children":[
+      {
+         "Content":"!DOCTYPE",
+         "Generation":1,
+         "Type":"tag",
+         "Attributes":[
+            {
+               "Key":"attribute",
+               "Value":"html"
+            }
+         ],
+         "Children":[
+            
+         ]
+      },
+      {
+         "Content":"html",
+         "Generation":1,
+         "Type":"tag",
+         "Attributes":[
+            
+         ],
+         "Children":[
+            {
+               "Content":"head",
+               "Generation":2,
+               "Type":"tag",
+               "Attributes":[
+                  
+               ],
+               "Children":[
+                  {
+                     "Content":"meta",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"charset=\"UTF-8\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"meta",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"name=\"description\""
+                        },
+                        {
+                           "Key":"attribute",
+                           "Value":"content=\"Another test file\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"meta",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"name=\"author\""
+                        },
+                        {
+                           "Key":"attribute",
+                           "Value":"content=\"Barrett Otte\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"script",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"type=\"text/javascript\""
+                        }
+                     ],
+                     "Children":[
+                        {
+                           "Content":"document.getElementById(\"test\").innerHTML = \"Hello World\";",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "Content":"noscript",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"This browser does not support JavaScript!",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "Content":"body",
+               "Generation":2,
+               "Type":"tag",
+               "Attributes":[
+                  
+               ],
+               "Children":[
+                  {
+                     "Content":"\r\n\t\t\t\u003cp\u003e I hope this doesnt break stuff \u003c/p\u003e\r\n\t\t",
+                     "Generation":3,
+                     "Type":"comment",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"form",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"fieldset",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"legend",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    {
+                                       "Content":"AHHHHHHHHH",
+                                       "Generation":6,
+                                       "Type":"text",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          
+                                       ]
+                                    }
+                                 ]
+                              },
+                              {
+                                 "Content":"input",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    {
+                                       "Key":"attribute",
+                                       "Value":"type=\"text\""
+                                    }
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              },
+                              {
+                                 "Content":"br",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              },
+                              {
+                                 "Content":"Name:",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              },
+                              {
+                                 "Content":"input",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    {
+                                       "Key":"attribute",
+                                       "Value":"type=\"text\""
+                                    }
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              },
+                              {
+                                 "Content":"br",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              },
+                              {
+                                 "Content":"Email:",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"button",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"type=\"button\""
+                              }
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"Click Me!",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"h3",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"Assembly(x86)",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"code",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"PUSH  EDX\r\n\t\t\t\tMOV   EDX, OFFSET buffer\r\n\t\t\t\tCALL  WriteString\r\n\t\t\t\tPOP   EDX",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"textarea",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"cols=\"50\""
+                              },
+                              {
+                                 "Key":"attribute",
+                                 "Value":"rows=\"4\""
+                              }
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzzxcvb\r\n\t\t\t\tawefaweroigterg",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "Content":"embed",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"src=\"helloworld.swf\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

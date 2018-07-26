@@ -1,0 +1,577 @@
+{
+   "Content":"root",
+   "Generation":0,
+   "Type":"root",
+   "Attributes":[
+      
+   ],
+   "Children":[
+      {
+         "Content":"!DOCTYPE",
+         "Generation":1,
+         "Type":"tag",
+         "Attributes":[
+            {
+               "Key":"attribute",
+               "Value":"html"
+            }
+         ],
+         "Children":[
+            
+         ]
+      },
+      {
+         "Content":"html",
+         "Generation":1,
+         "Type":"tag",
+         "Attributes":[
+            
+         ],
+         "Children":[
+            {
+               "Content":"head",
+               "Generation":2,
+               "Type":"tag",
+               "Attributes":[
+                  
+               ],
+               "Children":[
+                  {
+                     "Content":"meta",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"charset=\"UTF-8\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"meta",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"name=\"description\""
+                        },
+                        {
+                           "Key":"attribute",
+                           "Value":"content=\"Another test file\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"meta",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"name=\"author\""
+                        },
+                        {
+                           "Key":"attribute",
+                           "Value":"content=\"Barrett Otte\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"script",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"type=\"text/javascript\""
+                        }
+                     ],
+                     "Children":[
+                        {
+                           "Content":"document.getElementById(\"test\").innerHTML = \"Hello World\";",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "Content":"noscript",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"This browser does not support JavaScript!",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "Content":"body",
+               "Generation":2,
+               "Type":"tag",
+               "Attributes":[
+                  
+               ],
+               "Children":[
+                  {
+                     "Content":"A header from my old personal website",
+                     "Generation":3,
+                     "Type":"comment",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"header",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"div",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"class=\"container clearfix\""
+                              }
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"div",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    {
+                                       "Key":"attribute",
+                                       "Value":"class=\"one-third column\""
+                                    }
+                                 ],
+                                 "Children":[
+                                    {
+                                       "Content":"div",
+                                       "Generation":6,
+                                       "Type":"tag",
+                                       "Attributes":[
+                                          {
+                                             "Key":"attribute",
+                                             "Value":"class=\"logo\""
+                                          }
+                                       ],
+                                       "Children":[
+                                          {
+                                             "Content":"a",
+                                             "Generation":7,
+                                             "Type":"tag",
+                                             "Attributes":[
+                                                {
+                                                   "Key":"attribute",
+                                                   "Value":"href=\"index.html\""
+                                                }
+                                             ],
+                                             "Children":[
+                                                {
+                                                   "Content":"img",
+                                                   "Generation":8,
+                                                   "Type":"tag",
+                                                   "Attributes":[
+                                                      {
+                                                         "Key":"attribute",
+                                                         "Value":"src=\"images/logo.png\""
+                                                      },
+                                                      {
+                                                         "Key":"attribute",
+                                                         "Value":"alt=\"Barrett Otte - Personal Website\""
+                                                      }
+                                                   ],
+                                                   "Children":[
+                                                      
+                                                   ]
+                                                },
+                                                {
+                                                   "Content":"\u003e",
+                                                   "Generation":8,
+                                                   "Type":"text",
+                                                   "Attributes":[
+                                                      
+                                                   ],
+                                                   "Children":[
+                                                      
+                                                   ]
+                                                }
+                                             ]
+                                          }
+                                       ]
+                                    }
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "Content":"A footer from my old personal website",
+               "Generation":2,
+               "Type":"comment",
+               "Attributes":[
+                  
+               ],
+               "Children":[
+                  
+               ]
+            },
+            {
+               "Content":"footer",
+               "Generation":2,
+               "Type":"tag",
+               "Attributes":[
+                  
+               ],
+               "Children":[
+                  {
+                     "Content":"div",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"class=\"container\""
+                        }
+                     ],
+                     "Children":[
+                        {
+                           "Content":"br",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        },
+                        {
+                           "Content":"\u003e",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        },
+                        {
+                           "Content":"div",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"class=\"eight columns\""
+                              }
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"span",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    {
+                                       "Key":"attribute",
+                                       "Value":"class=\"copyright\""
+                                    }
+                                 ],
+                                 "Children":[
+                                    {
+                                       "Content":"© Copyright 2014-2017",
+                                       "Generation":6,
+                                       "Type":"text",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          
+                                       ]
+                                    },
+                                    {
+                                       "Content":"a",
+                                       "Generation":6,
+                                       "Type":"tag",
+                                       "Attributes":[
+                                          {
+                                             "Key":"attribute",
+                                             "Value":"href=\"index.html\""
+                                          }
+                                       ],
+                                       "Children":[
+                                          {
+                                             "Content":"Barrett Otte",
+                                             "Generation":7,
+                                             "Type":"text",
+                                             "Attributes":[
+                                                
+                                             ],
+                                             "Children":[
+                                                
+                                             ]
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "Content":"br",
+                                       "Generation":6,
+                                       "Type":"tag",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          
+                                       ]
+                                    },
+                                    {
+                                       "Content":".",
+                                       "Generation":6,
+                                       "Type":"text",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          
+                                       ]
+                                    },
+                                    {
+                                       "Content":"\u003e\u0026emsp;All Rights Reserved",
+                                       "Generation":6,
+                                       "Type":"text",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          
+                                       ]
+                                    },
+                                    {
+                                       "Content":"a",
+                                       "Generation":6,
+                                       "Type":"tag",
+                                       "Attributes":[
+                                          {
+                                             "Key":"attribute",
+                                             "Value":"href=\"#\""
+                                          }
+                                       ],
+                                       "Children":[
+                                          {
+                                             "Content":"Barrett Otte",
+                                             "Generation":7,
+                                             "Type":"text",
+                                             "Attributes":[
+                                                
+                                             ],
+                                             "Children":[
+                                                
+                                             ]
+                                          }
+                                       ]
+                                    }
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"div",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"class=\"eight columns\""
+                              }
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"div",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    {
+                                       "Key":"attribute",
+                                       "Value":"class=\"social\""
+                                    }
+                                 ],
+                                 "Children":[
+                                    {
+                                       "Content":"a",
+                                       "Generation":6,
+                                       "Type":"tag",
+                                       "Attributes":[
+                                          {
+                                             "Key":"attribute",
+                                             "Value":"href=\"https://www.linkedin.com/in/barrett-otte-564123b4\""
+                                          }
+                                       ],
+                                       "Children":[
+                                          {
+                                             "Content":"img",
+                                             "Generation":7,
+                                             "Type":"tag",
+                                             "Attributes":[
+                                                {
+                                                   "Key":"attribute",
+                                                   "Value":"src=\"images/icons/linkedin.png\""
+                                                },
+                                                {
+                                                   "Key":"attribute",
+                                                   "Value":"alt=\"x\""
+                                                }
+                                             ],
+                                             "Children":[
+                                                
+                                             ]
+                                          },
+                                          {
+                                             "Content":"\u003e",
+                                             "Generation":7,
+                                             "Type":"text",
+                                             "Attributes":[
+                                                
+                                             ],
+                                             "Children":[
+                                                
+                                             ]
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "Content":"a",
+                                       "Generation":6,
+                                       "Type":"tag",
+                                       "Attributes":[
+                                          {
+                                             "Key":"attribute",
+                                             "Value":"href=\"https://barrettotte.itch.io/\""
+                                          }
+                                       ],
+                                       "Children":[
+                                          {
+                                             "Content":"img",
+                                             "Generation":7,
+                                             "Type":"tag",
+                                             "Attributes":[
+                                                {
+                                                   "Key":"attribute",
+                                                   "Value":"src=\"images/icons/itch.png\""
+                                                },
+                                                {
+                                                   "Key":"attribute",
+                                                   "Value":"alt=\"x\""
+                                                }
+                                             ],
+                                             "Children":[
+                                                
+                                             ]
+                                          },
+                                          {
+                                             "Content":"\u003e",
+                                             "Generation":7,
+                                             "Type":"text",
+                                             "Attributes":[
+                                                
+                                             ],
+                                             "Children":[
+                                                
+                                             ]
+                                          }
+                                       ]
+                                    },
+                                    {
+                                       "Content":"a",
+                                       "Generation":6,
+                                       "Type":"tag",
+                                       "Attributes":[
+                                          {
+                                             "Key":"attribute",
+                                             "Value":"href=\"https://github.com/barrettotte\""
+                                          }
+                                       ],
+                                       "Children":[
+                                          {
+                                             "Content":"img",
+                                             "Generation":7,
+                                             "Type":"tag",
+                                             "Attributes":[
+                                                {
+                                                   "Key":"attribute",
+                                                   "Value":"src=\"images/icons/github.png\""
+                                                },
+                                                {
+                                                   "Key":"attribute",
+                                                   "Value":"alt=\"x\""
+                                                }
+                                             ],
+                                             "Children":[
+                                                
+                                             ]
+                                          },
+                                          {
+                                             "Content":"\u003e",
+                                             "Generation":7,
+                                             "Type":"text",
+                                             "Attributes":[
+                                                
+                                             ],
+                                             "Children":[
+                                                
+                                             ]
+                                          }
+                                       ]
+                                    }
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

@@ -5,12 +5,7 @@ using System.Collections.Generic;
 class Driver{
     
     private static void Main(){
-        string[] testFiles = new string[] {
-            "files/Test-01",
-            "files/Test-02",
-            "files/Test-03",
-            "files/Test-04"
-        };
+        string[] testFiles = Directory.GetFiles("files/", "*.html");
         Driver d = new Driver();
         ParseOptions options = new ParseOptions();
         HtmlLexer hLexer = new HtmlLexer();
@@ -19,7 +14,7 @@ class Driver{
 
         for(int i = 0; i < testFiles.Length; i++){
             string fileName = testFiles[i];
-            string htmlContent = d.LoadHTML(fileName);
+            string htmlContent = d.LoadFile(fileName);
             List<Token> tokens = hLexer.Lexer(htmlContent, options);
             //d.WriteTokensToConsole(tokens);
             d.WriteTokensToTextFile(tokens, fileName);
@@ -30,9 +25,9 @@ class Driver{
         d.Finish();
     }
 
-    private string LoadHTML(String fileName){
+    private string LoadFile(String fileName){
         try{
-            return File.ReadAllText(fileName + ".html");
+            return File.ReadAllText(fileName);
         } catch (System.Exception){
             throw;
         }

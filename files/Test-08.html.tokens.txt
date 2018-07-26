@@ -1,0 +1,196 @@
+{ type: tag-start, content: <, startPos: { index: 0, column: 0, line: 1 }, endPos: { index: 1, column: 1, line: 1 } }
+
+{ type: tag, content: !DOCTYPE, startPos: { index: 1, column: 1, line: 1 }, endPos: { index: 9, column: 9, line: 1 } }
+
+{ type: attribute, content: html, startPos: { index: 9, column: 9, line: 1 }, endPos: { index: 14, column: 14, line: 1 } }
+
+{ type: tag-end, content: />, startPos: { index: 14, column: 14, line: 1 }, endPos: { index: 14, column: 14, line: 1 } }
+
+{ type: tag-start, content: <, startPos: { index: 17, column: 0, line: 2 }, endPos: { index: 18, column: 1, line: 2 } }
+
+{ type: tag, content: html, startPos: { index: 18, column: 1, line: 2 }, endPos: { index: 22, column: 5, line: 2 } }
+
+{ type: tag-start, content: <, startPos: { index: 26, column: 1, line: 3 }, endPos: { index: 27, column: 2, line: 3 } }
+
+{ type: tag, content: head, startPos: { index: 27, column: 2, line: 3 }, endPos: { index: 31, column: 6, line: 3 } }
+
+{ type: tag-start, content: <, startPos: { index: 36, column: 2, line: 4 }, endPos: { index: 37, column: 3, line: 4 } }
+
+{ type: tag, content: meta, startPos: { index: 37, column: 3, line: 4 }, endPos: { index: 41, column: 7, line: 4 } }
+
+{ type: attribute, content: charset="UTF-8", startPos: { index: 41, column: 7, line: 4 }, endPos: { index: 57, column: 23, line: 4 } }
+
+{ type: tag-end, content: />, startPos: { index: 57, column: 23, line: 4 }, endPos: { index: 57, column: 23, line: 4 } }
+
+{ type: tag-start, content: <, startPos: { index: 62, column: 2, line: 5 }, endPos: { index: 63, column: 3, line: 5 } }
+
+{ type: tag, content: meta, startPos: { index: 63, column: 3, line: 5 }, endPos: { index: 67, column: 7, line: 5 } }
+
+{ type: attribute, content: name="description", startPos: { index: 67, column: 7, line: 5 }, endPos: { index: 114, column: 54, line: 5 } }
+
+{ type: attribute, content: content="Another test file", startPos: { index: 67, column: 7, line: 5 }, endPos: { index: 114, column: 54, line: 5 } }
+
+{ type: tag-end, content: />, startPos: { index: 114, column: 54, line: 5 }, endPos: { index: 114, column: 54, line: 5 } }
+
+{ type: tag-start, content: <, startPos: { index: 119, column: 2, line: 6 }, endPos: { index: 120, column: 3, line: 6 } }
+
+{ type: tag, content: meta, startPos: { index: 120, column: 3, line: 6 }, endPos: { index: 124, column: 7, line: 6 } }
+
+{ type: attribute, content: name="author", startPos: { index: 124, column: 7, line: 6 }, endPos: { index: 161, column: 44, line: 6 } }
+
+{ type: attribute, content: content="Barrett Otte", startPos: { index: 124, column: 7, line: 6 }, endPos: { index: 161, column: 44, line: 6 } }
+
+{ type: tag-end, content: />, startPos: { index: 161, column: 44, line: 6 }, endPos: { index: 161, column: 44, line: 6 } }
+
+{ type: tag-start, content: <, startPos: { index: 166, column: 2, line: 7 }, endPos: { index: 167, column: 3, line: 7 } }
+
+{ type: tag, content: script, startPos: { index: 167, column: 3, line: 7 }, endPos: { index: 173, column: 9, line: 7 } }
+
+{ type: attribute, content: type="text/javascript", startPos: { index: 173, column: 9, line: 7 }, endPos: { index: 196, column: 32, line: 7 } }
+
+{ type: text, content: document.getElementById("test").innerHTML = "Hello World";, startPos: { index: 196, column: 32, line: 7 }, endPos: { index: 264, column: 2, line: 9 } }
+
+{ type: tag-end, content: />, startPos: { index: 264, column: 2, line: 9 }, endPos: { index: 266, column: 4, line: 9 } }
+
+{ type: tag, content: script, startPos: { index: 266, column: 4, line: 9 }, endPos: { index: 272, column: 10, line: 9 } }
+
+{ type: tag-start, content: <, startPos: { index: 277, column: 2, line: 10 }, endPos: { index: 278, column: 3, line: 10 } }
+
+{ type: tag, content: noscript, startPos: { index: 278, column: 3, line: 10 }, endPos: { index: 286, column: 11, line: 10 } }
+
+{ type: text, content: This browser does not support JavaScript!, startPos: { index: 286, column: 11, line: 10 }, endPos: { index: 328, column: 52, line: 10 } }
+
+{ type: tag-end, content: />, startPos: { index: 328, column: 52, line: 10 }, endPos: { index: 330, column: 54, line: 10 } }
+
+{ type: tag, content: noscript, startPos: { index: 330, column: 54, line: 10 }, endPos: { index: 338, column: 62, line: 10 } }
+
+{ type: tag-end, content: />, startPos: { index: 342, column: 1, line: 11 }, endPos: { index: 344, column: 3, line: 11 } }
+
+{ type: tag, content: head, startPos: { index: 344, column: 3, line: 11 }, endPos: { index: 348, column: 7, line: 11 } }
+
+{ type: tag-start, content: <, startPos: { index: 352, column: 1, line: 12 }, endPos: { index: 353, column: 2, line: 12 } }
+
+{ type: tag, content: body, startPos: { index: 353, column: 2, line: 12 }, endPos: { index: 357, column: 6, line: 12 } }
+
+{ type: comment, content: 			<p> I hope this doesnt break stuff </p>		, startPos: { index: 362, column: 2, line: 13 }, endPos: { index: 417, column: 5, line: 15 } }
+
+{ type: tag-start, content: <, startPos: { index: 421, column: 2, line: 16 }, endPos: { index: 422, column: 3, line: 16 } }
+
+{ type: tag, content: form, startPos: { index: 422, column: 3, line: 16 }, endPos: { index: 426, column: 7, line: 16 } }
+
+{ type: tag-start, content: <, startPos: { index: 432, column: 3, line: 17 }, endPos: { index: 433, column: 4, line: 17 } }
+
+{ type: tag, content: fieldset, startPos: { index: 433, column: 4, line: 17 }, endPos: { index: 441, column: 12, line: 17 } }
+
+{ type: tag-start, content: <, startPos: { index: 448, column: 4, line: 18 }, endPos: { index: 449, column: 5, line: 18 } }
+
+{ type: tag, content: legend, startPos: { index: 449, column: 5, line: 18 }, endPos: { index: 455, column: 11, line: 18 } }
+
+{ type: text, content: AHHHHHHHHH, startPos: { index: 455, column: 11, line: 18 }, endPos: { index: 466, column: 21, line: 18 } }
+
+{ type: tag-end, content: />, startPos: { index: 466, column: 21, line: 18 }, endPos: { index: 468, column: 23, line: 18 } }
+
+{ type: tag, content: legend, startPos: { index: 468, column: 23, line: 18 }, endPos: { index: 474, column: 29, line: 18 } }
+
+{ type: text, content: Name:, startPos: { index: 474, column: 29, line: 18 }, endPos: { index: 487, column: 10, line: 19 } }
+
+{ type: tag-start, content: <, startPos: { index: 487, column: 10, line: 19 }, endPos: { index: 488, column: 11, line: 19 } }
+
+{ type: tag, content: input, startPos: { index: 488, column: 11, line: 19 }, endPos: { index: 493, column: 16, line: 19 } }
+
+{ type: attribute, content: type="text", startPos: { index: 493, column: 16, line: 19 }, endPos: { index: 505, column: 28, line: 19 } }
+
+{ type: tag-end, content: />, startPos: { index: 505, column: 28, line: 19 }, endPos: { index: 505, column: 28, line: 19 } }
+
+{ type: tag-start, content: <, startPos: { index: 506, column: 28, line: 19 }, endPos: { index: 507, column: 29, line: 19 } }
+
+{ type: tag, content: br, startPos: { index: 507, column: 29, line: 19 }, endPos: { index: 509, column: 31, line: 19 } }
+
+{ type: tag-end, content: />, startPos: { index: 509, column: 31, line: 19 }, endPos: { index: 509, column: 31, line: 19 } }
+
+{ type: text, content: Email:, startPos: { index: 509, column: 31, line: 19 }, endPos: { index: 523, column: 11, line: 20 } }
+
+{ type: tag-start, content: <, startPos: { index: 523, column: 11, line: 20 }, endPos: { index: 524, column: 12, line: 20 } }
+
+{ type: tag, content: input, startPos: { index: 524, column: 12, line: 20 }, endPos: { index: 529, column: 17, line: 20 } }
+
+{ type: attribute, content: type="text", startPos: { index: 529, column: 17, line: 20 }, endPos: { index: 541, column: 29, line: 20 } }
+
+{ type: tag-end, content: />, startPos: { index: 541, column: 29, line: 20 }, endPos: { index: 541, column: 29, line: 20 } }
+
+{ type: tag-start, content: <, startPos: { index: 542, column: 29, line: 20 }, endPos: { index: 543, column: 30, line: 20 } }
+
+{ type: tag, content: br, startPos: { index: 543, column: 30, line: 20 }, endPos: { index: 545, column: 32, line: 20 } }
+
+{ type: tag-end, content: />, startPos: { index: 545, column: 32, line: 20 }, endPos: { index: 545, column: 32, line: 20 } }
+
+{ type: tag-end, content: />, startPos: { index: 551, column: 3, line: 21 }, endPos: { index: 553, column: 5, line: 21 } }
+
+{ type: tag, content: fieldset, startPos: { index: 553, column: 5, line: 21 }, endPos: { index: 561, column: 13, line: 21 } }
+
+{ type: tag-start, content: <, startPos: { index: 567, column: 3, line: 22 }, endPos: { index: 568, column: 4, line: 22 } }
+
+{ type: tag, content: button, startPos: { index: 568, column: 4, line: 22 }, endPos: { index: 574, column: 10, line: 22 } }
+
+{ type: attribute, content: type="button", startPos: { index: 574, column: 10, line: 22 }, endPos: { index: 588, column: 24, line: 22 } }
+
+{ type: text, content: Click Me!, startPos: { index: 588, column: 24, line: 22 }, endPos: { index: 598, column: 33, line: 22 } }
+
+{ type: tag-end, content: />, startPos: { index: 598, column: 33, line: 22 }, endPos: { index: 600, column: 35, line: 22 } }
+
+{ type: tag, content: button, startPos: { index: 600, column: 35, line: 22 }, endPos: { index: 606, column: 41, line: 22 } }
+
+{ type: tag-start, content: <, startPos: { index: 612, column: 3, line: 23 }, endPos: { index: 613, column: 4, line: 23 } }
+
+{ type: tag, content: h3, startPos: { index: 613, column: 4, line: 23 }, endPos: { index: 615, column: 6, line: 23 } }
+
+{ type: text, content: Assembly(x86), startPos: { index: 615, column: 6, line: 23 }, endPos: { index: 629, column: 19, line: 23 } }
+
+{ type: tag-end, content: />, startPos: { index: 629, column: 19, line: 23 }, endPos: { index: 631, column: 21, line: 23 } }
+
+{ type: tag, content: h3, startPos: { index: 631, column: 21, line: 23 }, endPos: { index: 633, column: 23, line: 23 } }
+
+{ type: tag-start, content: <, startPos: { index: 639, column: 3, line: 24 }, endPos: { index: 640, column: 4, line: 24 } }
+
+{ type: tag, content: code, startPos: { index: 640, column: 4, line: 24 }, endPos: { index: 644, column: 8, line: 24 } }
+
+{ type: text, content: PUSH  EDX				MOV   EDX, OFFSET buffer				CALL  WriteString				POP   EDX, startPos: { index: 644, column: 8, line: 24 }, endPos: { index: 733, column: 3, line: 29 } }
+
+{ type: tag-end, content: />, startPos: { index: 733, column: 3, line: 29 }, endPos: { index: 735, column: 5, line: 29 } }
+
+{ type: tag, content: code, startPos: { index: 735, column: 5, line: 29 }, endPos: { index: 739, column: 9, line: 29 } }
+
+{ type: tag-start, content: <, startPos: { index: 745, column: 3, line: 30 }, endPos: { index: 746, column: 4, line: 30 } }
+
+{ type: tag, content: textarea, startPos: { index: 746, column: 4, line: 30 }, endPos: { index: 754, column: 12, line: 30 } }
+
+{ type: attribute, content: rows="4", startPos: { index: 754, column: 12, line: 30 }, endPos: { index: 773, column: 31, line: 30 } }
+
+{ type: attribute, content: cols="50", startPos: { index: 754, column: 12, line: 30 }, endPos: { index: 773, column: 31, line: 30 } }
+
+{ type: text, content: qwertyuiopasdfghjklzxcvbnmqwertyuiopasdfghjklzzxcvb				awefaweroigterg, startPos: { index: 773, column: 31, line: 30 }, endPos: { index: 857, column: 3, line: 33 } }
+
+{ type: tag-end, content: />, startPos: { index: 857, column: 3, line: 33 }, endPos: { index: 859, column: 5, line: 33 } }
+
+{ type: tag, content: textarea, startPos: { index: 859, column: 5, line: 33 }, endPos: { index: 867, column: 13, line: 33 } }
+
+{ type: tag-end, content: />, startPos: { index: 872, column: 2, line: 34 }, endPos: { index: 874, column: 4, line: 34 } }
+
+{ type: tag, content: form, startPos: { index: 874, column: 4, line: 34 }, endPos: { index: 878, column: 8, line: 34 } }
+
+{ type: tag-start, content: <, startPos: { index: 885, column: 2, line: 36 }, endPos: { index: 886, column: 3, line: 36 } }
+
+{ type: tag, content: embed, startPos: { index: 886, column: 3, line: 36 }, endPos: { index: 891, column: 8, line: 36 } }
+
+{ type: attribute, content: src="helloworld.swf", startPos: { index: 891, column: 8, line: 36 }, endPos: { index: 912, column: 29, line: 36 } }
+
+{ type: tag-end, content: />, startPos: { index: 912, column: 29, line: 36 }, endPos: { index: 912, column: 29, line: 36 } }
+
+{ type: tag-end, content: />, startPos: { index: 918, column: 1, line: 38 }, endPos: { index: 920, column: 3, line: 38 } }
+
+{ type: tag, content: body, startPos: { index: 920, column: 3, line: 38 }, endPos: { index: 924, column: 7, line: 38 } }
+
+{ type: tag-end, content: />, startPos: { index: 927, column: 0, line: 39 }, endPos: { index: 929, column: 2, line: 39 } }
+
+{ type: tag, content: html, startPos: { index: 929, column: 2, line: 39 }, endPos: { index: 933, column: 6, line: 39 } }
+

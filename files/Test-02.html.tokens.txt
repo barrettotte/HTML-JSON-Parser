@@ -1,0 +1,62 @@
+{ type: tag-start, content: <, startPos: { index: 0, column: 0, line: 1 }, endPos: { index: 1, column: 1, line: 1 } }
+
+{ type: tag, content: html, startPos: { index: 1, column: 1, line: 1 }, endPos: { index: 5, column: 5, line: 1 } }
+
+{ type: tag-start, content: <, startPos: { index: 9, column: 1, line: 2 }, endPos: { index: 10, column: 2, line: 2 } }
+
+{ type: tag, content: div, startPos: { index: 10, column: 2, line: 2 }, endPos: { index: 13, column: 5, line: 2 } }
+
+{ type: attribute, content: class="test", startPos: { index: 13, column: 5, line: 2 }, endPos: { index: 40, column: 32, line: 2 } }
+
+{ type: attribute, content: type="wasd", startPos: { index: 13, column: 5, line: 2 }, endPos: { index: 40, column: 32, line: 2 } }
+
+{ type: tag-start, content: <, startPos: { index: 45, column: 2, line: 3 }, endPos: { index: 46, column: 3, line: 3 } }
+
+{ type: tag, content: p, startPos: { index: 46, column: 3, line: 3 }, endPos: { index: 47, column: 4, line: 3 } }
+
+{ type: attribute, content: class="123", startPos: { index: 47, column: 4, line: 3 }, endPos: { index: 59, column: 16, line: 3 } }
+
+{ type: text, content: This is a simple test, startPos: { index: 59, column: 16, line: 3 }, endPos: { index: 91, column: 3, line: 5 } }
+
+{ type: tag-start, content: <, startPos: { index: 91, column: 3, line: 5 }, endPos: { index: 92, column: 4, line: 5 } }
+
+{ type: tag, content: p, startPos: { index: 92, column: 4, line: 5 }, endPos: { index: 93, column: 5, line: 5 } }
+
+{ type: text, content: 1234567890, startPos: { index: 93, column: 5, line: 5 }, endPos: { index: 115, column: 3, line: 7 } }
+
+{ type: tag-end, content: />, startPos: { index: 115, column: 3, line: 7 }, endPos: { index: 117, column: 5, line: 7 } }
+
+{ type: tag, content: p, startPos: { index: 117, column: 5, line: 7 }, endPos: { index: 118, column: 6, line: 7 } }
+
+{ type: tag-end, content: />, startPos: { index: 123, column: 2, line: 8 }, endPos: { index: 125, column: 4, line: 8 } }
+
+{ type: tag, content: p, startPos: { index: 125, column: 4, line: 8 }, endPos: { index: 126, column: 5, line: 8 } }
+
+{ type: tag-start, content: <, startPos: { index: 131, column: 2, line: 9 }, endPos: { index: 132, column: 3, line: 9 } }
+
+{ type: tag, content: b, startPos: { index: 132, column: 3, line: 9 }, endPos: { index: 133, column: 4, line: 9 } }
+
+{ type: text, content: This is bold, startPos: { index: 133, column: 4, line: 9 }, endPos: { index: 146, column: 16, line: 9 } }
+
+{ type: tag-end, content: />, startPos: { index: 146, column: 16, line: 9 }, endPos: { index: 148, column: 18, line: 9 } }
+
+{ type: tag, content: b, startPos: { index: 148, column: 18, line: 9 }, endPos: { index: 149, column: 19, line: 9 } }
+
+{ type: tag-start, content: <, startPos: { index: 154, column: 2, line: 10 }, endPos: { index: 155, column: 3, line: 10 } }
+
+{ type: tag, content: div, startPos: { index: 155, column: 3, line: 10 }, endPos: { index: 158, column: 6, line: 10 } }
+
+{ type: text, content: qwerty, startPos: { index: 158, column: 6, line: 10 }, endPos: { index: 174, column: 2, line: 12 } }
+
+{ type: tag-end, content: />, startPos: { index: 174, column: 2, line: 12 }, endPos: { index: 176, column: 4, line: 12 } }
+
+{ type: tag, content: div, startPos: { index: 176, column: 4, line: 12 }, endPos: { index: 179, column: 7, line: 12 } }
+
+{ type: tag-end, content: />, startPos: { index: 183, column: 1, line: 13 }, endPos: { index: 185, column: 3, line: 13 } }
+
+{ type: tag, content: div, startPos: { index: 185, column: 3, line: 13 }, endPos: { index: 188, column: 6, line: 13 } }
+
+{ type: tag-end, content: />, startPos: { index: 191, column: 0, line: 14 }, endPos: { index: 193, column: 2, line: 14 } }
+
+{ type: tag, content: html, startPos: { index: 193, column: 2, line: 14 }, endPos: { index: 197, column: 6, line: 14 } }
+

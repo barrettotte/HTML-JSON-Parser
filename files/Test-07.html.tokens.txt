@@ -1,0 +1,306 @@
+{ type: tag-start, content: <, startPos: { index: 0, column: 0, line: 1 }, endPos: { index: 1, column: 1, line: 1 } }
+
+{ type: tag, content: !DOCTYPE, startPos: { index: 1, column: 1, line: 1 }, endPos: { index: 9, column: 9, line: 1 } }
+
+{ type: attribute, content: html, startPos: { index: 9, column: 9, line: 1 }, endPos: { index: 14, column: 14, line: 1 } }
+
+{ type: tag-end, content: />, startPos: { index: 14, column: 14, line: 1 }, endPos: { index: 14, column: 14, line: 1 } }
+
+{ type: tag-start, content: <, startPos: { index: 17, column: 0, line: 2 }, endPos: { index: 18, column: 1, line: 2 } }
+
+{ type: tag, content: html, startPos: { index: 18, column: 1, line: 2 }, endPos: { index: 22, column: 5, line: 2 } }
+
+{ type: tag-start, content: <, startPos: { index: 26, column: 1, line: 3 }, endPos: { index: 27, column: 2, line: 3 } }
+
+{ type: tag, content: head, startPos: { index: 27, column: 2, line: 3 }, endPos: { index: 31, column: 6, line: 3 } }
+
+{ type: tag-start, content: <, startPos: { index: 36, column: 2, line: 4 }, endPos: { index: 37, column: 3, line: 4 } }
+
+{ type: tag, content: meta, startPos: { index: 37, column: 3, line: 4 }, endPos: { index: 41, column: 7, line: 4 } }
+
+{ type: attribute, content: charset="UTF-8", startPos: { index: 41, column: 7, line: 4 }, endPos: { index: 57, column: 23, line: 4 } }
+
+{ type: tag-end, content: />, startPos: { index: 57, column: 23, line: 4 }, endPos: { index: 57, column: 23, line: 4 } }
+
+{ type: tag-start, content: <, startPos: { index: 62, column: 2, line: 5 }, endPos: { index: 63, column: 3, line: 5 } }
+
+{ type: tag, content: meta, startPos: { index: 63, column: 3, line: 5 }, endPos: { index: 67, column: 7, line: 5 } }
+
+{ type: attribute, content: name="description", startPos: { index: 67, column: 7, line: 5 }, endPos: { index: 114, column: 54, line: 5 } }
+
+{ type: attribute, content: content="Another test file", startPos: { index: 67, column: 7, line: 5 }, endPos: { index: 114, column: 54, line: 5 } }
+
+{ type: tag-end, content: />, startPos: { index: 114, column: 54, line: 5 }, endPos: { index: 114, column: 54, line: 5 } }
+
+{ type: tag-start, content: <, startPos: { index: 119, column: 2, line: 6 }, endPos: { index: 120, column: 3, line: 6 } }
+
+{ type: tag, content: meta, startPos: { index: 120, column: 3, line: 6 }, endPos: { index: 124, column: 7, line: 6 } }
+
+{ type: attribute, content: name="author", startPos: { index: 124, column: 7, line: 6 }, endPos: { index: 161, column: 44, line: 6 } }
+
+{ type: attribute, content: content="Barrett Otte", startPos: { index: 124, column: 7, line: 6 }, endPos: { index: 161, column: 44, line: 6 } }
+
+{ type: tag-end, content: />, startPos: { index: 161, column: 44, line: 6 }, endPos: { index: 161, column: 44, line: 6 } }
+
+{ type: tag-start, content: <, startPos: { index: 166, column: 2, line: 7 }, endPos: { index: 167, column: 3, line: 7 } }
+
+{ type: tag, content: script, startPos: { index: 167, column: 3, line: 7 }, endPos: { index: 173, column: 9, line: 7 } }
+
+{ type: attribute, content: type="text/javascript", startPos: { index: 173, column: 9, line: 7 }, endPos: { index: 196, column: 32, line: 7 } }
+
+{ type: text, content: document.getElementById("test").innerHTML = "Hello World";, startPos: { index: 196, column: 32, line: 7 }, endPos: { index: 264, column: 2, line: 9 } }
+
+{ type: tag-end, content: />, startPos: { index: 264, column: 2, line: 9 }, endPos: { index: 266, column: 4, line: 9 } }
+
+{ type: tag, content: script, startPos: { index: 266, column: 4, line: 9 }, endPos: { index: 272, column: 10, line: 9 } }
+
+{ type: tag-start, content: <, startPos: { index: 277, column: 2, line: 10 }, endPos: { index: 278, column: 3, line: 10 } }
+
+{ type: tag, content: noscript, startPos: { index: 278, column: 3, line: 10 }, endPos: { index: 286, column: 11, line: 10 } }
+
+{ type: text, content: This browser does not support JavaScript!, startPos: { index: 286, column: 11, line: 10 }, endPos: { index: 328, column: 52, line: 10 } }
+
+{ type: tag-end, content: />, startPos: { index: 328, column: 52, line: 10 }, endPos: { index: 330, column: 54, line: 10 } }
+
+{ type: tag, content: noscript, startPos: { index: 330, column: 54, line: 10 }, endPos: { index: 338, column: 62, line: 10 } }
+
+{ type: tag-end, content: />, startPos: { index: 342, column: 1, line: 11 }, endPos: { index: 344, column: 3, line: 11 } }
+
+{ type: tag, content: head, startPos: { index: 344, column: 3, line: 11 }, endPos: { index: 348, column: 7, line: 11 } }
+
+{ type: tag-start, content: <, startPos: { index: 352, column: 1, line: 12 }, endPos: { index: 353, column: 2, line: 12 } }
+
+{ type: tag, content: body, startPos: { index: 353, column: 2, line: 12 }, endPos: { index: 357, column: 6, line: 12 } }
+
+{ type: tag-start, content: <, startPos: { index: 362, column: 2, line: 13 }, endPos: { index: 363, column: 3, line: 13 } }
+
+{ type: tag, content: dl, startPos: { index: 363, column: 3, line: 13 }, endPos: { index: 365, column: 5, line: 13 } }
+
+{ type: tag-start, content: <, startPos: { index: 371, column: 3, line: 14 }, endPos: { index: 372, column: 4, line: 14 } }
+
+{ type: tag, content: dt, startPos: { index: 372, column: 4, line: 14 }, endPos: { index: 374, column: 6, line: 14 } }
+
+{ type: text, content: New Holland, startPos: { index: 374, column: 6, line: 14 }, endPos: { index: 386, column: 17, line: 14 } }
+
+{ type: tag-end, content: />, startPos: { index: 386, column: 17, line: 14 }, endPos: { index: 388, column: 19, line: 14 } }
+
+{ type: tag, content: dt, startPos: { index: 388, column: 19, line: 14 }, endPos: { index: 390, column: 21, line: 14 } }
+
+{ type: tag-start, content: <, startPos: { index: 396, column: 3, line: 15 }, endPos: { index: 397, column: 4, line: 15 } }
+
+{ type: tag, content: dd, startPos: { index: 397, column: 4, line: 15 }, endPos: { index: 399, column: 6, line: 15 } }
+
+{ type: text, content: PA, startPos: { index: 399, column: 6, line: 15 }, endPos: { index: 402, column: 8, line: 15 } }
+
+{ type: tag-end, content: />, startPos: { index: 402, column: 8, line: 15 }, endPos: { index: 404, column: 10, line: 15 } }
+
+{ type: tag, content: dd, startPos: { index: 404, column: 10, line: 15 }, endPos: { index: 406, column: 12, line: 15 } }
+
+{ type: tag-start, content: <, startPos: { index: 412, column: 3, line: 16 }, endPos: { index: 413, column: 4, line: 16 } }
+
+{ type: tag, content: dt, startPos: { index: 413, column: 4, line: 16 }, endPos: { index: 415, column: 6, line: 16 } }
+
+{ type: text, content: Baltimore, startPos: { index: 415, column: 6, line: 16 }, endPos: { index: 425, column: 15, line: 16 } }
+
+{ type: tag-end, content: />, startPos: { index: 425, column: 15, line: 16 }, endPos: { index: 427, column: 17, line: 16 } }
+
+{ type: tag, content: dt, startPos: { index: 427, column: 17, line: 16 }, endPos: { index: 429, column: 19, line: 16 } }
+
+{ type: tag-start, content: <, startPos: { index: 435, column: 3, line: 17 }, endPos: { index: 436, column: 4, line: 17 } }
+
+{ type: tag, content: dd, startPos: { index: 436, column: 4, line: 17 }, endPos: { index: 438, column: 6, line: 17 } }
+
+{ type: tag-start, content: <, startPos: { index: 439, column: 6, line: 17 }, endPos: { index: 440, column: 7, line: 17 } }
+
+{ type: tag, content: strong, startPos: { index: 440, column: 7, line: 17 }, endPos: { index: 446, column: 13, line: 17 } }
+
+{ type: text, content: MD, startPos: { index: 446, column: 13, line: 17 }, endPos: { index: 449, column: 15, line: 17 } }
+
+{ type: tag-end, content: />, startPos: { index: 449, column: 15, line: 17 }, endPos: { index: 451, column: 17, line: 17 } }
+
+{ type: tag, content: strong, startPos: { index: 451, column: 17, line: 17 }, endPos: { index: 457, column: 23, line: 17 } }
+
+{ type: tag-end, content: />, startPos: { index: 458, column: 23, line: 17 }, endPos: { index: 460, column: 25, line: 17 } }
+
+{ type: tag, content: dd, startPos: { index: 460, column: 25, line: 17 }, endPos: { index: 462, column: 27, line: 17 } }
+
+{ type: tag-end, content: />, startPos: { index: 467, column: 2, line: 18 }, endPos: { index: 469, column: 4, line: 18 } }
+
+{ type: tag, content: dl, startPos: { index: 469, column: 4, line: 18 }, endPos: { index: 471, column: 6, line: 18 } }
+
+{ type: tag-start, content: <, startPos: { index: 476, column: 2, line: 19 }, endPos: { index: 477, column: 3, line: 19 } }
+
+{ type: tag, content: table, startPos: { index: 477, column: 3, line: 19 }, endPos: { index: 482, column: 8, line: 19 } }
+
+{ type: tag-start, content: <, startPos: { index: 488, column: 3, line: 20 }, endPos: { index: 489, column: 4, line: 20 } }
+
+{ type: tag, content: thead, startPos: { index: 489, column: 4, line: 20 }, endPos: { index: 494, column: 9, line: 20 } }
+
+{ type: tag-start, content: <, startPos: { index: 501, column: 4, line: 21 }, endPos: { index: 502, column: 5, line: 21 } }
+
+{ type: tag, content: tr, startPos: { index: 502, column: 5, line: 21 }, endPos: { index: 504, column: 7, line: 21 } }
+
+{ type: tag-start, content: <, startPos: { index: 512, column: 5, line: 22 }, endPos: { index: 513, column: 6, line: 22 } }
+
+{ type: tag, content: th, startPos: { index: 513, column: 6, line: 22 }, endPos: { index: 515, column: 8, line: 22 } }
+
+{ type: text, content: Month, startPos: { index: 515, column: 8, line: 22 }, endPos: { index: 521, column: 13, line: 22 } }
+
+{ type: tag-end, content: />, startPos: { index: 521, column: 13, line: 22 }, endPos: { index: 523, column: 15, line: 22 } }
+
+{ type: tag, content: th, startPos: { index: 523, column: 15, line: 22 }, endPos: { index: 525, column: 17, line: 22 } }
+
+{ type: tag-start, content: <, startPos: { index: 533, column: 5, line: 23 }, endPos: { index: 534, column: 6, line: 23 } }
+
+{ type: tag, content: th, startPos: { index: 534, column: 6, line: 23 }, endPos: { index: 536, column: 8, line: 23 } }
+
+{ type: text, content: Index, startPos: { index: 536, column: 8, line: 23 }, endPos: { index: 542, column: 13, line: 23 } }
+
+{ type: tag-end, content: />, startPos: { index: 542, column: 13, line: 23 }, endPos: { index: 544, column: 15, line: 23 } }
+
+{ type: tag, content: th, startPos: { index: 544, column: 15, line: 23 }, endPos: { index: 546, column: 17, line: 23 } }
+
+{ type: tag-end, content: />, startPos: { index: 553, column: 4, line: 24 }, endPos: { index: 555, column: 6, line: 24 } }
+
+{ type: tag, content: tr, startPos: { index: 555, column: 6, line: 24 }, endPos: { index: 557, column: 8, line: 24 } }
+
+{ type: tag-end, content: />, startPos: { index: 563, column: 3, line: 25 }, endPos: { index: 565, column: 5, line: 25 } }
+
+{ type: tag, content: thead, startPos: { index: 565, column: 5, line: 25 }, endPos: { index: 570, column: 10, line: 25 } }
+
+{ type: tag-start, content: <, startPos: { index: 576, column: 3, line: 26 }, endPos: { index: 577, column: 4, line: 26 } }
+
+{ type: tag, content: tfoot, startPos: { index: 577, column: 4, line: 26 }, endPos: { index: 582, column: 9, line: 26 } }
+
+{ type: tag-start, content: <, startPos: { index: 589, column: 4, line: 27 }, endPos: { index: 590, column: 5, line: 27 } }
+
+{ type: tag, content: td, startPos: { index: 590, column: 5, line: 27 }, endPos: { index: 592, column: 7, line: 27 } }
+
+{ type: tag-start, content: <, startPos: { index: 593, column: 7, line: 27 }, endPos: { index: 594, column: 8, line: 27 } }
+
+{ type: tag, content: data, startPos: { index: 594, column: 8, line: 27 }, endPos: { index: 598, column: 12, line: 27 } }
+
+{ type: attribute, content: value="21053", startPos: { index: 598, column: 12, line: 27 }, endPos: { index: 612, column: 26, line: 27 } }
+
+{ type: tag-end, content: />, startPos: { index: 613, column: 26, line: 27 }, endPos: { index: 615, column: 28, line: 27 } }
+
+{ type: tag, content: data, startPos: { index: 615, column: 28, line: 27 }, endPos: { index: 619, column: 32, line: 27 } }
+
+{ type: text, content: qwerty, startPos: { index: 619, column: 32, line: 27 }, endPos: { index: 626, column: 38, line: 27 } }
+
+{ type: tag-end, content: />, startPos: { index: 626, column: 38, line: 27 }, endPos: { index: 628, column: 40, line: 27 } }
+
+{ type: tag, content: td, startPos: { index: 628, column: 40, line: 27 }, endPos: { index: 630, column: 42, line: 27 } }
+
+{ type: tag-start, content: <, startPos: { index: 637, column: 4, line: 28 }, endPos: { index: 638, column: 5, line: 28 } }
+
+{ type: tag, content: td, startPos: { index: 638, column: 5, line: 28 }, endPos: { index: 640, column: 7, line: 28 } }
+
+{ type: tag-start, content: <, startPos: { index: 641, column: 7, line: 28 }, endPos: { index: 642, column: 8, line: 28 } }
+
+{ type: tag, content: data, startPos: { index: 642, column: 8, line: 28 }, endPos: { index: 646, column: 12, line: 28 } }
+
+{ type: attribute, content: value="12345", startPos: { index: 646, column: 12, line: 28 }, endPos: { index: 660, column: 26, line: 28 } }
+
+{ type: tag-end, content: />, startPos: { index: 661, column: 26, line: 28 }, endPos: { index: 663, column: 28, line: 28 } }
+
+{ type: tag, content: data, startPos: { index: 663, column: 28, line: 28 }, endPos: { index: 667, column: 32, line: 28 } }
+
+{ type: text, content: zxcvb, startPos: { index: 667, column: 32, line: 28 }, endPos: { index: 673, column: 37, line: 28 } }
+
+{ type: tag-end, content: />, startPos: { index: 673, column: 37, line: 28 }, endPos: { index: 675, column: 39, line: 28 } }
+
+{ type: tag, content: td, startPos: { index: 675, column: 39, line: 28 }, endPos: { index: 677, column: 41, line: 28 } }
+
+{ type: tag-end, content: />, startPos: { index: 683, column: 3, line: 29 }, endPos: { index: 685, column: 5, line: 29 } }
+
+{ type: tag, content: tfoot, startPos: { index: 685, column: 5, line: 29 }, endPos: { index: 690, column: 10, line: 29 } }
+
+{ type: tag-start, content: <, startPos: { index: 696, column: 3, line: 30 }, endPos: { index: 697, column: 4, line: 30 } }
+
+{ type: tag, content: tbody, startPos: { index: 697, column: 4, line: 30 }, endPos: { index: 702, column: 9, line: 30 } }
+
+{ type: tag-start, content: <, startPos: { index: 709, column: 4, line: 31 }, endPos: { index: 710, column: 5, line: 31 } }
+
+{ type: tag, content: tr, startPos: { index: 710, column: 5, line: 31 }, endPos: { index: 712, column: 7, line: 31 } }
+
+{ type: tag-start, content: <, startPos: { index: 720, column: 5, line: 32 }, endPos: { index: 721, column: 6, line: 32 } }
+
+{ type: tag, content: td, startPos: { index: 721, column: 6, line: 32 }, endPos: { index: 723, column: 8, line: 32 } }
+
+{ type: text, content: January, startPos: { index: 723, column: 8, line: 32 }, endPos: { index: 731, column: 15, line: 32 } }
+
+{ type: tag-end, content: />, startPos: { index: 731, column: 15, line: 32 }, endPos: { index: 733, column: 17, line: 32 } }
+
+{ type: tag, content: td, startPos: { index: 733, column: 17, line: 32 }, endPos: { index: 735, column: 19, line: 32 } }
+
+{ type: tag-start, content: <, startPos: { index: 743, column: 5, line: 33 }, endPos: { index: 744, column: 6, line: 33 } }
+
+{ type: tag, content: td, startPos: { index: 744, column: 6, line: 33 }, endPos: { index: 746, column: 8, line: 33 } }
+
+{ type: text, content: 01, startPos: { index: 746, column: 8, line: 33 }, endPos: { index: 749, column: 10, line: 33 } }
+
+{ type: tag-end, content: />, startPos: { index: 749, column: 10, line: 33 }, endPos: { index: 751, column: 12, line: 33 } }
+
+{ type: tag, content: td, startPos: { index: 751, column: 12, line: 33 }, endPos: { index: 753, column: 14, line: 33 } }
+
+{ type: tag-end, content: />, startPos: { index: 760, column: 4, line: 34 }, endPos: { index: 762, column: 6, line: 34 } }
+
+{ type: tag, content: tr, startPos: { index: 762, column: 6, line: 34 }, endPos: { index: 764, column: 8, line: 34 } }
+
+{ type: tag-start, content: <, startPos: { index: 771, column: 4, line: 35 }, endPos: { index: 772, column: 5, line: 35 } }
+
+{ type: tag, content: tr, startPos: { index: 772, column: 5, line: 35 }, endPos: { index: 774, column: 7, line: 35 } }
+
+{ type: tag-start, content: <, startPos: { index: 782, column: 5, line: 36 }, endPos: { index: 783, column: 6, line: 36 } }
+
+{ type: tag, content: td, startPos: { index: 783, column: 6, line: 36 }, endPos: { index: 785, column: 8, line: 36 } }
+
+{ type: text, content: February, startPos: { index: 785, column: 8, line: 36 }, endPos: { index: 794, column: 16, line: 36 } }
+
+{ type: tag-end, content: />, startPos: { index: 794, column: 16, line: 36 }, endPos: { index: 796, column: 18, line: 36 } }
+
+{ type: tag, content: td, startPos: { index: 796, column: 18, line: 36 }, endPos: { index: 798, column: 20, line: 36 } }
+
+{ type: tag-start, content: <, startPos: { index: 806, column: 5, line: 37 }, endPos: { index: 807, column: 6, line: 37 } }
+
+{ type: tag, content: td, startPos: { index: 807, column: 6, line: 37 }, endPos: { index: 809, column: 8, line: 37 } }
+
+{ type: text, content: 02, startPos: { index: 809, column: 8, line: 37 }, endPos: { index: 812, column: 10, line: 37 } }
+
+{ type: tag-end, content: />, startPos: { index: 812, column: 10, line: 37 }, endPos: { index: 814, column: 12, line: 37 } }
+
+{ type: tag, content: td, startPos: { index: 814, column: 12, line: 37 }, endPos: { index: 816, column: 14, line: 37 } }
+
+{ type: tag-end, content: />, startPos: { index: 823, column: 4, line: 38 }, endPos: { index: 825, column: 6, line: 38 } }
+
+{ type: tag, content: tr, startPos: { index: 825, column: 6, line: 38 }, endPos: { index: 827, column: 8, line: 38 } }
+
+{ type: tag-end, content: />, startPos: { index: 833, column: 3, line: 39 }, endPos: { index: 835, column: 5, line: 39 } }
+
+{ type: tag, content: tbody, startPos: { index: 835, column: 5, line: 39 }, endPos: { index: 840, column: 10, line: 39 } }
+
+{ type: tag-end, content: />, startPos: { index: 845, column: 2, line: 40 }, endPos: { index: 847, column: 4, line: 40 } }
+
+{ type: tag, content: table, startPos: { index: 847, column: 4, line: 40 }, endPos: { index: 852, column: 9, line: 40 } }
+
+{ type: tag-start, content: <, startPos: { index: 857, column: 2, line: 41 }, endPos: { index: 858, column: 3, line: 41 } }
+
+{ type: tag, content: blockquote, startPos: { index: 858, column: 3, line: 41 }, endPos: { index: 868, column: 13, line: 41 } }
+
+{ type: attribute, content: cite="http://www.barrettotte.com", startPos: { index: 868, column: 13, line: 41 }, endPos: { index: 902, column: 47, line: 41 } }
+
+{ type: text, content: This is supposed to be a long block quote but i really dont feel like typing anymore, startPos: { index: 902, column: 47, line: 41 }, endPos: { index: 995, column: 2, line: 43 } }
+
+{ type: tag-end, content: />, startPos: { index: 995, column: 2, line: 43 }, endPos: { index: 997, column: 4, line: 43 } }
+
+{ type: tag, content: blockquote, startPos: { index: 997, column: 4, line: 43 }, endPos: { index: 1007, column: 14, line: 43 } }
+
+{ type: tag-end, content: />, startPos: { index: 1015, column: 1, line: 46 }, endPos: { index: 1017, column: 3, line: 46 } }
+
+{ type: tag, content: body, startPos: { index: 1017, column: 3, line: 46 }, endPos: { index: 1021, column: 7, line: 46 } }
+
+{ type: tag-end, content: />, startPos: { index: 1024, column: 0, line: 47 }, endPos: { index: 1026, column: 2, line: 47 } }
+
+{ type: tag, content: html, startPos: { index: 1026, column: 2, line: 47 }, endPos: { index: 1030, column: 6, line: 47 } }
+

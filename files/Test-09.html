@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="Another test file">
+		<meta name="author" content="Barrett Otte">
+		<script type="text/javascript">
+			document.getElementById("test").innerHTML = "Hello World";
+		</script>
+		<noscript>This browser does not support JavaScript!</noscript>
+	</head>
+	<body>
+		<canvas id="myCanvas"></canvas>
+		<script>
+			var canvas = document.getElementById("myCanvas");
+			var ctx = canvas.getContext("2d");
+			ctx.fillStyle = "#FF0000";
+			ctx.fillRect(0, 0, 80, 80);
+		</script>
+
+		<table>
+			<caption>Im a copy and pasted table from w3schools.com</caption>
+			<colgroup>
+				<col span="2" style="background-color:red">
+				<col style="background-color:yellow">
+			</colgroup>
+			<tr>
+				<th>ISBN</th>
+				<th>Title</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td>3476896</td>
+				<td>My first HTML</td>
+				<td>$53</td>
+			</tr>
+	  	</table>
+		
+		<figure>
+			<img src="picture.png" alt="asd" style="width:100%">
+			<figcaption>Im a picture</figcaption>
+		</figure>
+
+		<iframe src="https://www.w3schools.com"></iframe>
+
+		<nav>
+			<a href="/html/">HTML</a> |
+			<a href="/css/">CSS</a> |
+			<a href="/js/">JavaScript</a> |
+			<a href="/jquery/">jQuery</a>
+		</nav>
+
+		<object width="400" height="400" 
+			data="helloworld.swf">
+			<param name="autoplay" value="true">
+		</object>
+
+		<picture>
+			<source media="(min-width: 650px)" srcset="img_pink_flowers.jpg">
+			<source media="(min-width: 465px)" srcset="img_white_flower.jpg">
+			<img src="img_orange_flowers.jpg" alt="Flowers" style="width:auto;">
+		</picture>
+
+		<p>
+			I have a date on 
+			<time datetime="2018-07-26 12:00">
+				Some day
+			</time>.
+		</p>
+
+		
+
+
+
+
+
+
+
+
+
+
+	</body>
+</html>

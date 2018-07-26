@@ -1,0 +1,772 @@
+{
+   "Content":"root",
+   "Generation":0,
+   "Type":"root",
+   "Attributes":[
+      
+   ],
+   "Children":[
+      {
+         "Content":"!DOCTYPE",
+         "Generation":1,
+         "Type":"tag",
+         "Attributes":[
+            {
+               "Key":"attribute",
+               "Value":"html"
+            }
+         ],
+         "Children":[
+            
+         ]
+      },
+      {
+         "Content":"html",
+         "Generation":1,
+         "Type":"tag",
+         "Attributes":[
+            
+         ],
+         "Children":[
+            {
+               "Content":"head",
+               "Generation":2,
+               "Type":"tag",
+               "Attributes":[
+                  
+               ],
+               "Children":[
+                  {
+                     "Content":"meta",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"charset=\"UTF-8\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"meta",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"name=\"description\""
+                        },
+                        {
+                           "Key":"attribute",
+                           "Value":"content=\"Another test file\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"meta",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"name=\"author\""
+                        },
+                        {
+                           "Key":"attribute",
+                           "Value":"content=\"Barrett Otte\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"script",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"type=\"text/javascript\""
+                        }
+                     ],
+                     "Children":[
+                        {
+                           "Content":"document.getElementById(\"test\").innerHTML = \"Hello World\";",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "Content":"noscript",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"This browser does not support JavaScript!",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            },
+            {
+               "Content":"body",
+               "Generation":2,
+               "Type":"tag",
+               "Attributes":[
+                  
+               ],
+               "Children":[
+                  {
+                     "Content":"canvas",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"id=\"myCanvas\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"script",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"var canvas = document.getElementById(\"myCanvas\");\r\n\t\t\tvar ctx = canvas.getContext(\"2d\");\r\n\t\t\tctx.fillStyle = \"#FF0000\";\r\n\t\t\tctx.fillRect(0, 0, 80, 80);",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "Content":"table",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"caption",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"Im a copy and pasted table from w3schools.com",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"colgroup",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"col",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    {
+                                       "Key":"attribute",
+                                       "Value":"span=\"2\""
+                                    },
+                                    {
+                                       "Key":"attribute",
+                                       "Value":"style=\"background-color:red\""
+                                    }
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              },
+                              {
+                                 "Content":"col",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    {
+                                       "Key":"attribute",
+                                       "Value":"style=\"background-color:yellow\""
+                                    }
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"tr",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"th",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    {
+                                       "Content":"ISBN",
+                                       "Generation":6,
+                                       "Type":"text",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          
+                                       ]
+                                    }
+                                 ]
+                              },
+                              {
+                                 "Content":"th",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    {
+                                       "Content":"Title",
+                                       "Generation":6,
+                                       "Type":"text",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          
+                                       ]
+                                    }
+                                 ]
+                              },
+                              {
+                                 "Content":"th",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    {
+                                       "Content":"Price",
+                                       "Generation":6,
+                                       "Type":"text",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          
+                                       ]
+                                    }
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"tr",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"td",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    {
+                                       "Content":"3476896",
+                                       "Generation":6,
+                                       "Type":"text",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          
+                                       ]
+                                    }
+                                 ]
+                              },
+                              {
+                                 "Content":"td",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    {
+                                       "Content":"My first HTML",
+                                       "Generation":6,
+                                       "Type":"text",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          
+                                       ]
+                                    }
+                                 ]
+                              },
+                              {
+                                 "Content":"td",
+                                 "Generation":5,
+                                 "Type":"tag",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    {
+                                       "Content":"$53",
+                                       "Generation":6,
+                                       "Type":"text",
+                                       "Attributes":[
+                                          
+                                       ],
+                                       "Children":[
+                                          
+                                       ]
+                                    }
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "Content":"figure",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"img",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"src=\"picture.png\""
+                              },
+                              {
+                                 "Key":"attribute",
+                                 "Value":"alt=\"asd\""
+                              },
+                              {
+                                 "Key":"attribute",
+                                 "Value":"style=\"width:100%\""
+                              }
+                           ],
+                           "Children":[
+                              
+                           ]
+                        },
+                        {
+                           "Content":"figcaption",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"Im a picture",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "Content":"iframe",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"src=\"https://www.w3schools.com\""
+                        }
+                     ],
+                     "Children":[
+                        
+                     ]
+                  },
+                  {
+                     "Content":"nav",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"a",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"href=\"/html/\""
+                              }
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"HTML",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"|",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        },
+                        {
+                           "Content":"a",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"href=\"/css/\""
+                              }
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"CSS",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"|",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        },
+                        {
+                           "Content":"a",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"href=\"/js/\""
+                              }
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"JavaScript",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":"|",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        },
+                        {
+                           "Content":"a",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"href=\"/jquery/\""
+                              }
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"jQuery",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "Content":"object",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"data=\"helloworld.swf\""
+                        },
+                        {
+                           "Key":"attribute",
+                           "Value":"height=\"400\""
+                        },
+                        {
+                           "Key":"attribute",
+                           "Value":"width=\"400\""
+                        }
+                     ],
+                     "Children":[
+                        {
+                           "Content":"param",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"name=\"autoplay\""
+                              },
+                              {
+                                 "Key":"attribute",
+                                 "Value":"value=\"true\""
+                              }
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "Content":"picture",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"source",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"media=\"(min-width: 650px)\""
+                              },
+                              {
+                                 "Key":"attribute",
+                                 "Value":"srcset=\"img_pink_flowers.jpg\""
+                              }
+                           ],
+                           "Children":[
+                              
+                           ]
+                        },
+                        {
+                           "Content":"source",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"media=\"(min-width: 465px)\""
+                              },
+                              {
+                                 "Key":"attribute",
+                                 "Value":"srcset=\"img_white_flower.jpg\""
+                              }
+                           ],
+                           "Children":[
+                              
+                           ]
+                        },
+                        {
+                           "Content":"img",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"src=\"img_orange_flowers.jpg\""
+                              },
+                              {
+                                 "Key":"attribute",
+                                 "Value":"alt=\"Flowers\""
+                              },
+                              {
+                                 "Key":"attribute",
+                                 "Value":"style=\"width:auto;\""
+                              }
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  },
+                  {
+                     "Content":"p",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        
+                     ],
+                     "Children":[
+                        {
+                           "Content":"I have a date on",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        },
+                        {
+                           "Content":"time",
+                           "Generation":4,
+                           "Type":"tag",
+                           "Attributes":[
+                              {
+                                 "Key":"attribute",
+                                 "Value":"datetime=\"2018-07-26 12:00\""
+                              }
+                           ],
+                           "Children":[
+                              {
+                                 "Content":"Some day",
+                                 "Generation":5,
+                                 "Type":"text",
+                                 "Attributes":[
+                                    
+                                 ],
+                                 "Children":[
+                                    
+                                 ]
+                              }
+                           ]
+                        },
+                        {
+                           "Content":".",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}
