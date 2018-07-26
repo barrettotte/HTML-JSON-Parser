@@ -9,7 +9,19 @@
 * This program will take an html file and attempt to parse it to a simple JSON file.
 * For simplicity this transformation will only go one way, no converting back.
 * Later, this project will be adapted for a game development project involving a psuedo web browser.
-* I also have plans to make a CSS to JSON parser depending on the success of this project for a similar purpose.
+* I also have plans to make a CSS to JSON parser depending on the success of this project, for a similar purpose.
+
+
+## To Do:
+ * Testing for li, dt, dd, tbody, thead, tfoot, tr, td, ul, ol, table
+ * Testing for body, blockquote, br, button, canvas, caption, code, col , colgroup, data, dialog
+ * Testing for dl, dt, embed, fieldset, figcaption, figure, footer, form, head, header, iframe, img
+ * Testing for input, label, legend, link, main, map, meta, nav, noscript, object, picture, pre, span
+ * Testing for source, string, summary, sup, template, textarea, time, var, video, wbr
+ * Testing for style, script, template
+ * Add better error handling and log it to file.
+    * Check to see if anything is left on stacks after parse is "completed"
+ * Code refactor/cleanup for { parser, lexer }
 
 
 ## HTML
