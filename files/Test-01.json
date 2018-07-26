@@ -1,0 +1,61 @@
+{
+   "Content":"root",
+   "Generation":0,
+   "Type":"root",
+   "Attributes":[
+      
+   ],
+   "Children":[
+      {
+         "Content":"html",
+         "Generation":1,
+         "Type":"tag",
+         "Attributes":[
+            
+         ],
+         "Children":[
+            {
+               "Content":"div",
+               "Generation":2,
+               "Type":"tag",
+               "Attributes":[
+                  {
+                     "Key":"attribute",
+                     "Value":"type=\"wasd\""
+                  },
+                  {
+                     "Key":"attribute",
+                     "Value":"class=\"test\""
+                  }
+               ],
+               "Children":[
+                  {
+                     "Content":"p",
+                     "Generation":3,
+                     "Type":"tag",
+                     "Attributes":[
+                        {
+                           "Key":"attribute",
+                           "Value":"class=\"123\""
+                        }
+                     ],
+                     "Children":[
+                        {
+                           "Content":"This is a simple test",
+                           "Generation":4,
+                           "Type":"text",
+                           "Attributes":[
+                              
+                           ],
+                           "Children":[
+                              
+                           ]
+                        }
+                     ]
+                  }
+               ]
+            }
+         ]
+      }
+   ]
+}

@@ -22,21 +22,11 @@
 
 { type: tag, content: p, startPos: { index: 92, column: 4, line: 5 }, endPos: { index: 93, column: 5, line: 5 } }
 
-{ type: tag-start, content: <, startPos: { index: 98, column: 2, line: 6 }, endPos: { index: 99, column: 3, line: 6 } }
+{ type: tag-end, content: />, startPos: { index: 97, column: 1, line: 6 }, endPos: { index: 99, column: 3, line: 6 } }
 
-{ type: tag, content: b, startPos: { index: 99, column: 3, line: 6 }, endPos: { index: 100, column: 4, line: 6 } }
+{ type: tag, content: div, startPos: { index: 99, column: 3, line: 6 }, endPos: { index: 102, column: 6, line: 6 } }
 
-{ type: text, content: Bold text, startPos: { index: 100, column: 4, line: 6 }, endPos: { index: 119, column: 2, line: 8 } }
+{ type: tag-end, content: />, startPos: { index: 105, column: 0, line: 7 }, endPos: { index: 107, column: 2, line: 7 } }
 
-{ type: tag-end, content: />, startPos: { index: 119, column: 2, line: 8 }, endPos: { index: 121, column: 4, line: 8 } }
-
-{ type: tag, content: b, startPos: { index: 121, column: 4, line: 8 }, endPos: { index: 122, column: 5, line: 8 } }
-
-{ type: tag-end, content: />, startPos: { index: 126, column: 1, line: 9 }, endPos: { index: 128, column: 3, line: 9 } }
-
-{ type: tag, content: div, startPos: { index: 128, column: 3, line: 9 }, endPos: { index: 131, column: 6, line: 9 } }
-
-{ type: tag-end, content: />, startPos: { index: 134, column: 0, line: 10 }, endPos: { index: 136, column: 2, line: 10 } }
-
-{ type: tag, content: html, startPos: { index: 136, column: 2, line: 10 }, endPos: { index: 140, column: 6, line: 10 } }
+{ type: tag, content: html, startPos: { index: 107, column: 2, line: 7 }, endPos: { index: 111, column: 6, line: 7 } }
 

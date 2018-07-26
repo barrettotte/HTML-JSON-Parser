@@ -1,0 +1,42 @@
+{ type: comment, content: This is another	Test File, startPos: { index: 0, column: 0, line: 1 }, endPos: { index: 36, column: 3, line: 3 } }
+
+{ type: tag-start, content: <, startPos: { index: 38, column: 0, line: 4 }, endPos: { index: 39, column: 1, line: 4 } }
+
+{ type: tag, content: !DOCTYPE, startPos: { index: 39, column: 1, line: 4 }, endPos: { index: 47, column: 9, line: 4 } }
+
+{ type: attribute, content: html, startPos: { index: 47, column: 9, line: 4 }, endPos: { index: 52, column: 14, line: 4 } }
+
+{ type: tag-end, content: />, startPos: { index: 52, column: 14, line: 4 }, endPos: { index: 52, column: 14, line: 4 } }
+
+{ type: tag-start, content: <, startPos: { index: 55, column: 0, line: 5 }, endPos: { index: 56, column: 1, line: 5 } }
+
+{ type: tag, content: html, startPos: { index: 56, column: 1, line: 5 }, endPos: { index: 60, column: 5, line: 5 } }
+
+{ type: tag-start, content: <, startPos: { index: 64, column: 1, line: 6 }, endPos: { index: 65, column: 2, line: 6 } }
+
+{ type: tag, content: div, startPos: { index: 65, column: 2, line: 6 }, endPos: { index: 68, column: 5, line: 6 } }
+
+{ type: attribute, content: class="test", startPos: { index: 68, column: 5, line: 6 }, endPos: { index: 83, column: 20, line: 6 } }
+
+{ type: tag-start, content: <, startPos: { index: 88, column: 2, line: 7 }, endPos: { index: 89, column: 3, line: 7 } }
+
+{ type: tag, content: p, startPos: { index: 89, column: 3, line: 7 }, endPos: { index: 90, column: 4, line: 7 } }
+
+{ type: attribute, content: class="asd", startPos: { index: 90, column: 4, line: 7 }, endPos: { index: 102, column: 16, line: 7 } }
+
+{ type: text, content: Text text text text, startPos: { index: 102, column: 16, line: 7 }, endPos: { index: 131, column: 2, line: 9 } }
+
+{ type: tag-end, content: />, startPos: { index: 131, column: 2, line: 9 }, endPos: { index: 133, column: 4, line: 9 } }
+
+{ type: tag, content: p, startPos: { index: 133, column: 4, line: 9 }, endPos: { index: 134, column: 5, line: 9 } }
+
+{ type: tag-end, content: />, startPos: { index: 138, column: 1, line: 10 }, endPos: { index: 140, column: 3, line: 10 } }
+
+{ type: tag, content: div, startPos: { index: 140, column: 3, line: 10 }, endPos: { index: 143, column: 6, line: 10 } }
+
+{ type: comment, content: I am a comment, startPos: { index: 147, column: 1, line: 11 }, endPos: { index: 168, column: 22, line: 11 } }
+
+{ type: tag-end, content: />, startPos: { index: 170, column: 0, line: 12 }, endPos: { index: 172, column: 2, line: 12 } }
+
+{ type: tag, content: html, startPos: { index: 172, column: 2, line: 12 }, endPos: { index: 176, column: 6, line: 12 } }
+

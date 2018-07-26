@@ -20,6 +20,7 @@ public class HtmlParse{
     }
 
     
+    //REFACTOR THIS AWFUL LOOKING FUNCTION
     public HtmlNode Parse(){
         int index = 0;
         Stack<HtmlNode> nodeStack = new Stack<HtmlNode>();
@@ -29,20 +30,37 @@ public class HtmlParse{
 
         while(index < tokens.Count-1){
             Token token = tokens[index];
-
             if(token.Type == "tag-start"){
-                if(contentStack.Count > 0){
-                    while(contentStack.Count > 0){
-                       if(contentStack.Peek().Type == "attribute"){
-                           string[] split = contentStack.Pop().Content.Replace(" ", "").Split('=');
-                           nodeStack.Peek().Attributes.Add(new KeyPair(split[0], split[1]));
-                       } else{
-                           nodeStack.Peek().Children.Add(new HtmlNode(contentStack.Pop(), nodeStack.Count));
-                       }
+                if(Array.IndexOf(options.NoClosingTags, tokens[index+1].Content.ToLower()) > -1){
+                    index++;
+                    HtmlNode selfClosingNode = new HtmlNode(tokens[index], nodeStack.Count);
+                    int i = index;
+
+                    while(i < tokens.Count){
+                        if(tokens[i].Type == "tag-end"){
+                            index++;
+                            break;
+                        } else if(tokens[i].Type == "attribute"){
+                            selfClosingNode.Attributes.Add(new KeyPair("attribute", tokens[i].Content));
+                            index++;
+                        }
+                        i++;
                     }
+                    nodeStack.Peek().Children.Add(selfClosingNode);
                 }
-                index++;
-                nodeStack.Push(new HtmlNode(tokens[index], nodeStack.Count));
+                else{
+                    if(contentStack.Count > 0){
+                        while(contentStack.Count > 0){
+                            if(contentStack.Peek().Type == "attribute"){
+                                nodeStack.Peek().Attributes.Add(new KeyPair("attribute", contentStack.Pop().Content));
+                            } else{
+                                nodeStack.Peek().Children.Add(new HtmlNode(contentStack.Pop(), nodeStack.Count));
+                            }
+                        }   
+                    }
+                    index++;
+                    nodeStack.Push(new HtmlNode(tokens[index], nodeStack.Count));
+                }
             }
             else if(token.Type == "attribute"){
                 contentStack.Push(token);
@@ -51,8 +69,7 @@ public class HtmlParse{
                 if(contentStack.Count > 0){
                     while(contentStack.Count > 0){
                        if(contentStack.Peek().Type == "attribute"){
-                           string[] split = contentStack.Pop().Content.Replace(" ", "").Split('=');
-                           nodeStack.Peek().Attributes.Add(new KeyPair(split[0], split[1]));
+                            nodeStack.Peek().Attributes.Add(new KeyPair("attribute", contentStack.Pop().Content));
                        } else{
                            nodeStack.Peek().Children.Add(new HtmlNode(contentStack.Pop(), nodeStack.Count));
                        }
@@ -66,8 +83,7 @@ public class HtmlParse{
                 if(contentStack.Count > 0){
                     while(contentStack.Count > 0){
                        if(contentStack.Peek().Type == "attribute"){
-                           string[] split = contentStack.Pop().Content.Replace(" ", "").Split('=');
-                           nodeStack.Peek().Attributes.Add(new KeyPair(split[0], split[1]));
+                            nodeStack.Peek().Attributes.Add(new KeyPair("attribute", contentStack.Pop().Content));
                        } else{
                            nodeStack.Peek().Children.Add(new HtmlNode(contentStack.Pop(), nodeStack.Count));
                        }
@@ -75,7 +91,6 @@ public class HtmlParse{
                 }
                 contentStack.Push(token);
             }
-
             index++;
         }
         return root;

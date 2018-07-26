@@ -1,0 +1,32 @@
+{ type: tag-start, content: <, startPos: { index: 0, column: 0, line: 1 }, endPos: { index: 1, column: 1, line: 1 } }
+
+{ type: tag, content: html, startPos: { index: 1, column: 1, line: 1 }, endPos: { index: 5, column: 5, line: 1 } }
+
+{ type: tag-start, content: <, startPos: { index: 9, column: 1, line: 2 }, endPos: { index: 10, column: 2, line: 2 } }
+
+{ type: tag, content: div, startPos: { index: 10, column: 2, line: 2 }, endPos: { index: 13, column: 5, line: 2 } }
+
+{ type: attribute, content: class="test", startPos: { index: 13, column: 5, line: 2 }, endPos: { index: 28, column: 20, line: 2 } }
+
+{ type: tag-start, content: <, startPos: { index: 33, column: 2, line: 3 }, endPos: { index: 34, column: 3, line: 3 } }
+
+{ type: tag, content: p, startPos: { index: 34, column: 3, line: 3 }, endPos: { index: 35, column: 4, line: 3 } }
+
+{ type: attribute, content: class="asd", startPos: { index: 35, column: 4, line: 3 }, endPos: { index: 47, column: 16, line: 3 } }
+
+{ type: comment, content: I am a comment, startPos: { index: 53, column: 3, line: 4 }, endPos: { index: 74, column: 24, line: 4 } }
+
+{ type: text, content: Text text text text, startPos: { index: 74, column: 24, line: 4 }, endPos: { index: 102, column: 2, line: 6 } }
+
+{ type: tag-end, content: />, startPos: { index: 102, column: 2, line: 6 }, endPos: { index: 104, column: 4, line: 6 } }
+
+{ type: tag, content: p, startPos: { index: 104, column: 4, line: 6 }, endPos: { index: 105, column: 5, line: 6 } }
+
+{ type: tag-end, content: />, startPos: { index: 109, column: 1, line: 7 }, endPos: { index: 111, column: 3, line: 7 } }
+
+{ type: tag, content: div, startPos: { index: 111, column: 3, line: 7 }, endPos: { index: 114, column: 6, line: 7 } }
+
+{ type: tag-end, content: />, startPos: { index: 117, column: 0, line: 8 }, endPos: { index: 119, column: 2, line: 8 } }
+
+{ type: tag, content: html, startPos: { index: 119, column: 2, line: 8 }, endPos: { index: 123, column: 6, line: 8 } }
+
