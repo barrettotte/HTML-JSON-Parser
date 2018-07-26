@@ -8,20 +8,40 @@
 ## Summary :     Html --> Tokens --> JSON
 * This program will take an html file and attempt to parse it to a simple JSON file.
 * For simplicity this transformation will only go one way, no converting back.
+* To my disbelief this actually works with every tag I tested and I have yet to find a major issue with nested tags.
+* This parser assumes you know how to write html as there is no syntax analysis done before lexing.
 * Later, this project will be adapted for a game development project involving a psuedo web browser.
 * I also have plans to make a CSS to JSON parser depending on the success of this project, for a similar purpose.
 
 
 ## To Do:
- * Testing for li, dt, dd, tbody, thead, tfoot, tr, td, ul, ol, table
- * Testing for body, blockquote, br, button, canvas, caption, code, col , colgroup, data, dialog
- * Testing for dl, dt, embed, fieldset, figcaption, figure, footer, form, head, header, iframe, img
- * Testing for input, label, legend, link, main, map, meta, nav, noscript, object, picture, pre, span
- * Testing for source, string, summary, sup, template, textarea, time, var, video, wbr
- * Testing for style, script, template
- * Add better error handling and log it to file.
-    * Check to see if anything is left on stacks after parse is "completed"
+ * Throw error if anything is left on stacks after parse is "completed" and log to file
  * Code refactor/cleanup for { parser, lexer }
+
+## Tests:
+  * Test-01.html  --- Very basic html test
+  * Test-02.html  --- Multiple attributes, multiple of same tag nested in each other
+  * Test-03.html  --- Comment
+  * Test-04.html  --- Comment before a tag, non-closing tag (DOCTYPE)
+  * Test-05.html  --- ul, li, ol, nested lists with varying format, hr, br
+  * Test-06.html  --- head, meta, script, noscript, body, header, a, img, footer, span
+  * Test-07.html  --- dl, dt, dd, strong, table, tr, td, thead tbody, tfoot, blockquote, data
+  * Test-08.html  --- commented out tag, form, legend, fieldset, input, embed, button, code, h1-n, textarea, label
+  * Test-09.html  --- canvas, col, colgroup, figure, figcaption, iframe, nav, picture, source, object, time, param
+  * Test-10.html  --- style, link, script with CDATA
+  
+## Limitations \ Existing Issues:
+  * Does not have extensive error handling, I assume that people don't need a lexical analyzer for something as simple as html.
+  * Did not check every single tag, but I believe I checked around 80% of them.
+  * I found an error with the following code. Just don't do this please, it saves me some time on this project.
+    I'm probably going to be the only one using it anyway.
+  ```HTML
+<script type="text/javascript">
+   //<![CDATA[
+      var x = 12345;
+   //]]>
+</script>
+  ```
 
 
 ## HTML
