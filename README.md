@@ -14,7 +14,6 @@
 
 ## HTML
 ``` HTML
-<!--This is a test to see how well the lexer performs-->
 <!--This is another
 	Test File
 -->
