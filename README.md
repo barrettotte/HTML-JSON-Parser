@@ -19,20 +19,23 @@
  * Code refactor/cleanup for { parser, lexer }
 
 ## Tests:
-  * Test-01.html  --- Very basic html test
-  * Test-02.html  --- Multiple attributes, multiple of same tag nested in each other
-  * Test-03.html  --- Comment
-  * Test-04.html  --- Comment before a tag, non-closing tag (DOCTYPE)
-  * Test-05.html  --- ul, li, ol, nested lists with varying format, hr, br
-  * Test-06.html  --- head, meta, script, noscript, body, header, a, img, footer, span
-  * Test-07.html  --- dl, dt, dd, strong, table, tr, td, thead tbody, tfoot, blockquote, data
-  * Test-08.html  --- commented out tag, form, legend, fieldset, input, embed, button, code, h1-n, textarea, label
-  * Test-09.html  --- canvas, col, colgroup, figure, figcaption, iframe, nav, picture, source, object, time, param
-  * Test-10.html  --- style, link, script with CDATA
+| **File Name**  | **Description** |
+| -------------- | --------------- |
+| Test-01.html   | Very basic html test |
+| Test-02.html   | Multiple attributes, multiple of same tag nested in each other |
+| Test-03.html   | Comment |
+| Test-04.html   | Comment before a tag, non-closing tag (DOCTYPE) |
+| Test-05.html   | ul, li, ol, nested lists with varying format, hr, br |
+| Test-06.html   | head, meta, script, noscript, body, header, a, img, footer, span |
+| Test-07.html   | dl, dt, dd, strong, table, tr, td, thead tbody, tfoot, blockquote, data |
+| Test-08.html   | commented out tag, form, legend, fieldset, input, embed, button, code, h1-n, textarea, label |
+| Test-09.html   | canvas, col, colgroup, figure, figcaption, iframe, nav, picture, source, object, time, param |
+| Test-10.html   | style, link, script with CDATA |
   
 ## Limitations \ Existing Issues:
   * Does not have extensive error handling, I assume that people don't need a lexical analyzer for something as simple as html.
   * Did not check every single tag, but I believe I checked around 80% of them.
+  * Does not work with XHTML, I don't know why you would want to use it anyway in 2018, but that's just my opinion.
   * I found an error with the following code. Just don't do this please, it saves me some time on this project.
     I'm probably going to be the only one using it anyway.
   ```HTML
