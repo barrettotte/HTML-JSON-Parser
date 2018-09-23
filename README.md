@@ -40,9 +40,9 @@
     I'm probably going to be the only one using it anyway.
   ```HTML
 <script type="text/javascript">
-   //<![CDATA[
+   <![CDATA[
       var x = 12345;
-   //]]>
+   ]]>
 </script>
   ```
 
